@@ -1,0 +1,39 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  given_names: MyText
+  surname: MyText
+  preffered_name: MyText
+  birth_date: 2009-08-14
+  email: MyText
+  skype_name: MyText
+  mobile: MyText
+  home_phone: MyText
+  work_phone: MyText
+  business_name: MyText
+  processed_by: MyText
+  entered_by: MyText
+  region: MyText
+  paid?: false
+  payment_method: MyText
+  payment_notes: MyText
+  personal_skills: MyText
+
+two:
+  given_names: MyText
+  surname: MyText
+  preffered_name: MyText
+  birth_date: 2009-08-14
+  email: MyText
+  skype_name: MyText
+  mobile: MyText
+  home_phone: MyText
+  work_phone: MyText
+  business_name: MyText
+  processed_by: MyText
+  entered_by: MyText
+  region: MyText
+  paid?: false
+  payment_method: MyText
+  payment_notes: MyText
+  personal_skills: MyText

@@ -1,0 +1,52 @@
+<h1>Listing volunteers</h1>
+
+<table>
+  <tr>
+    <th>Given names</th>
+    <th>Surname</th>
+    <th>Preffered name</th>
+    <th>Birth date</th>
+    <th>Email</th>
+    <th>Skype name</th>
+    <th>Mobile</th>
+    <th>Home phone</th>
+    <th>Work phone</th>
+    <th>Business name</th>
+    <th>Processed by</th>
+    <th>Entered by</th>
+    <th>Region</th>
+    <th>Paid?</th>
+    <th>Payment method</th>
+    <th>Payment notes</th>
+    <th>Personal skills</th>
+  </tr>
+
+<% @volunteers.each do |volunteer| %>
+  <tr>
+    <td><%=h volunteer.given_names %></td>
+    <td><%=h volunteer.surname %></td>
+    <td><%=h volunteer.preffered_name %></td>
+    <td><%=h volunteer.birth_date %></td>
+    <td><%=h volunteer.email %></td>
+    <td><%=h volunteer.skype_name %></td>
+    <td><%=h volunteer.mobile %></td>
+    <td><%=h volunteer.home_phone %></td>
+    <td><%=h volunteer.work_phone %></td>
+    <td><%=h volunteer.business_name %></td>
+    <td><%=h volunteer.processed_by %></td>
+    <td><%=h volunteer.entered_by %></td>
+    <td><%=h volunteer.region %></td>
+    <td><%=h volunteer.paid? %></td>
+    <td><%=h volunteer.payment_method %></td>
+    <td><%=h volunteer.payment_notes %></td>
+    <td><%=h volunteer.personal_skills %></td>
+    <td><%= link_to 'Show', volunteer %></td>
+    <td><%= link_to 'Edit', edit_volunteer_path(volunteer) %></td>
+    <td><%= link_to 'Destroy', volunteer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New volunteer', new_volunteer_path %>

@@ -1,0 +1,88 @@
+<p>
+  <b>Given names:</b>
+  <%=h @volunteer.given_names %>
+</p>
+
+<p>
+  <b>Surname:</b>
+  <%=h @volunteer.surname %>
+</p>
+
+<p>
+  <b>Preffered name:</b>
+  <%=h @volunteer.preffered_name %>
+</p>
+
+<p>
+  <b>Birth date:</b>
+  <%=h @volunteer.birth_date %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @volunteer.email %>
+</p>
+
+<p>
+  <b>Skype name:</b>
+  <%=h @volunteer.skype_name %>
+</p>
+
+<p>
+  <b>Mobile:</b>
+  <%=h @volunteer.mobile %>
+</p>
+
+<p>
+  <b>Home phone:</b>
+  <%=h @volunteer.home_phone %>
+</p>
+
+<p>
+  <b>Work phone:</b>
+  <%=h @volunteer.work_phone %>
+</p>
+
+<p>
+  <b>Business name:</b>
+  <%=h @volunteer.business_name %>
+</p>
+
+<p>
+  <b>Processed by:</b>
+  <%=h @volunteer.processed_by %>
+</p>
+
+<p>
+  <b>Entered by:</b>
+  <%=h @volunteer.entered_by %>
+</p>
+
+<p>
+  <b>Region:</b>
+  <%=h @volunteer.region %>
+</p>
+
+<p>
+  <b>Paid?:</b>
+  <%=h @volunteer.paid? %>
+</p>
+
+<p>
+  <b>Payment method:</b>
+  <%=h @volunteer.payment_method %>
+</p>
+
+<p>
+  <b>Payment notes:</b>
+  <%=h @volunteer.payment_notes %>
+</p>
+
+<p>
+  <b>Personal skills:</b>
+  <%=h @volunteer.personal_skills %>
+</p>
+
+
+<%= link_to 'Edit', edit_volunteer_path(@volunteer) %> |
+<%= link_to 'Back', volunteers_path %>

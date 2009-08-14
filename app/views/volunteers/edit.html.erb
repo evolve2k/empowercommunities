@@ -1,0 +1,80 @@
+<h1>Editing volunteer</h1>
+
+<% form_for(@volunteer) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :given_names %><br />
+    <%= f.text_area :given_names %>
+  </p>
+  <p>
+    <%= f.label :surname %><br />
+    <%= f.text_area :surname %>
+  </p>
+  <p>
+    <%= f.label :preffered_name %><br />
+    <%= f.text_area :preffered_name %>
+  </p>
+  <p>
+    <%= f.label :birth_date %><br />
+    <%= f.date_select :birth_date %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_area :email %>
+  </p>
+  <p>
+    <%= f.label :skype_name %><br />
+    <%= f.text_area :skype_name %>
+  </p>
+  <p>
+    <%= f.label :mobile %><br />
+    <%= f.text_area :mobile %>
+  </p>
+  <p>
+    <%= f.label :home_phone %><br />
+    <%= f.text_area :home_phone %>
+  </p>
+  <p>
+    <%= f.label :work_phone %><br />
+    <%= f.text_area :work_phone %>
+  </p>
+  <p>
+    <%= f.label :business_name %><br />
+    <%= f.text_area :business_name %>
+  </p>
+  <p>
+    <%= f.label :processed_by %><br />
+    <%= f.text_area :processed_by %>
+  </p>
+  <p>
+    <%= f.label :entered_by %><br />
+    <%= f.text_area :entered_by %>
+  </p>
+  <p>
+    <%= f.label :region %><br />
+    <%= f.text_area :region %>
+  </p>
+  <p>
+    <%= f.label :paid? %><br />
+    <%= f.check_box :paid? %>
+  </p>
+  <p>
+    <%= f.label :payment_method %><br />
+    <%= f.text_area :payment_method %>
+  </p>
+  <p>
+    <%= f.label :payment_notes %><br />
+    <%= f.text_area :payment_notes %>
+  </p>
+  <p>
+    <%= f.label :personal_skills %><br />
+    <%= f.text_area :personal_skills %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @volunteer %> |
+<%= link_to 'Back', volunteers_path %>
