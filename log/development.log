@@ -337,3 +337,54 @@ Rendering volunteers/index
 Rendered _header (1.0ms)
 Rendered _footer (0.0ms)
 Completed in 20ms (View: 10, DB: 3) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-14 15:28:18) [GET]
+  [4;35;1mVolunteer Load (21.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 50ms (View: 16, DB: 22) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-14 15:28:31) [GET]
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Exception occurred during reader method compilation.
+Maybe paid? is not a valid Ruby identifier?
+compile error
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def paid?=(new_value);write_attribute('paid?', new_value);end
+         ^
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def paid?=(new_value);write_attribute('paid?', new_value);end
+                                                             ^
+Exception occurred during reader method compilation.
+Maybe paid? is not a valid Ruby identifier?
+compile error
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def paid??; query_attribute('paid?'); end
+          ^
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def paid??; query_attribute('paid?'); end
+                                         ^
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 48ms (View: 32, DB: 5) | 200 OK [http://localhost/volunteers/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-14 15:29:16) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 23ms (View: 12, DB: 2) | 200 OK [http://localhost/volunteers]

@@ -11,14 +11,8 @@
     <th>Mobile</th>
     <th>Home phone</th>
     <th>Work phone</th>
-    <th>Business name</th>
-    <th>Processed by</th>
-    <th>Entered by</th>
     <th>Region</th>
     <th>Paid?</th>
-    <th>Payment method</th>
-    <th>Payment notes</th>
-    <th>Personal skills</th>
   </tr>
 
 <% @volunteers.each do |volunteer| %>
@@ -32,14 +26,8 @@
     <td><%=h volunteer.mobile %></td>
     <td><%=h volunteer.home_phone %></td>
     <td><%=h volunteer.work_phone %></td>
-    <td><%=h volunteer.business_name %></td>
-    <td><%=h volunteer.processed_by %></td>
-    <td><%=h volunteer.entered_by %></td>
     <td><%=h volunteer.region %></td>
     <td><%=h volunteer.paid? %></td>
-    <td><%=h volunteer.payment_method %></td>
-    <td><%=h volunteer.payment_notes %></td>
-    <td><%=h volunteer.personal_skills %></td>
     <td><%= link_to 'Show', volunteer %></td>
     <td><%= link_to 'Edit', edit_volunteer_path(volunteer) %></td>
     <td><%= link_to 'Destroy', volunteer, :confirm => 'Are you sure?', :method => :delete %></td>
