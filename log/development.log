@@ -1113,3 +1113,138 @@ Rendering volunteers/index
 Rendered _header (1.0ms)
 Rendered _footer (0.0ms)
 Completed in 16ms (View: 7, DB: 3) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (1086.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (56.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 10:25:13) [GET]
+  [4;36;1mVolunteer Load (1556.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (81.0ms)
+Rendered _footer (23.0ms)
+Completed in 7302ms (View: 5737, DB: 2698) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 10:25:37) [GET]
+  [4;35;1mVolunteer Columns (599.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Exception occurred during reader method compilation.
+Maybe paid? is not a valid Ruby identifier?
+compile error
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def paid?=(new_value);write_attribute('paid?', new_value);end
+         ^
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def paid?=(new_value);write_attribute('paid?', new_value);end
+                                                             ^
+Exception occurred during reader method compilation.
+Maybe paid? is not a valid Ruby identifier?
+compile error
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def paid??; query_attribute('paid?'); end
+          ^
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def paid??; query_attribute('paid?'); end
+                                         ^
+Rendered _header (1.0ms)
+Rendered _footer (49.0ms)
+Completed in 1322ms (View: 713, DB: 599) | 200 OK [http://localhost/volunteers/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 10:25:46) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 16ms (View: 6, DB: 3) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 10:25:49) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 16ms (View: 6, DB: 2) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 10:25:51) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 10:27:28) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (0.0ms)
+Rendered _footer (1.0ms)
+Completed in 18ms (View: 7, DB: 1) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 10:28:17) [GET]
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Exception occurred during reader method compilation.
+Maybe paid? is not a valid Ruby identifier?
+compile error
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def paid?=(new_value);write_attribute('paid?', new_value);end
+         ^
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def paid?=(new_value);write_attribute('paid?', new_value);end
+                                                             ^
+Exception occurred during reader method compilation.
+Maybe paid? is not a valid Ruby identifier?
+compile error
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def paid??; query_attribute('paid?'); end
+          ^
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def paid??; query_attribute('paid?'); end
+                                         ^
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 41ms (View: 26, DB: 5) | 200 OK [http://localhost/volunteers/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 10:29:27) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 19ms (View: 7, DB: 0) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 10:29:29) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 17ms (View: 6, DB: 3) | 200 OK [http://localhost/volunteers]
