@@ -4099,3 +4099,15 @@ Rendering volunteers/show
 Rendered _header (1.0ms)
 Rendered _footer (0.0ms)
 Completed in 31ms (View: 8, DB: 7) | 200 OK [http://localhost/volunteers/3]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 16:10:30) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 98ms (View: 77, DB: 9) | 200 OK [http://localhost/volunteers]
