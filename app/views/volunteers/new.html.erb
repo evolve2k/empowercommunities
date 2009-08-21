@@ -5,71 +5,71 @@
 
   <p>
     <%= f.label :given_names %><br />
-    <%= f.text_area :given_names %>
+    <%= f.text_field :given_names %>
   </p>
   <p>
     <%= f.label :surname %><br />
-    <%= f.text_area :surname %>
+    <%= f.text_field :surname %>
   </p>
   <p>
     <%= f.label :preffered_name %><br />
-    <%= f.text_area :preffered_name %>
+    <%= f.text_field :preffered_name %>
   </p>
   <p>
     <%= f.label :birth_date %><br />
-    <%= f.date_select :birth_date %>
+    <%= f.date_select :birth_date , :start_year=>1900 , :end_year=>Time.now.year %>
   </p>
   <p>
     <%= f.label :email %><br />
-    <%= f.text_area :email %>
+    <%= f.text_field :email %>
   </p>
   <p>
     <%= f.label :skype_name %><br />
-    <%= f.text_area :skype_name %>
+    <%= f.text_field :skype_name %>
   </p>
   <p>
     <%= f.label :mobile %><br />
-    <%= f.text_area :mobile %>
+    <%= f.text_field :mobile %>
   </p>
   <p>
     <%= f.label :home_phone %><br />
-    <%= f.text_area :home_phone %>
+    <%= f.text_field :home_phone %>
   </p>
   <p>
     <%= f.label :work_phone %><br />
-    <%= f.text_area :work_phone %>
+    <%= f.text_field :work_phone %>
   </p>
   <p>
     <%= f.label :business_name %><br />
-    <%= f.text_area :business_name %>
+    <%= f.text_field :business_name %>
   </p>
   <p>
     <%= f.label :processed_by %><br />
-    <%= f.text_area :processed_by %>
+    <%= f.text_field :processed_by %>
   </p>
   <p>
     <%= f.label :entered_by %><br />
-    <%= f.text_area :entered_by %>
+    <%= f.text_field :entered_by %>
   </p>
   <p>
     <%= f.label :region %><br />
-    <%= f.text_area :region %>
+    <%= f.text_field :region %>
   </p>
   <p>
-    <%= f.label :paid? %><br />
-    <%= f.check_box :paid? %>
+    <%= f.label :paid %><br />
+    <%= f.check_box :paid %>
   </p>
   <p>
     <%= f.label :payment_method %><br />
-    <%= f.text_area :payment_method %>
+    <%= f.text_field :payment_method %>
   </p>
   <p>
     <%= f.label :payment_notes %><br />
-    <%= f.text_area :payment_notes %>
+    <%= f.text_field :payment_notes %>
   </p>
   <p>
     <%= f.label :personal_skills %><br />
-    <%= f.text_area :personal_skills %>
+    <%= f.text_field :personal_skills %>
   </p>
   <p>
     <%= f.submit 'Create' %>

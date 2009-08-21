@@ -13,8 +13,10 @@ class VolunteersController < ApplicationController
   # GET /volunteers/1
   # GET /volunteers/1.xml
   def show
+  
     @volunteer = Volunteer.find(params[:id])
-
+	@name = @volunteer.given_names + " " + @volunteer.surname
+	
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @volunteer }

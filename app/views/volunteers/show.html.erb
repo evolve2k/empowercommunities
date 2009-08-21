@@ -1,3 +1,6 @@
+
+<p><%=h @name %></p>
+
 <p>
   <b>Given names:</b>
   <%=h @volunteer.given_names %>
@@ -20,7 +23,7 @@
 
 <p>
   <b>Email:</b>
-  <%=h @volunteer.email %>
+  <a href="mailto:<%=h @volunteer.email %>"><%=h @volunteer.email %></a>
 </p>
 
 <p>
@@ -64,8 +67,8 @@
 </p>
 
 <p>
-  <b>Paid?:</b>
-  <%=h @volunteer.paid? %>
+  <b>Paid:</b>
+  <%=h @volunteer.paid %>
 </p>
 
 <p>
@@ -85,4 +88,5 @@
 
 
 <%= link_to 'Edit', edit_volunteer_path(@volunteer) %> |
+<%= link_to 'Destroy', volunteer_path(@volunteer), :confirm => 'Are you sure?', :method => :delete %> |
 <%= link_to 'Back', volunteers_path %>

@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(:version => 20090814043645) do
     t.text     "processed_by"
     t.text     "entered_by"
     t.text     "region"
-    t.boolean  "paid?"
+    t.boolean  "paid"
     t.text     "payment_method"
     t.text     "payment_notes"
     t.text     "personal_skills"

@@ -1248,3 +1248,2854 @@ Rendering volunteers/index
 Rendered _header (1.0ms)
 Rendered _footer (0.0ms)
 Completed in 17ms (View: 6, DB: 3) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 10:57:38) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (0.0ms)
+Rendered _footer (1.0ms)
+Completed in 18ms (View: 7, DB: 1) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 12:14:19) [GET]
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Exception occurred during reader method compilation.
+Maybe paid? is not a valid Ruby identifier?
+compile error
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def paid?=(new_value);write_attribute('paid?', new_value);end
+         ^
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def paid?=(new_value);write_attribute('paid?', new_value);end
+                                                             ^
+Exception occurred during reader method compilation.
+Maybe paid? is not a valid Ruby identifier?
+compile error
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def paid??; query_attribute('paid?'); end
+          ^
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def paid??; query_attribute('paid?'); end
+                                         ^
+Rendered _header (3.0ms)
+Rendered _footer (2.0ms)
+Completed in 389ms (View: 373, DB: 5) | 200 OK [http://localhost/volunteers/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 12:29:49) [GET]
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Exception occurred during reader method compilation.
+Maybe paid? is not a valid Ruby identifier?
+compile error
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def paid?=(new_value);write_attribute('paid?', new_value);end
+         ^
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def paid?=(new_value);write_attribute('paid?', new_value);end
+                                                             ^
+Exception occurred during reader method compilation.
+Maybe paid? is not a valid Ruby identifier?
+compile error
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def paid??; query_attribute('paid?'); end
+          ^
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def paid??; query_attribute('paid?'); end
+                                         ^
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 105ms (View: 89, DB: 4) | 200 OK [http://localhost/volunteers/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (49.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (136.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20090814043645)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `volunteers`[0m
+  [4;35;1mSQL (54.0ms)[0m   [0mSHOW KEYS FROM `volunteers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (120.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (234.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20090814043645)
+  [4;35;1mSQL (40.0ms)[0m   [0mCREATE TABLE `volunteers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `given_names` text, `surname` text, `preffered_name` text, `birth_date` date, `email` text, `skype_name` text, `mobile` text, `home_phone` text, `work_phone` text, `business_name` text, `processed_by` text, `entered_by` text, `region` text, `paid` tinyint(1), `payment_method` text, `payment_notes` text, `personal_skills` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (65.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090814043645')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (42.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `volunteers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `volunteers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 12:44:50) [GET]
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 51ms (View: 34, DB: 4) | 200 OK [http://localhost/volunteers/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#create (for 127.0.0.1 at 2009-08-21 12:45:46) [POST]
+  Parameters: {"commit"=>"Create", "volunteer"=>{"region"=>"SA", "work_phone"=>"08 8227 1388", "birth_date(2i)"=>"8", "personal_skills"=>"IT", "business_name"=>"Alec Khoo & Associates", "birth_date(3i)"=>"21", "skype_name"=>"richkhoo22", "paid"=>"1", "payment_method"=>"CASH", "home_phone"=>"08 8370 1468", "mobile"=>"0425 614 388", "preffered_name"=>"Richie", "entered_by"=>"Richie", "surname"=>"Khoo", "payment_notes"=>"", "processed_by"=>"Richie", "email"=>"evolve2k@gmail.com", "birth_date(1i)"=>"2009", "given_names"=>"Richard"}, "authenticity_token"=>"FKOMPjqy8ppr4VtoHNVIrCmJezioG8XZI7qfJH6axBA="}
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mVolunteer Create (0.0ms)[0m   [0mINSERT INTO `volunteers` (`work_phone`, `region`, `business_name`, `personal_skills`, `created_at`, `skype_name`, `paid`, `updated_at`, `payment_method`, `birth_date`, `home_phone`, `mobile`, `preffered_name`, `surname`, `entered_by`, `given_names`, `email`, `processed_by`, `payment_notes`) VALUES('08 8227 1388', 'SA', 'Alec Khoo & Associates', 'IT', '2009-08-21 03:15:46', 'richkhoo22', 1, '2009-08-21 03:15:46', 'CASH', '2009-08-21', '08 8370 1468', '0425 614 388', 'Richie', 'Khoo', 'Richie', 'Richard', 'evolve2k@gmail.com', 'Richie', '')[0m
+  [4;36;1mSQL (35.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/volunteers/1
+Completed in 163ms (DB: 39) | 302 Found [http://localhost/volunteers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 12:45:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (75.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 109ms (View: 18, DB: 82) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 12:46:00) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 36ms (View: 20, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 12:46:10) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (1.0ms)
+Completed in 29ms (View: 15, DB: 7) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 12:50:46) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 30ms (View: 16, DB: 5) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 12:53:26) [GET]
+  [4;35;1mVolunteer Load (19.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 54ms (View: 19, DB: 25) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 12:55:39) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 36ms (View: 20, DB: 5) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 12:57:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 43ms (View: 25, DB: 6) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 12:58:37) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.email) on line #24 of app/views/volunteers/index.html.erb:
+21:     <td><%=h volunteer.surname %></td>
+22:     <td><%=h volunteer.preffered_name %></td>
+23:     <td><%=h volunteer.birth_date %></td>
+24:     <td>  <a href="mailto:<%=h @volunteer.email %>"><%=h @volunteer.email %></a></td>
+25:     <td><%=h volunteer.skype_name %></td>
+26:     <td><%=h volunteer.mobile %></td>
+27:     <td><%=h volunteer.home_phone %></td>
+
+    app/views/volunteers/index.html.erb:24
+    app/views/volunteers/index.html.erb:18:in `each'
+    app/views/volunteers/index.html.erb:18
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (155.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 12:59:28) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.email) on line #24 of app/views/volunteers/index.html.erb:
+21:     <td><%=h volunteer.surname %></td>
+22:     <td><%=h volunteer.preffered_name %></td>
+23:     <td><%=h volunteer.birth_date %></td>
+24:     <td>  <a href="mailto:<%=h @volunteer.email %>">email address</a></td>
+25:     <td><%=h volunteer.skype_name %></td>
+26:     <td><%=h volunteer.mobile %></td>
+27:     <td><%=h volunteer.home_phone %></td>
+
+    app/views/volunteers/index.html.erb:24
+    app/views/volunteers/index.html.erb:18:in `each'
+    app/views/volunteers/index.html.erb:18
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (151.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 13:00:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (0.0ms)
+Rendered _footer (1.0ms)
+Completed in 35ms (View: 18, DB: 5) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:00:12) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.email) on line #24 of app/views/volunteers/index.html.erb:
+21:     <td><%=h volunteer.surname %></td>
+22:     <td><%=h volunteer.preffered_name %></td>
+23:     <td><%=h volunteer.birth_date %></td>
+24:     <td>  <a href="mailto:<%=h @volunteer.email %>">email address</a></td>
+25:     <td><%=h volunteer.skype_name %></td>
+26:     <td><%=h volunteer.mobile %></td>
+27:     <td><%=h volunteer.home_phone %></td>
+
+    app/views/volunteers/index.html.erb:24
+    app/views/volunteers/index.html.erb:18:in `each'
+    app/views/volunteers/index.html.erb:18
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (149.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:00:47) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.email) on line #24 of app/views/volunteers/index.html.erb:
+21:     <td><%=h volunteer.surname %></td>
+22:     <td><%=h volunteer.preffered_name %></td>
+23:     <td><%=h volunteer.birth_date %></td>
+24:     <td><a href="mailto:<%=h @volunteer.email %>"><%=h @volunteer.email %></a></td>
+25:     <td><%=h volunteer.skype_name %></td>
+26:     <td><%=h volunteer.mobile %></td>
+27:     <td><%=h volunteer.home_phone %></td>
+
+    app/views/volunteers/index.html.erb:24
+    app/views/volunteers/index.html.erb:18:in `each'
+    app/views/volunteers/index.html.erb:18
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (150.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:01:05) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 35ms (View: 20, DB: 4) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 13:12:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 13, DB: 6) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:12:31) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 32ms (View: 15, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 13:12:36) [GET]
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+ERROR: compiling _run_erb_app47views47volunteers47new46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:20: syntax error, unexpected ':', expecting ')'
+...(( f.date_select :birth_date :start_year=>1900 end_year:Time...
+                              ^
+Function body:           def _run_erb_app47views47volunteers47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>New volunteer</h1>\n\n"
+
+;  form_for(@volunteer) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :given_names ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :given_names ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :surname ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :surname ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :preffered_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :preffered_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :birth_date ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.date_select :birth_date :start_year=>1900 end_year:Time.now.year ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :email ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :email ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :skype_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :skype_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :mobile ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :mobile ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :home_phone ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :home_phone ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :work_phone ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :work_phone ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :business_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :business_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :processed_by ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :processed_by ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :entered_by ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :entered_by ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :region ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :region ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :paid ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.check_box :paid ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :payment_method ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :payment_method ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :payment_notes ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :payment_notes ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :personal_skills ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :personal_skills ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( link_to 'Back', volunteers_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:82:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:29:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:20: syntax error, unexpected ':', expecting ')'
+...(( f.date_select :birth_date :start_year=>1900 end_year:Time...
+                              ^) on line #20 of app/views/volunteers/new.html.erb:
+17:   </p>
+18:   <p>
+19:     <%= f.label :birth_date %><br />
+20:     <%= f.date_select :birth_date :start_year=>1900 end_year:Time.now.year %>
+21:   </p>
+22:   <p>
+23:     <%= f.label :email %><br />
+
+    app/views/volunteers/new.html.erb:82:in `compile!'
+    app/controllers/volunteers_controller.rb:29:in `new'
+
+Rendered rescues/_trace (152.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 13:12:54) [GET]
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+ERROR: compiling _run_erb_app47views47volunteers47new46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:20: syntax error, unexpected ':', expecting ')'
+...(( f.date_select :birth_date :start_year=>1900 end_year=>Tim...
+                              ^
+Function body:           def _run_erb_app47views47volunteers47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>New volunteer</h1>\n\n"
+
+;  form_for(@volunteer) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :given_names ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :given_names ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :surname ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :surname ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :preffered_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :preffered_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :birth_date ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.date_select :birth_date :start_year=>1900 end_year=>Time.now.year ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :email ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :email ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :skype_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :skype_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :mobile ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :mobile ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :home_phone ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :home_phone ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :work_phone ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :work_phone ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :business_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :business_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :processed_by ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :processed_by ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :entered_by ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :entered_by ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :region ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :region ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :paid ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.check_box :paid ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :payment_method ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :payment_method ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :payment_notes ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :payment_notes ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :personal_skills ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :personal_skills ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( link_to 'Back', volunteers_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:82:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:29:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:20: syntax error, unexpected ':', expecting ')'
+...(( f.date_select :birth_date :start_year=>1900 end_year=>Tim...
+                              ^) on line #20 of app/views/volunteers/new.html.erb:
+17:   </p>
+18:   <p>
+19:     <%= f.label :birth_date %><br />
+20:     <%= f.date_select :birth_date :start_year=>1900 end_year=>Time.now.year %>
+21:   </p>
+22:   <p>
+23:     <%= f.label :email %><br />
+
+    app/views/volunteers/new.html.erb:82:in `compile!'
+    app/controllers/volunteers_controller.rb:29:in `new'
+
+Rendered rescues/_trace (91.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 13:13:26) [GET]
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+ERROR: compiling _run_erb_app47views47volunteers47new46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:20: syntax error, unexpected ':', expecting ')'
+...(( f.date_select :birth_date :start_year=>1900 :end_year=>Ti...
+                              ^
+Function body:           def _run_erb_app47views47volunteers47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>New volunteer</h1>\n\n"
+
+;  form_for(@volunteer) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :given_names ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :given_names ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :surname ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :surname ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :preffered_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :preffered_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :birth_date ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.date_select :birth_date :start_year=>1900 :end_year=>Time.now.year ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :email ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :email ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :skype_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :skype_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :mobile ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :mobile ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :home_phone ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :home_phone ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :work_phone ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :work_phone ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :business_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :business_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :processed_by ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :processed_by ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :entered_by ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :entered_by ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :region ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :region ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :paid ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.check_box :paid ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :payment_method ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :payment_method ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :payment_notes ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :payment_notes ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :personal_skills ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :personal_skills ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( link_to 'Back', volunteers_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:82:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:29:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:20: syntax error, unexpected ':', expecting ')'
+...(( f.date_select :birth_date :start_year=>1900 :end_year=>Ti...
+                              ^) on line #20 of app/views/volunteers/new.html.erb:
+17:   </p>
+18:   <p>
+19:     <%= f.label :birth_date %><br />
+20:     <%= f.date_select :birth_date :start_year=>1900 :end_year=>Time.now.year %>
+21:   </p>
+22:   <p>
+23:     <%= f.label :email %><br />
+
+    app/views/volunteers/new.html.erb:82:in `compile!'
+    app/controllers/volunteers_controller.rb:29:in `new'
+
+Rendered rescues/_trace (93.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 13:13:35) [GET]
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+ERROR: compiling _run_erb_app47views47volunteers47new46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:20: syntax error, unexpected ':', expecting ')'
+...(( f.date_select :birth_date :start_year=>1900  ).to_s); @ou...
+                              ^
+Function body:           def _run_erb_app47views47volunteers47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>New volunteer</h1>\n\n"
+
+;  form_for(@volunteer) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :given_names ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :given_names ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :surname ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :surname ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :preffered_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :preffered_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :birth_date ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.date_select :birth_date :start_year=>1900  ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :email ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :email ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :skype_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :skype_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :mobile ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :mobile ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :home_phone ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :home_phone ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :work_phone ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :work_phone ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :business_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :business_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :processed_by ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :processed_by ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :entered_by ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :entered_by ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :region ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :region ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :paid ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.check_box :paid ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :payment_method ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :payment_method ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :payment_notes ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :payment_notes ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :personal_skills ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :personal_skills ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( link_to 'Back', volunteers_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:82:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:29:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:20: syntax error, unexpected ':', expecting ')'
+...(( f.date_select :birth_date :start_year=>1900  ).to_s); @ou...
+                              ^) on line #20 of app/views/volunteers/new.html.erb:
+17:   </p>
+18:   <p>
+19:     <%= f.label :birth_date %><br />
+20:     <%= f.date_select :birth_date :start_year=>1900  %>
+21:   </p>
+22:   <p>
+23:     <%= f.label :email %><br />
+
+    app/views/volunteers/new.html.erb:82:in `compile!'
+    app/controllers/volunteers_controller.rb:29:in `new'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 13:13:52) [GET]
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 56ms (View: 39, DB: 5) | 200 OK [http://localhost/volunteers/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 13:14:07) [GET]
+  [4;36;1mVolunteer Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+ERROR: compiling _run_erb_app47views47volunteers47new46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:20: syntax error, unexpected ':', expecting ')'
+...rth_date , :start_year=>1900 :end_year=>Time.now.year ).to_s...
+                              ^
+Function body:           def _run_erb_app47views47volunteers47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>New volunteer</h1>\n\n"
+
+;  form_for(@volunteer) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :given_names ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :given_names ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :surname ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :surname ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :preffered_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :preffered_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :birth_date ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.date_select :birth_date , :start_year=>1900 :end_year=>Time.now.year ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :email ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :email ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :skype_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :skype_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :mobile ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :mobile ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :home_phone ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :home_phone ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :work_phone ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :work_phone ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :business_name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :business_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :processed_by ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :processed_by ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :entered_by ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :entered_by ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :region ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :region ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :paid ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.check_box :paid ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :payment_method ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :payment_method ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :payment_notes ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :payment_notes ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :personal_skills ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :personal_skills ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( link_to 'Back', volunteers_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:82:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:29:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/new.html.erb:20: syntax error, unexpected ':', expecting ')'
+...rth_date , :start_year=>1900 :end_year=>Time.now.year ).to_s...
+                              ^) on line #20 of app/views/volunteers/new.html.erb:
+17:   </p>
+18:   <p>
+19:     <%= f.label :birth_date %><br />
+20:     <%= f.date_select :birth_date , :start_year=>1900 :end_year=>Time.now.year %>
+21:   </p>
+22:   <p>
+23:     <%= f.label :email %><br />
+
+    app/views/volunteers/new.html.erb:82:in `compile!'
+    app/controllers/volunteers_controller.rb:29:in `new'
+
+Rendered rescues/_trace (157.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 13:14:22) [GET]
+  [4;35;1mVolunteer Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 54ms (View: 35, DB: 8) | 200 OK [http://localhost/volunteers/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:16:32) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (1.0ms)
+Completed in 31ms (View: 15, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:20:23) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 36ms (View: 21, DB: 5) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:21:10) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (1.0ms)
+Completed in 39ms (View: 22, DB: 5) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 13:22:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 30ms (View: 12, DB: 7) | 200 OK [http://localhost/volunteers/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:22:30) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 16, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#edit (for 127.0.0.1 at 2009-08-21 13:22:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/edit
+Rendered _header (0.0ms)
+Rendered _footer (1.0ms)
+Completed in 53ms (View: 36, DB: 5) | 200 OK [http://localhost/volunteers/1/edit]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:22:37) [GET]
+  [4;36;1mVolunteer Load (0.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 30ms (View: 15, DB: 7) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 13:23:16) [GET]
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 45ms (View: 29, DB: 4) | 200 OK [http://localhost/volunteers/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:23:26) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 30ms (View: 15, DB: 4) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:28:35) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 32ms (View: 15, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:30:17) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 16, DB: 4) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:35:13) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 15, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:35:22) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 33ms (View: 16, DB: 8) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:40:06) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 15, DB: 8) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:40:39) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 32ms (View: 17, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:40:52) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 15, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:53:28) [GET]
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (1.0ms)
+Completed in 34ms (View: 17, DB: 7) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:53:51) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 33ms (View: 16, DB: 7) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:55:53) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (1.0ms)
+Completed in 37ms (View: 22, DB: 7) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 13:57:09) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 16, DB: 5) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 14:00:00) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+ERROR: compiling _run_erb_app47views47volunteers47index46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:16: syntax error, unexpected '>'
+...buffer.concat "', volunteer %></td>\n    <td><a href=\"mailt...
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:17: unknown regexp option - a
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:17: syntax error, unexpected '<'
+...; @output_buffer.concat "</a></td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:18: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:18: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    <td></td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: syntax error, unexpected '<'
+...uffer.concat "</td>\n    <td></td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:24: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:24: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:25: unknown regexp options - tr
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:25: syntax error, unexpected $undefined
+...buffer.concat "</td>\n  </tr>\n"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:27: syntax error, unexpected $undefined, expecting ')'
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+                                 ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:27: syntax error, unexpected $undefined
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+                                                     ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:27: unterminated string meets end of file
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:27: syntax error, unexpected $end, expecting ')'
+Function body:           def _run_erb_app47views47volunteers47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing volunteers</h1>\n\n<table>\n  <tr>\n    <th>Name</th>\n    <th>Email</th>\n    <th>Skype name</th>\n    <th>Mobile</th>\n\t<th>Home</th>\n    <th>Region</th>\n    <th>Paid?</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+;  @volunteers.each do |volunteer| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( link_to '<%=h volunteer.preffered_name ).to_s); @output_buffer.concat " "; @output_buffer.concat((h volunteer.surname ).to_s); @output_buffer.concat "', volunteer %></td>\n    <td><a href=\"mailto:"
+; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "\">"; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "</a></td>\n    <td>"
+; @output_buffer.concat((h volunteer.skype_name ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.mobile ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.home_phone ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.region ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.paid ).to_s); @output_buffer.concat "</td>\n    <td></td>\n    <td>"
+
+; @output_buffer.concat(( link_to 'Edit', edit_volunteer_path(volunteer) ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Destroy', volunteer, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New volunteer', new_volunteer_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:27:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:7:in `index'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:16: syntax error, unexpected '>'
+...buffer.concat "', volunteer %></td>\n    <td><a href=\"mailt...
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:17: unknown regexp option - a
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:17: syntax error, unexpected '<'
+...; @output_buffer.concat "</a></td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:18: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:18: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    <td></td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: syntax error, unexpected '<'
+...uffer.concat "</td>\n    <td></td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:24: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:24: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:25: unknown regexp options - tr
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:25: syntax error, unexpected $undefined
+...buffer.concat "</td>\n  </tr>\n"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:27: syntax error, unexpected $undefined, expecting ')'
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+                                 ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:27: syntax error, unexpected $undefined
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+                                                     ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:27: unterminated string meets end of file
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:27: syntax error, unexpected $end, expecting ')') on line #16 of app/views/volunteers/index.html.erb:
+13: 
+14: <% @volunteers.each do |volunteer| %>
+15:   <tr>
+16:     <td><%= link_to '<%=h volunteer.preffered_name %> <%=h volunteer.surname %>', volunteer %></td>
+17:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+18:     <td><%=h volunteer.skype_name %></td>
+19:     <td><%=h volunteer.mobile %></td>
+
+    app/views/volunteers/index.html.erb:27:in `compile!'
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (155.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 14:03:29) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 40ms (View: 22, DB: 7) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 14:03:44) [GET]
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 47ms (View: 30, DB: 5) | 200 OK [http://localhost/volunteers/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:34:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mVolunteer Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mVolunteer Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+
+NameError (undefined local variable or method `volunteer' for #<Class:0x42a9f00>):
+  app/models/volunteer.rb:2
+  app/controllers/volunteers_controller.rb:16:in `show'
+
+Rendered rescues/_trace (161.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:35:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mVolunteer Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+
+NameError (undefined local variable or method `volunteer' for #<Class:0x4e0e530>):
+  app/models/volunteer.rb:2
+  app/controllers/volunteers_controller.rb:16:in `show'
+
+Rendered rescues/_trace (89.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:36:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mVolunteer Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+
+NameError (undefined local variable or method `volunteer' for #<Class:0x41b1378>):
+  app/models/volunteer.rb:2
+  app/controllers/volunteers_controller.rb:16:in `show'
+
+Rendered rescues/_trace (143.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:37:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+
+NameError (undefined local variable or method `volunteer' for #<Class:0x4d2b730>):
+  app/models/volunteer.rb:2
+  app/controllers/volunteers_controller.rb:16:in `show'
+
+Rendered rescues/_trace (129.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:38:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+
+NameError (undefined local variable or method `volunteer' for #<Class:0x4f6c864>):
+  app/models/volunteer.rb:2
+  app/controllers/volunteers_controller.rb:16:in `show'
+
+Rendered rescues/_trace (87.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:39:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 42ms (View: 23, DB: 6) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:39:57) [GET]
+  Parameters: {"id"=>"1"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.preferred_name):
+  app/models/volunteer.rb:2
+  app/controllers/volunteers_controller.rb:16:in `show'
+
+Rendered rescues/_trace (148.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:40:14) [GET]
+  Parameters: {"id"=>"1"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.preferred_name):
+  app/models/volunteer.rb:2
+  app/controllers/volunteers_controller.rb:16:in `show'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:40:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+
+NameError (undefined local variable or method `preferred_name' for #<Class:0x41a6b94>):
+  app/models/volunteer.rb:2
+  app/controllers/volunteers_controller.rb:16:in `show'
+
+Rendered rescues/_trace (155.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:45:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (0.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+
+NoMethodError (undefined method `preferred_name' for #<Volunteer:0x4d2d210>):
+  app/controllers/volunteers_controller.rb:19:in `show'
+
+Rendered rescues/_trace (74.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:48:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 99ms (View: 82, DB: 7) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:53:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 30ms (View: 8, DB: 6) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:53:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (3.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (0.0ms)
+Rendered _footer (1.0ms)
+Completed in 38ms (View: 10, DB: 12) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:54:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (0.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 9, DB: 4) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:54:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (0.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+
+NoMethodError (undefined method `preffered_names' for #<Volunteer:0x4c4b220>):
+  app/controllers/volunteers_controller.rb:19:in `show'
+
+Rendered rescues/_trace (68.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 14:54:58) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 30ms (View: 15, DB: 5) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:55:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+
+NoMethodError (undefined method `preferred_names' for #<Volunteer:0x4e49ab8>):
+  app/controllers/volunteers_controller.rb:19:in `show'
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:55:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (0.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+
+NoMethodError (undefined method `preferred_name' for #<Volunteer:0x42dddb4>):
+  app/controllers/volunteers_controller.rb:19:in `show'
+
+Rendered rescues/_trace (134.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 14:55:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 30ms (View: 9, DB: 5) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 14:57:03) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.given_names):
+  app/controllers/volunteers_controller.rb:6:in `index'
+
+Rendered rescues/_trace (68.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 14:57:23) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.given_names):
+  app/controllers/volunteers_controller.rb:6:in `index'
+
+Rendered rescues/_trace (129.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 14:57:47) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.given_names):
+  app/controllers/volunteers_controller.rb:6:in `index'
+
+Rendered rescues/_trace (68.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 14:58:14) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+
+NoMethodError (undefined method `given_names' for #<Class:0x4285ad8>):
+  app/controllers/volunteers_controller.rb:6:in `index'
+
+Rendered rescues/_trace (130.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:00:08) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 38ms (View: 21, DB: 5) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:00:52) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 40ms (View: 23, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:01:32) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 38ms (View: 22, DB: 7) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:01:54) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 37ms (View: 21, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:02:26) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 99ms (View: 83, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:02:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 8, DB: 7) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:05:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 9, DB: 6) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:05:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 9, DB: 6) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:05:36) [GET]
+  [4;35;1mVolunteer Load (4.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 41ms (View: 20, DB: 9) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:05:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 36ms (View: 11, DB: 7) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#edit (for 127.0.0.1 at 2009-08-21 15:05:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/edit
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 47ms (View: 29, DB: 8) | 200 OK [http://localhost/volunteers/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:06:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 85ms (View: 8, DB: 6) | 200 OK [http://localhost/volunteers/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:06:43) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 16, DB: 5) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:07:14) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 37ms (View: 21, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:09:29) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (2.0ms)
+Completed in 37ms (View: 22, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:10:46) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 15, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:11:10) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 30ms (View: 14, DB: 5) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:12:02) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 34ms (View: 16, DB: 7) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:13:24) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 29ms (View: 13, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:13:48) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 32ms (View: 16, DB: 4) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:15:48) [GET]
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (1.0ms)
+Completed in 30ms (View: 15, DB: 5) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 15:17:26) [GET]
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 46ms (View: 30, DB: 6) | 200 OK [http://localhost/volunteers/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#create (for 127.0.0.1 at 2009-08-21 15:18:08) [POST]
+  Parameters: {"commit"=>"Create", "volunteer"=>{"region"=>"SA", "work_phone"=>"", "birth_date(2i)"=>"8", "personal_skills"=>"", "business_name"=>"", "birth_date(3i)"=>"21", "skype_name"=>"", "paid"=>"1", "payment_method"=>"Cash", "home_phone"=>"", "mobile"=>"0401 352 731", "preffered_name"=>"Tyson", "entered_by"=>"Richie", "surname"=>"Avery", "payment_notes"=>"", "processed_by"=>"Richie", "email"=>"tysonavery@carpetsforcommunities.org", "birth_date(1i)"=>"2009", "given_names"=>"Tyson"}, "authenticity_token"=>"FKOMPjqy8ppr4VtoHNVIrCmJezioG8XZI7qfJH6axBA="}
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mVolunteer Create (1.0ms)[0m   [0;1mINSERT INTO `volunteers` (`work_phone`, `region`, `business_name`, `personal_skills`, `created_at`, `skype_name`, `paid`, `updated_at`, `payment_method`, `birth_date`, `home_phone`, `mobile`, `preffered_name`, `surname`, `entered_by`, `given_names`, `email`, `processed_by`, `payment_notes`) VALUES('', 'SA', '', '', '2009-08-21 05:48:08', '', 1, '2009-08-21 05:48:08', 'Cash', '2009-08-21', '', '0401 352 731', 'Tyson', 'Avery', 'Richie', 'Tyson', 'tysonavery@carpetsforcommunities.org', 'Richie', '')[0m
+  [4;35;1mSQL (70.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/volunteers/2
+Completed in 103ms (DB: 76) | 302 Found [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:18:09) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 2) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (0.0ms)
+Rendered _footer (1.0ms)
+Completed in 29ms (View: 8, DB: 7) | 200 OK [http://localhost/volunteers/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:18:15) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 88ms (View: 14, DB: 7) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:18:47) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 16, DB: 5) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:22:37) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 35ms (View: 16, DB: 10) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:23:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 2) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 9, DB: 6) | 200 OK [http://localhost/volunteers/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:23:27) [GET]
+  [4;36;1mVolunteer Load (0.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 32ms (View: 16, DB: 5) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:24:24) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 39ms (View: 19, DB: 9) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:28:49) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 2) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+
+ActionView::TemplateError (undefined local variable or method `volunteer' for #<ActionView::Base:0x41bbf6c>) on line #91 of app/views/volunteers/show.html.erb:
+88: 
+89: 
+90: <%= link_to 'Edit', edit_volunteer_path(@volunteer) %> |
+91: <%= link_to 'Destroy', volunteer, :confirm => 'Are you sure?', :method => :delete %> |
+92: <%= link_to 'Back', volunteers_path %>
+
+    app/views/volunteers/show.html.erb:91
+    app/controllers/volunteers_controller.rb:20:in `show'
+
+Rendered rescues/_trace (92.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:30:59) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 2) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 38ms (View: 15, DB: 7) | 200 OK [http://localhost/volunteers/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#destroy (for 127.0.0.1 at 2009-08-21 15:31:08) [DELETE]
+  Parameters: {"authenticity_token"=>"FKOMPjqy8ppr4VtoHNVIrCmJezioG8XZI7qfJH6axBA=", "id"=>"2"}
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 2) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mVolunteer Destroy (52.0ms)[0m   [0mDELETE FROM `volunteers` WHERE `id` = 2[0m
+  [4;36;1mSQL (49.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/volunteers
+Completed in 124ms (DB: 108) | 302 Found [http://localhost/volunteers/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:31:09) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 92ms (View: 16, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-08-21 15:31:45) [GET]
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 45ms (View: 29, DB: 5) | 200 OK [http://localhost/volunteers/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#create (for 127.0.0.1 at 2009-08-21 15:32:16) [POST]
+  Parameters: {"commit"=>"Create", "volunteer"=>{"region"=>"SA", "work_phone"=>"", "birth_date(2i)"=>"8", "personal_skills"=>"", "business_name"=>"", "birth_date(3i)"=>"21", "skype_name"=>"", "paid"=>"1", "payment_method"=>"", "home_phone"=>"", "mobile"=>"0401 352 731", "preffered_name"=>"Tys", "entered_by"=>"Richie", "surname"=>"Avery", "payment_notes"=>"", "processed_by"=>"Richie", "email"=>"tysonavery@carpetsforcommunities.org", "birth_date(1i)"=>"2009", "given_names"=>"Tyson"}, "authenticity_token"=>"FKOMPjqy8ppr4VtoHNVIrCmJezioG8XZI7qfJH6axBA="}
+  [4;36;1mVolunteer Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mVolunteer Create (1.0ms)[0m   [0;1mINSERT INTO `volunteers` (`work_phone`, `region`, `business_name`, `personal_skills`, `created_at`, `skype_name`, `paid`, `updated_at`, `payment_method`, `birth_date`, `home_phone`, `mobile`, `preffered_name`, `surname`, `entered_by`, `given_names`, `email`, `processed_by`, `payment_notes`) VALUES('', 'SA', '', '', '2009-08-21 06:02:16', '', 1, '2009-08-21 06:02:16', '', '2009-08-21', '', '0401 352 731', 'Tys', 'Avery', 'Richie', 'Tyson', 'tysonavery@carpetsforcommunities.org', 'Richie', '')[0m
+  [4;35;1mSQL (53.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/volunteers/3
+Completed in 84ms (DB: 62) | 302 Found [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:32:17) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 3) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 30ms (View: 9, DB: 6) | 200 OK [http://localhost/volunteers/3]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:32:23) [GET]
+  [4;36;1mVolunteer Load (0.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 32ms (View: 16, DB: 4) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:33:44) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 37ms (View: 21, DB: 6) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:34:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (0.0ms)
+Rendered _footer (1.0ms)
+Completed in 87ms (View: 65, DB: 6) | 200 OK [http://localhost/volunteers/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:35:03) [GET]
+  [4;36;1mVolunteer Load (0.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 55ms (View: 39, DB: 5) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:35:09) [GET]
+  [4;36;1mVolunteer Load (0.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 32ms (View: 14, DB: 7) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#edit (for 127.0.0.1 at 2009-08-21 15:36:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mVolunteer Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 3) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/edit
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 46ms (View: 25, DB: 9) | 200 OK [http://localhost/volunteers/3/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#update (for 127.0.0.1 at 2009-08-21 15:36:18) [PUT]
+  Parameters: {"commit"=>"Update", "volunteer"=>{"region"=>"SA", "work_phone"=>"", "birth_date(2i)"=>"8", "personal_skills"=>"", "business_name"=>"", "birth_date(3i)"=>"21", "skype_name"=>"", "paid"=>"1", "payment_method"=>"Cash", "home_phone"=>"", "mobile"=>"0401 352 731", "preffered_name"=>"Tys", "entered_by"=>"Richie", "surname"=>"Avery", "payment_notes"=>"", "processed_by"=>"Richie", "email"=>"tysonavery@carpetsforcommunities.org", "birth_date(1i)"=>"2009", "given_names"=>"Tyson"}, "authenticity_token"=>"FKOMPjqy8ppr4VtoHNVIrCmJezioG8XZI7qfJH6axBA=", "id"=>"3"}
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 3) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mVolunteer Update (24.0ms)[0m   [0mUPDATE `volunteers` SET `updated_at` = '2009-08-21 06:06:18', `payment_method` = 'Cash' WHERE `id` = 3[0m
+  [4;36;1mSQL (45.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/volunteers/3
+Completed in 100ms (DB: 76) | 302 Found [http://localhost/volunteers/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:36:19) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mVolunteer Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 3) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 8, DB: 5) | 200 OK [http://localhost/volunteers/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:37:40) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mVolunteer Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 3) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 38ms (View: 16, DB: 7) | 200 OK [http://localhost/volunteers/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#edit (for 127.0.0.1 at 2009-08-21 15:37:45) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 3) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/edit
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 44ms (View: 26, DB: 6) | 200 OK [http://localhost/volunteers/3/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#update (for 127.0.0.1 at 2009-08-21 15:37:55) [PUT]
+  Parameters: {"commit"=>"Update", "volunteer"=>{"region"=>"SA", "work_phone"=>"", "birth_date(2i)"=>"8", "personal_skills"=>"Marketing", "business_name"=>"", "birth_date(3i)"=>"21", "skype_name"=>"", "paid"=>"1", "payment_method"=>"Cash", "home_phone"=>"", "mobile"=>"0401 352 731", "preffered_name"=>"Tys", "entered_by"=>"Richie", "surname"=>"Avery", "payment_notes"=>"", "processed_by"=>"Richie", "email"=>"tysonavery@carpetsforcommunities.org", "birth_date(1i)"=>"2009", "given_names"=>"Tyson"}, "authenticity_token"=>"FKOMPjqy8ppr4VtoHNVIrCmJezioG8XZI7qfJH6axBA=", "id"=>"3"}
+  [4;35;1mVolunteer Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 3) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mVolunteer Update (0.0ms)[0m   [0;1mUPDATE `volunteers` SET `updated_at` = '2009-08-21 06:07:55', `personal_skills` = 'Marketing' WHERE `id` = 3[0m
+  [4;35;1mSQL (164.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/volunteers/3
+Completed in 194ms (DB: 172) | 302 Found [http://localhost/volunteers/3]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:37:56) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mVolunteer Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mVolunteer Load (0.0ms)[0m   [0mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 3) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 8, DB: 6) | 200 OK [http://localhost/volunteers/3]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:38:15) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 35ms (View: 17, DB: 8) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-08-21 15:39:41) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (2.0ms)
+Completed in 36ms (View: 19, DB: 7) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-08-21 15:40:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mVolunteer Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `volunteers`[0m
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM `volunteers` WHERE (`volunteers`.`id` = 3) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 8, DB: 7) | 200 OK [http://localhost/volunteers/3]

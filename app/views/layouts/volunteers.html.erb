@@ -10,10 +10,10 @@
 </head>
 <body>
   <%= render :partial => "/header" %>
-    <p style="color: green"><%= flash[:notice] %></p>
 	
   <div class="content">
     <div class="column-1">
+      <p style="color: green"><%= flash[:notice] %></p>
 	  <br />
       <%= yield %>	  
 	</div>	

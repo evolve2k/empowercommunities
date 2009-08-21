@@ -2,35 +2,25 @@
 
 <table>
   <tr>
-    <th>Given names</th>
-    <th>Surname</th>
-    <th>Preffered name</th>
-    <th>Birth date</th>
+    <th>Name</th>
     <th>Email</th>
     <th>Skype name</th>
     <th>Mobile</th>
-    <th>Home phone</th>
-    <th>Work phone</th>
+	<th>Home</th>
     <th>Region</th>
     <th>Paid?</th>
   </tr>
 
 <% @volunteers.each do |volunteer| %>
   <tr>
-    <td><%=h volunteer.given_names %></td>
-    <td><%=h volunteer.surname %></td>
-    <td><%=h volunteer.preffered_name %></td>
-    <td><%=h volunteer.birth_date %></td>
-    <td><%=h volunteer.email %></td>
+    <td><%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %></td>
+    <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
     <td><%=h volunteer.skype_name %></td>
     <td><%=h volunteer.mobile %></td>
     <td><%=h volunteer.home_phone %></td>
-    <td><%=h volunteer.work_phone %></td>
     <td><%=h volunteer.region %></td>
-    <td><%=h volunteer.paid? %></td>
-    <td><%= link_to 'Show', volunteer %></td>
-    <td><%= link_to 'Edit', edit_volunteer_path(volunteer) %></td>
-    <td><%= link_to 'Destroy', volunteer, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%=h volunteer.paid %></td>
+	<td><%= link_to 'Edit', edit_volunteer_path(volunteer) %></td>
   </tr>
 <% end %>
 </table>
