@@ -10,14 +10,7 @@
 </head>
 <body>
   <%= render :partial => "/header" %>
-	
-  <div class="content">
-    <div class="column-1">
-      <p style="color: green"><%= flash[:notice] %></p>
-	  <br />
-      <%= yield %>	  
-	</div>	
-  
+
   	<div class="sidebar">
 	  <div class="sidebar-a">
 	   <h1><%= link_to 'Add New Volunteer', new_volunteer_path %></h1>	 
@@ -26,7 +19,14 @@
 	  <div class="sidebar-b">
 	  </div>
 	</div>
+  
+  <div class="content">
+      <p style="color: green"><%= flash[:notice] %></p>
+	  <br />
+      <%= yield %>	  
   </div>
+  
+
   
   <%= render :partial => "/footer" %>
 </body>

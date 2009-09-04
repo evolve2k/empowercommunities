@@ -1,80 +1,11 @@
-<h1>Editing volunteer</h1>
+<p class="content-nav"><%= link_to 'Show', @volunteer %> | <%= link_to 'Back', volunteers_path %> </p>
+<h1>Edit: <%= @volunteer.given_names + ' ' + @volunteer.surname %></h1>
 
-<% form_for(@volunteer) do |f| %>
-  <%= f.error_messages %>
+<div class="column-1">
+  <%= link_to(image_tag(gravatar_url_for(@volunteer.email), { :width => 150, :height => 150, :alt => 'Gravatar Picture of Volunteer'}),'http://en.gravatar.com/emails')%>
+  <p><a href='http://en.gravatar.com/email'>Change your Gravatar</a></p>
+</div>
 
-  <p>
-    <%= f.label :given_names %><br />
-    <%= f.text_field :given_names %>
-  </p>
-  <p>
-    <%= f.label :surname %><br />
-    <%= f.text_field :surname %>
-  </p>
-  <p>
-    <%= f.label :preffered_name %><br />
-    <%= f.text_field :preffered_name %>
-  </p>
-  <p>
-    <%= f.label :birth_date %><br />
-    <%= f.date_select :birth_date %>
-  </p>
-  <p>
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </p>
-  <p>
-    <%= f.label :skype_name %><br />
-    <%= f.text_field :skype_name %>
-  </p>
-  <p>
-    <%= f.label :mobile %><br />
-    <%= f.text_field :mobile %>
-  </p>
-  <p>
-    <%= f.label :home_phone %><br />
-    <%= f.text_field :home_phone %>
-  </p>
-  <p>
-    <%= f.label :work_phone %><br />
-    <%= f.text_field :work_phone %>
-  </p>
-  <p>
-    <%= f.label :business_name %><br />
-    <%= f.text_field :business_name %>
-  </p>
-  <p>
-    <%= f.label :processed_by %><br />
-    <%= f.text_field :processed_by %>
-  </p>
-  <p>
-    <%= f.label :entered_by %><br />
-    <%= f.text_field :entered_by %>
-  </p>
-  <p>
-    <%= f.label :region %><br />
-    <%= f.text_field :region %>
-  </p>
-  <p>
-    <%= f.label :paid %><br />
-    <%= f.check_box :paid %>
-  </p>
-  <p>
-    <%= f.label :payment_method %><br />
-    <%= f.text_field :payment_method %>
-  </p>
-  <p>
-    <%= f.label :payment_notes %><br />
-    <%= f.text_field :payment_notes %>
-  </p>
-  <p>
-    <%= f.label :personal_skills %><br />
-    <%= f.text_field :personal_skills %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @volunteer %> |
-<%= link_to 'Back', volunteers_path %>
+<div class="column-2">
+  <%= render :partial => 'form' %>
+</div>

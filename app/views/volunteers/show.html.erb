@@ -1,92 +1,105 @@
-
-<p><%=h @name %></p>
-
-<p>
-  <b>Given names:</b>
-  <%=h @volunteer.given_names %>
+<p class="content-nav">
+  <%= link_to 'Edit', edit_volunteer_path(@volunteer) %> |
+  <%= link_to 'Destroy', volunteer_path(@volunteer), :confirm => 'Are you sure you want to DELETE volunteer record for ' + @volunteer.given_names + '?', :method => :delete %> |
+  <%= link_to 'Back', volunteers_path %>
 </p>
 
-<p>
-  <b>Surname:</b>
-  <%=h @volunteer.surname %>
-</p>
+<h2><%=h @name %></h2>
 
-<p>
-  <b>Preffered name:</b>
-  <%=h @volunteer.preffered_name %>
-</p>
+<div class="column-1">
+  <p><%= image_tag(gravatar_url_for(@volunteer.email), { :width => 150, :height => 150, :alt => 'Gravatar Picture of Volunteer' }) %></p>
+  <br />
+</div>
 
-<p>
-  <b>Birth date:</b>
-  <%=h @volunteer.birth_date %>
-</p>
+<div class="column-2">
 
-<p>
-  <b>Email:</b>
-  <a href="mailto:<%=h @volunteer.email %>"><%=h @volunteer.email %></a>
-</p>
+<table>
 
-<p>
-  <b>Skype name:</b>
-  <%=h @volunteer.skype_name %>
-</p>
+<tr>
+  <td>Given names:</td>
+  <td><%=h @volunteer.given_names %></td>
+</tr>
 
-<p>
-  <b>Mobile:</b>
-  <%=h @volunteer.mobile %>
-</p>
+<tr>
+  <td>Surname:</td>
+  <td><%=h @volunteer.surname %></td>
+</tr>
 
-<p>
-  <b>Home phone:</b>
-  <%=h @volunteer.home_phone %>
-</p>
+<tr>
+  <td>Preffered name:</td>
+  <td><%=h @volunteer.preffered_name %></td>
+</tr>
 
-<p>
-  <b>Work phone:</b>
-  <%=h @volunteer.work_phone %>
-</p>
+<tr>
+  <td>Birth date:</td>
+  <td><%=h @volunteer.birth_date %></td>
+</tr>
 
-<p>
-  <b>Business name:</b>
-  <%=h @volunteer.business_name %>
-</p>
+<tr>
+  <td>Email:</td>
+  <td><a href="mailto:<%=h @volunteer.email %>"><%=h @volunteer.email %></a></td>
+</tr>
 
-<p>
-  <b>Processed by:</b>
-  <%=h @volunteer.processed_by %>
-</p>
+<tr>
+  <td>Skype name:</td>
+  <td><%=h @volunteer.skype_name %></td>
+</tr>
 
-<p>
-  <b>Entered by:</b>
-  <%=h @volunteer.entered_by %>
-</p>
+<tr>
+  <td>Mobile:</td>
+  <td><%=h @volunteer.mobile %></td>
+</tr>
 
-<p>
-  <b>Region:</b>
-  <%=h @volunteer.region %>
-</p>
+<tr>
+  <td>Home phone:</td>
+  <td><%=h @volunteer.home_phone %></td>
+</tr>
 
-<p>
-  <b>Paid:</b>
-  <%=h @volunteer.paid %>
-</p>
+<tr>
+  <td>Work phone:</td>
+  <td><%=h @volunteer.work_phone %></td>
+</tr>
 
-<p>
-  <b>Payment method:</b>
-  <%=h @volunteer.payment_method %>
-</p>
+<tr>
+  <td>Business name:</td>
+  <td><%=h @volunteer.business_name %></td>
+</tr>
 
-<p>
-  <b>Payment notes:</b>
-  <%=h @volunteer.payment_notes %>
-</p>
+<tr>
+  <td>Processed by:</td>
+  <td><%=h @volunteer.processed_by %></td>
+</tr>
 
-<p>
-  <b>Personal skills:</b>
-  <%=h @volunteer.personal_skills %>
-</p>
+<tr>
+  <td>Entered by:</td>
+  <td><%=h @volunteer.entered_by %></td>
+</tr>
 
+<tr>
+  <td>Region:</td>
+  <td><%=h @volunteer.region %></td>
+</tr>
 
-<%= link_to 'Edit', edit_volunteer_path(@volunteer) %> |
-<%= link_to 'Destroy', volunteer_path(@volunteer), :confirm => 'Are you sure?', :method => :delete %> |
-<%= link_to 'Back', volunteers_path %>
+<tr>
+  <td>Paid:</td>
+  <td><%=h @volunteer.paid %></td>
+</tr>
+
+<tr>
+  <td>Payment method:</td>
+  <td><%=h @volunteer.payment_method %></td>
+</tr>
+
+<tr>
+  <td>Payment notes:</td>
+  <td><%=h @volunteer.payment_notes %></td>
+</tr>
+
+<tr>
+  <td>Personal skills:</td>
+  <td><%=h @volunteer.personal_skills %></td>
+</tr>
+
+</table>
+
+</div>
