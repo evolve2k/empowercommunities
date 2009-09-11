@@ -1,27 +1,23 @@
 body { background-color: #fff; color: #333; }
-
+ 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
+  font-size: 13px;
   line-height: 18px;
 }
-
+ 
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
 }
-/*
-a { color: #000; }
-a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
-*/
+
 .fieldWithErrors {
   padding: 2px;
   background-color: red;
   display: table;
 }
-
+ 
 #errorExplanation {
   width: 400px;
   border: 2px solid red;
@@ -30,7 +26,7 @@ a:hover { color: #fff; background-color:#000; }
   margin-bottom: 20px;
   background-color: #f0f0f0;
 }
-
+ 
 #errorExplanation h2 {
   text-align: left;
   font-weight: bold;
@@ -40,15 +36,15 @@ a:hover { color: #fff; background-color:#000; }
   background-color: #c00;
   color: #fff;
 }
-
+ 
 #errorExplanation p {
   color: #333;
   margin-bottom: 0;
   padding: 5px;
 }
-
+ 
 #errorExplanation ul li {
   font-size: 12px;
   list-style: square;
 }
-
+ 

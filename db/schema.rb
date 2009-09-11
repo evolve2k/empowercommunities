@@ -9,7 +9,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090814043645) do
+ActiveRecord::Schema.define(:version => 20090911014430) do
+
+  create_table "locations", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "suburb"
+    t.string   "state"
+    t.string   "post_code"
+    t.string   "country"
+    t.string   "primary_contact"
+    t.string   "position"
+    t.string   "contact_number"
+    t.string   "website"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "volunteers", :force => true do |t|
     t.text     "given_names"
