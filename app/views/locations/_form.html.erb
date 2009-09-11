@@ -1,0 +1,55 @@
+<% form_for(@location) do |f| %>
+<%= f.error_messages %>
+
+<table>
+  <tr>
+    <td><%= f.label :name %></td>
+    <td><%= f.text_field :name %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :address %></td>
+    <td><%= f.text_field :address %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :suburb %></td>
+    <td><%= f.text_field :suburb %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :state %></td>
+    <td><%= f.text_field :state %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :post_code %></td>
+    <td><%= f.text_field :post_code %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :country %></td>
+    <td><%= f.text_field :country %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :primary_contact %></td>
+    <td><%= f.text_field :primary_contact %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :position %></td>
+    <td><%= f.text_field :position %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :contact_number %></td>
+    <td><%= f.text_field :contact_number %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :website %></td>
+    <td><%= f.text_field :website %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :notes %></td>
+    <td><%= f.text_area :notes %></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><%= f.submit 'Update' %></td>
+  </tr>
+</table>
+
+<% end %>

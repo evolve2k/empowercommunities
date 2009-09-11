@@ -1,0 +1,6 @@
+<p class="content-nav"><%= link_to 'Show', @location %> | <%= link_to 'Destroy', @location, :confirm => 'Are you sure?', :method => :delete %> | <%= link_to 'Back', locations_path %> </p>
+<h1>Edit: <%= @location.name %></h1>
+
+<div class="column-1">
+  <%= render :partial => 'form' %>
+</div>

@@ -1,0 +1,78 @@
+<% form_for(@volunteer) do |f| %>
+<%= f.error_messages %>
+
+<table>  
+  <tr>
+    <td><%= f.label :given_names %></td>
+    <td><%= f.text_field :given_names %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :surname %></td>
+    <td><%= f.text_field :surname %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :preffered_name %></td>
+    <td><%= f.text_field :preffered_name %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :birth_date %></td>
+    <td><%= f.date_select :birth_date , :start_year=>1900 , :end_year=>Time.now.year %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :email %></td>
+    <td><%= f.text_field :email %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :skype_name %></td>
+    <td><%= f.text_field :skype_name %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :mobile %></td>
+    <td><%= f.text_field :mobile %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :home_phone %></td>
+    <td><%= f.text_field :home_phone %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :work_phone %></td>
+    <td><%= f.text_field :work_phone %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :business_name %></td>
+    <td><%= f.text_field :business_name %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :processed_by %></td>
+    <td><%= f.text_field :processed_by %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :entered_by %></td>
+    <td><%= f.text_field :entered_by %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :region %></td>
+    <td><%= f.text_field :region %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :paid %></td>
+    <td><%= f.check_box :paid %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :payment_method %></td>
+    <td><%= f.text_field :payment_method %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :payment_notes %></td>
+    <td><%= f.text_field :payment_notes %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :personal_skills %></td>
+    <td><%= f.text_field :personal_skills %></td>
+  </tr>
+  <tr>
+    <td></td><td><%= f.submit 'Submit' %></td>
+  </tr>
+</table>
+
+<% end %>
