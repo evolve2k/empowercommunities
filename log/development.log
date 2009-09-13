@@ -13504,3 +13504,225 @@ Rendering volunteers/index
 Rendered _header (0.0ms)
 Rendered _footer (0.0ms)
 Completed in 83ms (View: 45, DB: 10) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (54.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20090814043645)
+Migrating to CreateLocations (20090911014430)
+Migrating to CreateChannels (20090911052823)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mSHOW FIELDS FROM `channels`[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mdescribe `channels`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW KEYS FROM `channels`[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mdescribe `volunteers`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `volunteers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-13 10:32:13) [GET]
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM `channels` [0m
+Rendering template within layouts/channels
+Rendering channels/index
+  [4;35;1mChannel Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `channels`[0m
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 293ms (View: 32, DB: 11) | 200 OK [http://localhost/channels]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-13 10:32:18) [GET]
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM `locations` [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mLocation Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 182ms (View: 31, DB: 11) | 200 OK [http://localhost/locations]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-13 10:32:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 44ms (View: 15, DB: 7) | 200 OK [http://localhost/locations/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#edit (for 127.0.0.1 at 2009-09-13 10:33:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/edit
+Rendered locations/_form (21.0ms)
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 109ms (View: 68, DB: 13) | 200 OK [http://localhost/locations/1/edit]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#update (for 127.0.0.1 at 2009-09-13 10:33:40) [PUT]
+  Parameters: {"location"=>{"position"=>"", "address"=>"Rundle Street", "name"=>"Rundle Street Market", "contact_number"=>"", "country"=>"Australia", "notes"=>"", "post_code"=>"5000", "suburb"=>"Adelaide", "website"=>"", "primary_contact"=>"", "state"=>"SA"}, "commit"=>"Update", "authenticity_token"=>"6VWjIP/8pytRTI3q42NVzpACJ3+Lqhp31vLwVysB4Yc=", "id"=>"1"}
+  [4;36;1mLocation Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/locations/1
+Completed in 47ms (DB: 10) | 302 Found [http://localhost/locations/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-13 10:33:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 88ms (View: 48, DB: 11) | 200 OK [http://localhost/locations/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#edit (for 127.0.0.1 at 2009-09-13 10:36:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.0ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/edit
+
+ActionView::TemplateError (undefined method `channel_id' for #<Location:0x6f5804c>) on line #11 of app/views/locations/_form.html.erb:
+8:   </tr>
+9:   <tr>
+10:     <td><%= f.label :channel_id %></td>
+11:     <td><%= f.text_field :channel_id %></td>
+12:   </tr>
+13:   <tr>
+14:     <td><%= f.label :address %></td>
+
+    app/views/locations/_form.html.erb:11
+    app/views/locations/_form.html.erb:1
+    app/views/locations/edit.html.erb:5
+
+Rendered rescues/_trace (175.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20090814043645)
+Migrating to CreateLocations (20090911014430)
+Migrating to CreateChannels (20090911052823)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mSHOW FIELDS FROM `channels`[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mdescribe `channels`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `channels`[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mdescribe `volunteers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `volunteers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#edit (for 127.0.0.1 at 2009-09-13 10:42:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/edit
+
+ActionView::TemplateError (undefined method `channel_id' for #<Location:0x6d75e3c>) on line #11 of app/views/locations/_form.html.erb:
+8:   </tr>
+9:   <tr>
+10:     <td><%= f.label :channel_id %></td>
+11:     <td><%= f.text_field :channel_id %></td>
+12:   </tr>
+13:   <tr>
+14:     <td><%= f.label :address %></td>
+
+    app/views/locations/_form.html.erb:11
+    app/views/locations/_form.html.erb:1
+    app/views/locations/edit.html.erb:5
+
+Rendered rescues/_trace (277.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20090814043645)
+Migrating to CreateLocations (20090911014430)
+Migrating to CreateChannels (20090911052823)
+Migrating to AddChannelToLocation (20090913012626)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'empowercommunities_development.location' doesn't exist: ALTER TABLE `location` ADD `channel_id` int(11)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20090814043645)
+Migrating to CreateLocations (20090911014430)
+Migrating to CreateChannels (20090911052823)
+Migrating to AddChannelToLocation (20090913012626)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'empowercommunities_development.location' doesn't exist: ALTER TABLE `location` ADD `channel_id` int(11)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20090814043645)
+Migrating to CreateLocations (20090911014430)
+Migrating to CreateChannels (20090911052823)
+Migrating to AddChannelToLocation (20090913012626)
+  [4;36;1mSQL (452.0ms)[0m   [0;1mALTER TABLE `locations` ADD `channel_id` int(11)[0m
+  [4;35;1mSQL (168.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090913012626')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mSHOW FIELDS FROM `channels`[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mdescribe `channels`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW KEYS FROM `channels`[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `volunteers`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `volunteers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#edit (for 127.0.0.1 at 2009-09-13 11:06:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/edit
+Rendered locations/_form (9.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 59ms (View: 30, DB: 9) | 200 OK [http://localhost/locations/1/edit]
