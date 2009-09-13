@@ -13322,3 +13322,185 @@ Rendering volunteers/show
 Rendered _header (0.0ms)
 Rendered _footer (0.0ms)
 Completed in 91ms (View: 38, DB: 15) | 200 OK [http://localhost/volunteers/1]
+  [4;36;1mSQL (24.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (17.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 10:01:13) [GET]
+  [4;36;1mVolunteer Load (291.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (6.0ms)
+Rendered _footer (3.0ms)
+Completed in 5045ms (View: 4720, DB: 341) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-13 10:02:12) [GET]
+  [4;36;1mChannel Load (46.0ms)[0m   [0;1mSELECT * FROM `channels` [0m
+Rendering template within layouts/channels
+Rendering channels/index
+  [4;35;1mChannel Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `channels`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 222ms (View: 145, DB: 54) | 200 OK [http://localhost/channels]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-13 10:02:17) [GET]
+  [4;36;1mLocation Load (63.0ms)[0m   [0;1mSELECT * FROM `locations` [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mLocation Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 153ms (View: 63, DB: 70) | 200 OK [http://localhost/locations]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 10:02:21) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 46ms (View: 24, DB: 9) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-13 10:02:33) [GET]
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM `channels` [0m
+Rendering template within layouts/channels
+Rendering channels/index
+  [4;35;1mChannel Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `channels`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 48ms (View: 20, DB: 11) | 200 OK [http://localhost/channels]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-13 10:02:36) [GET]
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM `locations` [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mLocation Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 51ms (View: 20, DB: 13) | 200 OK [http://localhost/locations]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-13 10:02:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 55ms (View: 24, DB: 9) | 200 OK [http://localhost/locations/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 10:02:43) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (2.0ms)
+Rendered _footer (1.0ms)
+Completed in 73ms (View: 37, DB: 13) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-13 10:03:07) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM `locations` [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mLocation Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 64ms (View: 30, DB: 13) | 200 OK [http://localhost/locations]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-13 10:03:10) [GET]
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM `channels` [0m
+Rendering template within layouts/channels
+Rendering channels/index
+  [4;35;1mChannel Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `channels`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 61ms (View: 30, DB: 9) | 200 OK [http://localhost/channels]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-13 10:03:21) [GET]
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM `locations` [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mLocation Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 68ms (View: 35, DB: 12) | 200 OK [http://localhost/locations]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-13 10:03:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 282ms (View: 244, DB: 13) | 200 OK [http://localhost/locations/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-13 10:07:56) [GET]
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM `channels` [0m
+Rendering template within layouts/channels
+Rendering channels/index
+  [4;35;1mChannel Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `channels`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 48ms (View: 20, DB: 8) | 200 OK [http://localhost/channels]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-13 10:07:59) [GET]
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM `locations` [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mLocation Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 64ms (View: 30, DB: 12) | 200 OK [http://localhost/locations]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 10:08:02) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM `volunteers` [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+  [4;35;1mVolunteer Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `volunteers`[0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 83ms (View: 45, DB: 10) | 200 OK [http://localhost/volunteers]
