@@ -13726,3 +13726,246 @@ Rendered locations/_form (9.0ms)
 Rendered _header (1.0ms)
 Rendered _footer (0.0ms)
 Completed in 59ms (View: 30, DB: 9) | 200 OK [http://localhost/locations/1/edit]
+/!\ FAILSAFE /!\  Sun Sep 13 12:10:50 +0930 2009
+  Status: 500 Internal Server Error
+  Unknown database 'empowercommunities_development'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (65.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (65.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20090814043645)
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCREATE TABLE "volunteers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "given_names" text, "surname" text, "preffered_name" text, "birth_date" date, "email" text, "skype_name" text, "mobile" text, "home_phone" text, "work_phone" text, "business_name" text, "processed_by" text, "entered_by" text, "region" text, "paid" boolean, "payment_method" text, "payment_notes" text, "personal_skills" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090814043645')[0m
+Migrating to CreateLocations (20090911014430)
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address" varchar(255), "suburb" varchar(255), "state" varchar(255), "post_code" varchar(255), "country" varchar(255), "primary_contact" varchar(255), "position" varchar(255), "contact_number" varchar(255), "website" varchar(255), "notes" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090911014430')[0m
+Migrating to CreateChannels (20090911052823)
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCREATE TABLE "channels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090911052823')[0m
+Migrating to AddChannelToLocation (20090913012626)
+  [4;36;1mSQL (4.0ms)[0m   [0;1mALTER TABLE "locations" ADD "channel_id" integer[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090913012626')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("channels")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("locations")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("volunteers")[0m
+/!\ FAILSAFE /!\  Sun Sep 13 12:11:37 +0930 2009
+  Status: 500 Internal Server Error
+  Unknown database 'empowercommunities_development'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Sun Sep 13 12:12:00 +0930 2009
+  Status: 500 Internal Server Error
+  Unknown database 'empowercommunities_development'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 12:13:06) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (86.0ms)
+Rendered _footer (3.0ms)
+Completed in 161ms (View: 141, DB: 1) | 200 OK [http://localhost/volunteers]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-13 12:13:10) [GET]
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 91ms (View: 39, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-13 12:13:12) [GET]
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 193ms (View: 73, DB: 1) | 200 OK [http://localhost/channels]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 12:13:16) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 30ms (View: 10, DB: 1) | 200 OK [http://localhost/volunteers]
