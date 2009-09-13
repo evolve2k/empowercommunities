@@ -42,7 +42,10 @@
 
 <tr>
   <td>Skype name:</td>
-  <td><a href="skype:<%=h @volunteer.skype_name %>"><%=h @volunteer.skype_name %></a></td>
+  <td>
+    <%= link_to @volunteer.skype_name , 'skype:' + @volunteer.skype_name %>
+    <%= link_to (image_tag 'skype_tiny.png', :alt => 'skypeMe') , 'skype:' + @volunteer.skype_name %></a>
+  </td>
 </tr>
 
 <tr>

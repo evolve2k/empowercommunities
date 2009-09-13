@@ -13969,3 +13969,2294 @@ Rendering volunteers/index
 Rendered _header (1.0ms)
 Rendered _footer (1.0ms)
 Completed in 30ms (View: 10, DB: 1) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 16:46:41) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+ERROR: compiling _run_erb_app47views47volunteers47index46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+...40 , :alt => 'Pic'}) image_tag(skype_tiny.png) ).to_s); @out...
+                              ^
+Function body:           def _run_erb_app47views47volunteers47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing volunteers</h1>\n\n<table>\n  <tr>\n    <th>Pic</th>\n    <th>Name</th>\n    <th>Email</th>\n    <th>Mobile</th>\n\t<th>Home</th>\n    <th>Region</th>\n    <th>Paid?</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+;  @volunteers.each do |volunteer| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( image_tag(gravatar_url_for(volunteer.email), { :width => 40, :height => 40 , :alt => 'Pic'}) image_tag(skype_tiny.png) ).to_s); @output_buffer.concat " </td>\n    <td>"
+; @output_buffer.concat(( link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer ).to_s); @output_buffer.concat "</td>\n    <td><a href=\"mailto:"
+; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "\">"; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "</a></td>\n    <td>"
+; @output_buffer.concat((h volunteer.mobile ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.home_phone ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.region ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.paid ).to_s); @output_buffer.concat "</td>\n\t<td>"
+; @output_buffer.concat(( link_to 'Edit', edit_volunteer_path(volunteer) ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New volunteer', new_volunteer_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:33:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:7:in `index'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+...40 , :alt => 'Pic'}) image_tag(skype_tiny.png) ).to_s); @out...
+                              ^) on line #16 of app/views/volunteers/index.html.erb:
+13: 
+14: <% @volunteers.each do |volunteer| %>
+15:   <tr>
+16:     <td><%= image_tag(gravatar_url_for(volunteer.email), { :width => 40, :height => 40 , :alt => 'Pic'}) image_tag(skype_tiny.png) %> </td>
+17:     <td><%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %></td>
+18:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+19:     <td><%=h volunteer.mobile %></td>
+
+    app/views/volunteers/index.html.erb:33:in `compile!'
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (154.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 16:47:17) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (4.0ms)
+Rendered _footer (2.0ms)
+Completed in 726ms (View: 708, DB: 1) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-09-13 16:47:22) [GET]
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Rendered volunteers/_form (699.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 806ms (View: 785, DB: 0) | 200 OK [http://localhost/volunteers/new]
+
+
+Processing VolunteersController#create (for 127.0.0.1 at 2009-09-13 16:47:59) [POST]
+  Parameters: {"commit"=>"Submit", "volunteer"=>{"region"=>"SA", "work_phone"=>"08 8227 1388", "birth_date(2i)"=>"9", "personal_skills"=>"IT", "business_name"=>"Alec Khoo & Associates", "birth_date(3i)"=>"13", "skype_name"=>"richkhoo22", "paid"=>"1", "payment_method"=>"CASH", "home_phone"=>"08 8370 1468", "mobile"=>"0425 614 388", "preffered_name"=>"Richie", "entered_by"=>"Richie", "surname"=>"Khoo", "payment_notes"=>"", "processed_by"=>"Richie", "email"=>"richardkhoo@carpetsforcommunities.org", "birth_date(1i)"=>"1996", "given_names"=>"Richard"}, "authenticity_token"=>"Gj5xsT0wwqG1VkX/sWLQDmTFds8qPi/gD9AuAEUC0U8="}
+  [4;36;1mVolunteer Create (3.0ms)[0m   [0;1mINSERT INTO "volunteers" ("work_phone", "region", "business_name", "personal_skills", "created_at", "skype_name", "paid", "updated_at", "payment_method", "birth_date", "home_phone", "mobile", "preffered_name", "surname", "entered_by", "given_names", "email", "processed_by", "payment_notes") VALUES('08 8227 1388', 'SA', 'Alec Khoo & Associates', 'IT', '2009-09-13 07:17:59', 'richkhoo22', 't', '2009-09-13 07:17:59', 'CASH', '1996-09-13', '08 8370 1468', '0425 614 388', 'Richie', 'Khoo', 'Richie', 'Richard', 'richardkhoo@carpetsforcommunities.org', 'Richie', '')[0m
+Redirected to http://localhost:3000/volunteers/1
+Completed in 181ms (DB: 3) | 302 Found [http://localhost/volunteers]
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-09-13 16:48:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 64ms (View: 29, DB: 1) | 200 OK [http://localhost/volunteers/1]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 16:48:06) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+
+ActionView::TemplateError (undefined local variable or method `skype_tiny' for #<ActionView::Base:0x5911acc>) on line #17 of app/views/volunteers/index.html.erb:
+14: <% @volunteers.each do |volunteer| %>
+15:   <tr>
+16:     <td><%= image_tag(gravatar_url_for(volunteer.email), { :width => 40, :height => 40 , :alt => 'Pic'}) %> </td>
+17: 	<td><%= image_tag(skype_tiny.png) %></td>
+18:     <td><%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %></td>
+19:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+20:     <td><%=h volunteer.mobile %></td>
+
+    app/views/volunteers/index.html.erb:17
+    app/views/volunteers/index.html.erb:14:in `each'
+    app/views/volunteers/index.html.erb:14
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (142.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 16:48:41) [GET]
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+ERROR: compiling _run_erb_app47views47volunteers47index46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:17: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:17: unmatched ): /skype_tiny.png) ).to_s); @output_buffer.concat "</
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:17: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:19: unknown regexp option - a
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:19: syntax error, unexpected '<'
+...; @output_buffer.concat "</a></td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:24: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:24: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n  </tr>\n"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:26: unknown regexp options - tabl
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:26: syntax error, unexpected $undefined
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+                                           ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:26: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+                                                   ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:26: unterminated string meets end of file
+Function body:           def _run_erb_app47views47volunteers47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing volunteers</h1>\n\n<table>\n  <tr>\n    <th>Pic</th>\n    <th>Name</th>\n    <th>Email</th>\n    <th>Mobile</th>\n\t<th>Home</th>\n    <th>Region</th>\n    <th>Paid?</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+;  @volunteers.each do |volunteer| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( image_tag(gravatar_url_for(volunteer.email), { :width => 40, :height => 40 , :alt => 'Pic'}) ).to_s); @output_buffer.concat " </td>\n\t<td>"
+; @output_buffer.concat(( image_tag(/skype_tiny.png) ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer ).to_s); @output_buffer.concat "</td>\n    <td><a href=\"mailto:"
+; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "\">"; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "</a></td>\n    <td>"
+; @output_buffer.concat((h volunteer.mobile ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.home_phone ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.region ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.paid ).to_s); @output_buffer.concat "</td>\n\t<td>"
+; @output_buffer.concat(( link_to 'Edit', edit_volunteer_path(volunteer) ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New volunteer', new_volunteer_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:26:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:7:in `index'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:17: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:17: unmatched ): /skype_tiny.png) ).to_s); @output_buffer.concat "</
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:17: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:19: unknown regexp option - a
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:19: syntax error, unexpected '<'
+...; @output_buffer.concat "</a></td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n    <td>"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:24: unknown regexp options - td
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:24: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n  </tr>\n"
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:26: unknown regexp options - tabl
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:26: syntax error, unexpected $undefined
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+                                           ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:26: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+                                                   ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:26: unterminated string meets end of file) on line #17 of app/views/volunteers/index.html.erb:
+14: <% @volunteers.each do |volunteer| %>
+15:   <tr>
+16:     <td><%= image_tag(gravatar_url_for(volunteer.email), { :width => 40, :height => 40 , :alt => 'Pic'}) %> </td>
+17: 	<td><%= image_tag(/skype_tiny.png) %></td>
+18:     <td><%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %></td>
+19:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+20:     <td><%=h volunteer.mobile %></td>
+
+    app/views/volunteers/index.html.erb:26:in `compile!'
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (136.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 16:49:15) [GET]
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 52ms (View: 34, DB: 1) | 200 OK [http://localhost/volunteers]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-13 16:49:16) [GET]
+
+ActionController::RoutingError (No route matches "/skype_tiny.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 16:50:06) [GET]
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 52ms (View: 34, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 16:50:57) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 53ms (View: 35, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#edit (for 127.0.0.1 at 2009-09-13 16:52:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/edit
+Rendered volunteers/_form (28.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 318ms (View: 294, DB: 1) | 200 OK [http://localhost/volunteers/1/edit]
+
+
+Processing VolunteersController#update (for 127.0.0.1 at 2009-09-13 16:53:58) [PUT]
+  Parameters: {"commit"=>"Submit", "volunteer"=>{"region"=>"SA", "work_phone"=>"08 8227 1388", "birth_date(2i)"=>"9", "personal_skills"=>"IT", "business_name"=>"Alec Khoo & Associates", "birth_date(3i)"=>"13", "skype_name"=>"richkhoo22", "paid"=>"1", "payment_method"=>"CASH", "home_phone"=>"08 8370 1468", "mobile"=>"0425 614 388", "preffered_name"=>"Richie", "entered_by"=>"Richie", "surname"=>"Khoo", "payment_notes"=>"", "processed_by"=>"Richie", "email"=>"richardkhoo@carpetsforcommunities.org", "birth_date(1i)"=>"1996", "given_names"=>"Richard"}, "authenticity_token"=>"Gj5xsT0wwqG1VkX/sWLQDmTFds8qPi/gD9AuAEUC0U8=", "id"=>"1"}
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 1) [0m
+Redirected to http://localhost:3000/volunteers/1
+Completed in 37ms (DB: 2) | 302 Found [http://localhost/volunteers/1]
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-09-13 16:53:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 45ms (View: 14, DB: 1) | 200 OK [http://localhost/volunteers/1]
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-09-13 16:54:04) [GET]
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Rendered volunteers/_form (33.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 66ms (View: 45, DB: 0) | 200 OK [http://localhost/volunteers/new]
+
+
+Processing VolunteersController#create (for 127.0.0.1 at 2009-09-13 16:54:19) [POST]
+  Parameters: {"commit"=>"Submit", "volunteer"=>{"region"=>"", "work_phone"=>"", "birth_date(2i)"=>"9", "personal_skills"=>"", "business_name"=>"", "birth_date(3i)"=>"13", "skype_name"=>"", "paid"=>"0", "payment_method"=>"", "home_phone"=>"", "mobile"=>"0401 352 731", "preffered_name"=>"Tys", "entered_by"=>"", "surname"=>"Avery", "payment_notes"=>"", "processed_by"=>"", "email"=>"tysonavery@carpetsforcommunities.org", "birth_date(1i)"=>"2009", "given_names"=>"Tyson"}, "authenticity_token"=>"Gj5xsT0wwqG1VkX/sWLQDmTFds8qPi/gD9AuAEUC0U8="}
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Rendered volunteers/_form (24.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 109ms (View: 38, DB: 0) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#create (for 127.0.0.1 at 2009-09-13 16:54:31) [POST]
+  Parameters: {"commit"=>"Submit", "volunteer"=>{"region"=>"SA", "work_phone"=>"", "birth_date(2i)"=>"9", "personal_skills"=>"", "business_name"=>"", "birth_date(3i)"=>"13", "skype_name"=>"", "paid"=>"0", "payment_method"=>"", "home_phone"=>"", "mobile"=>"0401 352 731", "preffered_name"=>"Tys", "entered_by"=>"Richie", "surname"=>"Avery", "payment_notes"=>"", "processed_by"=>"Richie", "email"=>"tysonavery@carpetsforcommunities.org", "birth_date(1i)"=>"1990", "given_names"=>"Tyson"}, "authenticity_token"=>"Gj5xsT0wwqG1VkX/sWLQDmTFds8qPi/gD9AuAEUC0U8="}
+  [4;36;1mVolunteer Create (3.0ms)[0m   [0;1mINSERT INTO "volunteers" ("work_phone", "region", "business_name", "personal_skills", "created_at", "skype_name", "paid", "updated_at", "payment_method", "birth_date", "home_phone", "mobile", "preffered_name", "surname", "entered_by", "given_names", "email", "processed_by", "payment_notes") VALUES('', 'SA', '', '', '2009-09-13 07:24:31', '', 'f', '2009-09-13 07:24:31', '', '1990-09-13', '', '0401 352 731', 'Tys', 'Avery', 'Richie', 'Tyson', 'tysonavery@carpetsforcommunities.org', 'Richie', '')[0m
+Redirected to http://localhost:3000/volunteers/2
+Completed in 131ms (DB: 3) | 302 Found [http://localhost/volunteers]
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-09-13 16:54:32) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 2) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (0.0ms)
+Rendered _footer (1.0ms)
+Completed in 46ms (View: 13, DB: 1) | 200 OK [http://localhost/volunteers/2]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 16:54:36) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 58ms (View: 37, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 16:55:39) [GET]
+  [4;35;1mVolunteer Load (3.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 65ms (View: 44, DB: 3) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 16:57:26) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 55ms (View: 37, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 16:58:51) [GET]
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 59ms (View: 40, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 16:59:50) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 54ms (View: 35, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-09-13 17:02:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 62ms (View: 21, DB: 2) | 200 OK [http://localhost/volunteers/1]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:03:39) [GET]
+  [4;36;1mVolunteer Load (3.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.skype_name) on line #20 of app/views/volunteers/index.html.erb:
+17:     <td>
+18: 	  <%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %> 
+19: 	  <% if not volunteer.skype_name.blank? %>
+20: 	    <%= link_to ("skype:" + @volunteer.skype_name),(image_tag "skype_tiny.png", :alt => "skype") %>
+21: 	  <% end %>
+22: 	</td>
+23:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+
+    app/views/volunteers/index.html.erb:20
+    app/views/volunteers/index.html.erb:14:in `each'
+    app/views/volunteers/index.html.erb:14
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (268.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:04:19) [GET]
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.skype_name) on line #20 of app/views/volunteers/index.html.erb:
+17:     <td>
+18: 	  <%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %> 
+19: 	  <% if not volunteer.skype_name.blank? %>
+20: 	    <%= link_to (@volunteer.skype_name),(image_tag "skype_tiny.png", :alt => "skype") %>
+21: 	  <% end %>
+22: 	</td>
+23:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+
+    app/views/volunteers/index.html.erb:20
+    app/views/volunteers/index.html.erb:14:in `each'
+    app/views/volunteers/index.html.erb:14
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (145.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:04:44) [GET]
+  [4;36;1mVolunteer Load (3.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+ERROR: compiling _run_erb_app47views47volunteers47index46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:28: syntax error, unexpected tCONSTANT, expecting ')'
+..._buffer.concat(( link_to 'Edit', edit_volunteer_path(volunte...
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:35: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.concat(( link_to 'New volunteer', new_volunteer_pat...
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:35: unterminated string meets end of file
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:35: syntax error, unexpected $end, expecting ')'
+Function body:           def _run_erb_app47views47volunteers47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing volunteers</h1>\n\n<table>\n  <tr>\n    <th>Pic</th>\n    <th>Name</th>\n    <th>Email</th>\n    <th>Mobile</th>\n\t<th>Home</th>\n    <th>Region</th>\n    <th>Paid?</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+;  @volunteers.each do |volunteer| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( image_tag(gravatar_url_for(volunteer.email), { :width => 40, :height => 40 , :alt => 'Pic'}) ).to_s); @output_buffer.concat " </td>\n    <td>\n\t  "
+
+; @output_buffer.concat(( link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer ).to_s); @output_buffer.concat " \n\t  "
+;  if not volunteer.skype_name.blank? ; @output_buffer.concat "\n\t    "
+; @output_buffer.concat(( link_to (skype:' + @volunteer.skype_name),("skype") ).to_s); @output_buffer.concat "\n\t  "
+;  end ; @output_buffer.concat "\n\t</td>\n    <td><a href=\"mailto:"
+
+; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "\">"; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "</a></td>\n    <td>"
+; @output_buffer.concat((h volunteer.mobile ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.home_phone ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.region ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.paid ).to_s); @output_buffer.concat "</td>\n\t<td>"
+; @output_buffer.concat(( link_to 'Edit', edit_volunteer_path(volunteer) ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New volunteer', new_volunteer_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:35:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:7:in `index'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:28: syntax error, unexpected tCONSTANT, expecting ')'
+..._buffer.concat(( link_to 'Edit', edit_volunteer_path(volunte...
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:35: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.concat(( link_to 'New volunteer', new_volunteer_pat...
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:35: unterminated string meets end of file
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:35: syntax error, unexpected $end, expecting ')') on line #28 of app/views/volunteers/index.html.erb:
+25:     <td><%=h volunteer.home_phone %></td>
+26:     <td><%=h volunteer.region %></td>
+27:     <td><%=h volunteer.paid %></td>
+28: 	<td><%= link_to 'Edit', edit_volunteer_path(volunteer) %></td>
+29:   </tr>
+30: <% end %>
+31: </table>
+
+    app/views/volunteers/index.html.erb:35:in `compile!'
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (256.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:05:17) [GET]
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.skype_name) on line #20 of app/views/volunteers/index.html.erb:
+17:     <td>
+18: 	  <%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %> 
+19: 	  <% if not volunteer.skype_name.blank? %>
+20: 	    <%= link_to ('skype:' + @volunteer.skype_name),(image_tag "skype_tiny.png", :alt => "skype") %>
+21: 	  <% end %>
+22: 	</td>
+23:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+
+    app/views/volunteers/index.html.erb:20
+    app/views/volunteers/index.html.erb:14:in `each'
+    app/views/volunteers/index.html.erb:14
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:06:24) [GET]
+  [4;36;1mVolunteer Load (3.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+ERROR: compiling _run_erb_app47views47volunteers47index46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+	  <% end ).to_s); @output_buffer....
+	   ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: syntax error, unexpected ')', expecting kEND
+	  <% end ).to_s); @output_buffer.concat ...
+	          ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:37: syntax error, unexpected kENSURE, expecting kEND
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:39: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47volunteers47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing volunteers</h1>\n\n<table>\n  <tr>\n    <th>Pic</th>\n    <th>Name</th>\n    <th>Email</th>\n    <th>Mobile</th>\n\t<th>Home</th>\n    <th>Region</th>\n    <th>Paid?</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+;  @volunteers.each do |volunteer| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( image_tag(gravatar_url_for(volunteer.email), { :width => 40, :height => 40 , :alt => 'Pic'}) ).to_s); @output_buffer.concat " </td>\n    <td>\n\t  "
+
+; @output_buffer.concat(( link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer ).to_s); @output_buffer.concat " \n\t  "
+;  if not volunteer.skype_name.blank? ; @output_buffer.concat "\n\t    \n\t\t"
+
+; @output_buffer.concat(( link_to volunteer, "YES")
+	  <% end ).to_s); @output_buffer.concat "\n\t</td>\n    <td><a href=\"mailto:"
+
+; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "\">"; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "</a></td>\n    <td>"
+; @output_buffer.concat((h volunteer.mobile ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.home_phone ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.region ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.paid ).to_s); @output_buffer.concat "</td>\n\t<td>"
+; @output_buffer.concat(( link_to 'Edit', edit_volunteer_path(volunteer) ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New volunteer', new_volunteer_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:39:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:7:in `index'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+	  <% end ).to_s); @output_buffer....
+	   ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: syntax error, unexpected ')', expecting kEND
+	  <% end ).to_s); @output_buffer.concat ...
+	          ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:37: syntax error, unexpected kENSURE, expecting kEND
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:39: syntax error, unexpected $end, expecting kEND) on line #22 of app/views/volunteers/index.html.erb:
+19: 	  <% if not volunteer.skype_name.blank? %>
+20: 	    
+21: 		<%= link_to volunteer, "YES")
+22: 	  <% end %>
+23: 	</td>
+24:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+25:     <td><%=h volunteer.mobile %></td>
+
+    app/views/volunteers/index.html.erb:39:in `compile!'
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (256.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:06:40) [GET]
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+ERROR: compiling _run_erb_app47views47volunteers47index46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+	  <% end ).to_s); @output_buffer....
+	   ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: syntax error, unexpected ')', expecting kEND
+	  <% end ).to_s); @output_buffer.concat ...
+	          ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:37: syntax error, unexpected kENSURE, expecting kEND
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:39: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47volunteers47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing volunteers</h1>\n\n<table>\n  <tr>\n    <th>Pic</th>\n    <th>Name</th>\n    <th>Email</th>\n    <th>Mobile</th>\n\t<th>Home</th>\n    <th>Region</th>\n    <th>Paid?</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+;  @volunteers.each do |volunteer| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( image_tag(gravatar_url_for(volunteer.email), { :width => 40, :height => 40 , :alt => 'Pic'}) ).to_s); @output_buffer.concat " </td>\n    <td>\n\t  "
+
+; @output_buffer.concat(( link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer ).to_s); @output_buffer.concat " \n\t  "
+;  if not volunteer.skype_name.blank? ; @output_buffer.concat "\n\t    \n\t\t"
+
+; @output_buffer.concat(( link_to "YES", volunteer)
+	  <% end ).to_s); @output_buffer.concat "\n\t</td>\n    <td><a href=\"mailto:"
+
+; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "\">"; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "</a></td>\n    <td>"
+; @output_buffer.concat((h volunteer.mobile ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.home_phone ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.region ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.paid ).to_s); @output_buffer.concat "</td>\n\t<td>"
+; @output_buffer.concat(( link_to 'Edit', edit_volunteer_path(volunteer) ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New volunteer', new_volunteer_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:39:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:7:in `index'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+	  <% end ).to_s); @output_buffer....
+	   ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:22: syntax error, unexpected ')', expecting kEND
+	  <% end ).to_s); @output_buffer.concat ...
+	          ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:37: syntax error, unexpected kENSURE, expecting kEND
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:39: syntax error, unexpected $end, expecting kEND) on line #22 of app/views/volunteers/index.html.erb:
+19: 	  <% if not volunteer.skype_name.blank? %>
+20: 	    
+21: 		<%= link_to "YES", volunteer)
+22: 	  <% end %>
+23: 	</td>
+24:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+25:     <td><%=h volunteer.mobile %></td>
+
+    app/views/volunteers/index.html.erb:39:in `compile!'
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (136.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:07:45) [GET]
+  [4;36;1mVolunteer Load (3.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+ERROR: compiling _run_erb_app47views47volunteers47index46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: syntax error, unexpected ',', expecting ')'
+...e_tiny.png", :alt => "skype"),('skype:' + @volunteer.skype_n...
+                              ^
+Function body:           def _run_erb_app47views47volunteers47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing volunteers</h1>\n\n<table>\n  <tr>\n    <th>Pic</th>\n    <th>Name</th>\n    <th>Email</th>\n    <th>Mobile</th>\n\t<th>Home</th>\n    <th>Region</th>\n    <th>Paid?</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+;  @volunteers.each do |volunteer| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( image_tag(gravatar_url_for(volunteer.email), { :width => 40, :height => 40 , :alt => 'Pic'}) ).to_s); @output_buffer.concat " </td>\n    <td>\n\t  "
+
+; @output_buffer.concat(( link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer ).to_s); @output_buffer.concat " \n\t  "
+;  if not volunteer.skype_name.blank? ; @output_buffer.concat "\n\t\t"
+; @output_buffer.concat(( link_to(image_tag "skype_tiny.png", :alt => "skype"),('skype:' + @volunteer.skype_name) ).to_s); @output_buffer.concat "\n\t  "
+;  end ; @output_buffer.concat "\n\t</td>\n    <td><a href=\"mailto:"
+
+; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "\">"; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "</a></td>\n    <td>"
+; @output_buffer.concat((h volunteer.mobile ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.home_phone ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.region ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.paid ).to_s); @output_buffer.concat "</td>\n\t<td>"
+; @output_buffer.concat(( link_to 'Edit', edit_volunteer_path(volunteer) ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New volunteer', new_volunteer_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:38:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:7:in `index'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: syntax error, unexpected ',', expecting ')'
+...e_tiny.png", :alt => "skype"),('skype:' + @volunteer.skype_n...
+                              ^) on line #20 of app/views/volunteers/index.html.erb:
+17:     <td>
+18: 	  <%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %> 
+19: 	  <% if not volunteer.skype_name.blank? %>
+20: 		<%= link_to(image_tag "skype_tiny.png", :alt => "skype"),('skype:' + @volunteer.skype_name) %>
+21: 	  <% end %>
+22: 	</td>
+23:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+
+    app/views/volunteers/index.html.erb:38:in `compile!'
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (135.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:08:07) [GET]
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+ERROR: compiling _run_erb_app47views47volunteers47index46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: syntax error, unexpected ',', expecting ')'
+...e_tiny.png', :alt => 'skype'),('skype:' + @volunteer.skype_n...
+                              ^
+Function body:           def _run_erb_app47views47volunteers47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing volunteers</h1>\n\n<table>\n  <tr>\n    <th>Pic</th>\n    <th>Name</th>\n    <th>Email</th>\n    <th>Mobile</th>\n\t<th>Home</th>\n    <th>Region</th>\n    <th>Paid?</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+;  @volunteers.each do |volunteer| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( image_tag(gravatar_url_for(volunteer.email), { :width => 40, :height => 40 , :alt => 'Pic'}) ).to_s); @output_buffer.concat " </td>\n    <td>\n\t  "
+
+; @output_buffer.concat(( link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer ).to_s); @output_buffer.concat " \n\t  "
+;  if not volunteer.skype_name.blank? ; @output_buffer.concat "\n\t\t"
+; @output_buffer.concat(( link_to(image_tag 'skype_tiny.png', :alt => 'skype'),('skype:' + @volunteer.skype_name) ).to_s); @output_buffer.concat "\n\t  "
+;  end ; @output_buffer.concat "\n\t</td>\n    <td><a href=\"mailto:"
+
+; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "\">"; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "</a></td>\n    <td>"
+; @output_buffer.concat((h volunteer.mobile ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.home_phone ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.region ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.paid ).to_s); @output_buffer.concat "</td>\n\t<td>"
+; @output_buffer.concat(( link_to 'Edit', edit_volunteer_path(volunteer) ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New volunteer', new_volunteer_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:38:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:7:in `index'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: syntax error, unexpected ',', expecting ')'
+...e_tiny.png', :alt => 'skype'),('skype:' + @volunteer.skype_n...
+                              ^) on line #20 of app/views/volunteers/index.html.erb:
+17:     <td>
+18: 	  <%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %> 
+19: 	  <% if not volunteer.skype_name.blank? %>
+20: 		<%= link_to(image_tag 'skype_tiny.png', :alt => 'skype'),('skype:' + @volunteer.skype_name) %>
+21: 	  <% end %>
+22: 	</td>
+23:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+
+    app/views/volunteers/index.html.erb:38:in `compile!'
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (139.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:08:44) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+ERROR: compiling _run_erb_app47views47volunteers47index46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: syntax error, unexpected ')', expecting tASSOC
+...ype:' + @volunteer.skype_name) ).to_s); @output_buffer.conca...
+                              ^
+Function body:           def _run_erb_app47views47volunteers47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing volunteers</h1>\n\n<table>\n  <tr>\n    <th>Pic</th>\n    <th>Name</th>\n    <th>Email</th>\n    <th>Mobile</th>\n\t<th>Home</th>\n    <th>Region</th>\n    <th>Paid?</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+;  @volunteers.each do |volunteer| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( image_tag(gravatar_url_for(volunteer.email), { :width => 40, :height => 40 , :alt => 'Pic'}) ).to_s); @output_buffer.concat " </td>\n    <td>\n\t  "
+
+; @output_buffer.concat(( link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer ).to_s); @output_buffer.concat " \n\t  "
+;  if not volunteer.skype_name.blank? ; @output_buffer.concat "\n\t\t"
+; @output_buffer.concat(( link_to(image_tag 'skype_tiny.png', :alt => 'skype' , 'skype:' + @volunteer.skype_name) ).to_s); @output_buffer.concat "\n\t  "
+;  end ; @output_buffer.concat "\n\t</td>\n    <td><a href=\"mailto:"
+
+; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "\">"; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "</a></td>\n    <td>"
+; @output_buffer.concat((h volunteer.mobile ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.home_phone ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.region ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.paid ).to_s); @output_buffer.concat "</td>\n\t<td>"
+; @output_buffer.concat(( link_to 'Edit', edit_volunteer_path(volunteer) ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New volunteer', new_volunteer_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:38:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:7:in `index'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: syntax error, unexpected ')', expecting tASSOC
+...ype:' + @volunteer.skype_name) ).to_s); @output_buffer.conca...
+                              ^) on line #20 of app/views/volunteers/index.html.erb:
+17:     <td>
+18: 	  <%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %> 
+19: 	  <% if not volunteer.skype_name.blank? %>
+20: 		<%= link_to(image_tag 'skype_tiny.png', :alt => 'skype' , 'skype:' + @volunteer.skype_name) %>
+21: 	  <% end %>
+22: 	</td>
+23:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+
+    app/views/volunteers/index.html.erb:38:in `compile!'
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (135.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:10:01) [GET]
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+ERROR: compiling _run_erb_app47views47volunteers47index46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: syntax error, unexpected ')', expecting tASSOC
+...kype' , @volunteer.skype_name) ).to_s); @output_buffer.conca...
+                              ^
+Function body:           def _run_erb_app47views47volunteers47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing volunteers</h1>\n\n<table>\n  <tr>\n    <th>Pic</th>\n    <th>Name</th>\n    <th>Email</th>\n    <th>Mobile</th>\n\t<th>Home</th>\n    <th>Region</th>\n    <th>Paid?</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+;  @volunteers.each do |volunteer| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( image_tag(gravatar_url_for(volunteer.email), { :width => 40, :height => 40 , :alt => 'Pic'}) ).to_s); @output_buffer.concat " </td>\n    <td>\n\t  "
+
+; @output_buffer.concat(( link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer ).to_s); @output_buffer.concat " \n\t  "
+;  if not volunteer.skype_name.blank? ; @output_buffer.concat "\n\t\t"
+; @output_buffer.concat(( link_to(image_tag 'skype_tiny.png', :alt => 'skype' , @volunteer.skype_name) ).to_s); @output_buffer.concat "\n\t  "
+;  end ; @output_buffer.concat "\n\t</td>\n    <td><a href=\"mailto:"
+
+; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "\">"; @output_buffer.concat((h volunteer.email ).to_s); @output_buffer.concat "</a></td>\n    <td>"
+; @output_buffer.concat((h volunteer.mobile ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.home_phone ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.region ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h volunteer.paid ).to_s); @output_buffer.concat "</td>\n\t<td>"
+; @output_buffer.concat(( link_to 'Edit', edit_volunteer_path(volunteer) ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New volunteer', new_volunteer_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:38:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:7:in `index'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/index.html.erb:20: syntax error, unexpected ')', expecting tASSOC
+...kype' , @volunteer.skype_name) ).to_s); @output_buffer.conca...
+                              ^) on line #20 of app/views/volunteers/index.html.erb:
+17:     <td>
+18: 	  <%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %> 
+19: 	  <% if not volunteer.skype_name.blank? %>
+20: 		<%= link_to(image_tag 'skype_tiny.png', :alt => 'skype' , @volunteer.skype_name) %>
+21: 	  <% end %>
+22: 	</td>
+23:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+
+    app/views/volunteers/index.html.erb:38:in `compile!'
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (138.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:10:42) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.skype_name) on line #20 of app/views/volunteers/index.html.erb:
+17:     <td>
+18: 	  <%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %> 
+19: 	  <% if not volunteer.skype_name.blank? %>
+20: 		<%= link_to(image_tag 'skype_tiny.png', {:alt => 'skype'} , 'skype:' + @volunteer.skype_name) %>
+21: 	  <% end %>
+22: 	</td>
+23:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+
+    app/views/volunteers/index.html.erb:20
+    app/views/volunteers/index.html.erb:14:in `each'
+    app/views/volunteers/index.html.erb:14
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (144.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:11:03) [GET]
+  [4;35;1mVolunteer Load (3.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.skype_name) on line #20 of app/views/volunteers/index.html.erb:
+17:     <td>
+18: 	  <%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %> 
+19: 	  <% if not volunteer.skype_name.blank? %>
+20: 		<%= link_to((image_tag 'skype_tiny.png', {:alt => 'skype'}) , ('skype:' + @volunteer.skype_name)) %>
+21: 	  <% end %>
+22: 	</td>
+23:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+
+    app/views/volunteers/index.html.erb:20
+    app/views/volunteers/index.html.erb:14:in `each'
+    app/views/volunteers/index.html.erb:14
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (260.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:11:42) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.skype_name) on line #20 of app/views/volunteers/index.html.erb:
+17:     <td>
+18: 	  <%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %> 
+19: 	  <% if not volunteer.skype_name.blank? %>
+20: 		<%= link_to ((image_tag 'skype_tiny.png', {:alt => 'skype'}) , ('skype:' + @volunteer.skype_name)) %>
+21: 	  <% end %>
+22: 	</td>
+23:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+
+    app/views/volunteers/index.html.erb:20
+    app/views/volunteers/index.html.erb:14:in `each'
+    app/views/volunteers/index.html.erb:14
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (142.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:12:23) [GET]
+  [4;35;1mVolunteer Load (3.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+
+ActionView::TemplateError (undefined local variable or method `www' for #<ActionView::Base:0x580bbf0>) on line #20 of app/views/volunteers/index.html.erb:
+17:     <td>
+18: 	  <%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %> 
+19: 	  <% if not volunteer.skype_name.blank? %>
+20: 		<%= link_to www.givle.com, www.givle.com %>
+21: 	  <% end %>
+22: 	</td>
+23:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+
+    app/views/volunteers/index.html.erb:20
+    app/views/volunteers/index.html.erb:14:in `each'
+    app/views/volunteers/index.html.erb:14
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (268.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:12:50) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 55ms (View: 35, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:13:05) [GET]
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 54ms (View: 35, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:13:41) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 54ms (View: 36, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:14:13) [GET]
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.skype_name) on line #20 of app/views/volunteers/index.html.erb:
+17:     <td>
+18: 	  <%= link_to volunteer.preffered_name + ' ' + volunteer.surname, volunteer %> 
+19: 	  <% if not volunteer.skype_name.blank? %>
+20: 		<%= link_to (image_tag 'skype_tiny.png', :alt => 'skype') , @volunteer.skype_name %>
+21: 	  <% end %>
+22: 	</td>
+23:     <td><a href="mailto:<%=h volunteer.email %>"><%=h volunteer.email %></a></td>
+
+    app/views/volunteers/index.html.erb:20
+    app/views/volunteers/index.html.erb:14:in `each'
+    app/views/volunteers/index.html.erb:14
+    app/controllers/volunteers_controller.rb:7:in `index'
+
+Rendered rescues/_trace (270.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:15:21) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 58ms (View: 36, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:15:34) [GET]
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 55ms (View: 36, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-09-13 17:15:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 65ms (View: 19, DB: 2) | 200 OK [http://localhost/volunteers/1]
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-09-13 17:16:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 48ms (View: 16, DB: 1) | 200 OK [http://localhost/volunteers/1]
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-09-13 17:20:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+
+ActionView::TemplateError (undefined method `to' for #<ActionView::Base:0x5791ee0>) on line #46 of app/views/volunteers/show.html.erb:
+43: <tr>
+44:   <td>Skype name:</td>
+45:   <td>
+46:     <%= link to @volunteer.skype_name , @volunteer.skype_name %>
+47:     <%= link_to (image_tag 'skype_tiny.png', :alt => 'skype') , 'skype:' + @volunteer.skype_name %></a>
+48:   </td>
+49: </tr>
+
+    app/views/volunteers/show.html.erb:46
+    app/controllers/volunteers_controller.rb:20:in `show'
+
+Rendered rescues/_trace (139.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-09-13 17:21:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 90ms (View: 38, DB: 2) | 200 OK [http://localhost/volunteers/1]
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-09-13 17:21:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #47 of app/views/volunteers/show.html.erb:
+44:   <td>Skype name:</td>
+45:   <td>
+46:     <%= link_to @volunteer.skype_name , @volunteer.skype_name %>
+47:     <%= link_to (@volunteer.skype_name image_tag 'skype_tiny.png', :alt => 'skype') , 'skype:' + @volunteer.skype_name %></a>
+48:   </td>
+49: </tr>
+50: 
+
+    app/views/volunteers/show.html.erb:47:in `skype_name'
+    app/views/volunteers/show.html.erb:47
+    app/controllers/volunteers_controller.rb:20:in `show'
+
+Rendered rescues/_trace (261.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-09-13 17:21:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+ERROR: compiling _run_erb_app47views47volunteers47show46html46erb RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/show.html.erb:47: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+...nteer.skype_name + image_tag 'skype_tiny.png', :alt => 'skyp...
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/show.html.erb:47: syntax error, unexpected ',', expecting ')'
+... + image_tag 'skype_tiny.png', :alt => 'skype') , 'skype:' +...
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/show.html.erb:47: syntax error, unexpected ')', expecting kEND
+... @volunteer.skype_name ).to_s); @output_buffer.concat "</a>\...
+                              ^
+Function body:           def _run_erb_app47views47volunteers47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<p class=\"content-nav\">\n  "
+; @output_buffer.concat(( link_to 'Edit', edit_volunteer_path(@volunteer) ).to_s); @output_buffer.concat " |\n  "
+; @output_buffer.concat(( link_to 'Destroy', volunteer_path(@volunteer), :confirm => 'Are you sure you want to DELETE volunteer record for ' + @volunteer.given_names + '?', :method => :delete ).to_s); @output_buffer.concat " |\n  "
+; @output_buffer.concat(( link_to 'Back', volunteers_path ).to_s); @output_buffer.concat "\n</p>\n\n<h2>"
+
+
+; @output_buffer.concat((h @name ).to_s); @output_buffer.concat "</h2>\n\n<div class=\"column-1\">\n  <p>"
+
+
+; @output_buffer.concat(( image_tag(gravatar_url_for(@volunteer.email), { :width => 150, :height => 150, :alt => 'Gravatar Picture of Volunteer' }) ).to_s); @output_buffer.concat "</p>\n  <br />\n</div>\n\n<div class=\"column-2\">\n\n<table>\n\n<tr>\n  <td>Given names:</td>\n  <td>"
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat((h @volunteer.given_names ).to_s); @output_buffer.concat "</td>\n</tr>\n\n<tr>\n  <td>Surname:</td>\n  <td>"
+
+
+
+
+; @output_buffer.concat((h @volunteer.surname ).to_s); @output_buffer.concat "</td>\n</tr>\n\n<tr>\n  <td>Preffered name:</td>\n  <td>"
+
+
+
+
+; @output_buffer.concat((h @volunteer.preffered_name ).to_s); @output_buffer.concat "</td>\n</tr>\n\n<tr>\n  <td>Birth date:</td>\n  <td>"
+
+
+
+
+; @output_buffer.concat((h @volunteer.birth_date ).to_s); @output_buffer.concat "</td>\n</tr>\n\n<tr>\n  <td>Email:</td>\n  <td><a href=\"mailto:"
+
+
+
+
+; @output_buffer.concat((h @volunteer.email ).to_s); @output_buffer.concat "\">"; @output_buffer.concat((h @volunteer.email ).to_s); @output_buffer.concat "</a></td>\n</tr>\n\n<tr>\n  <td>Skype name:</td>\n  <td>\n    "
+
+
+
+
+
+; @output_buffer.concat(( link_to @volunteer.skype_name , @volunteer.skype_name ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( link_to (@volunteer.skype_name + image_tag 'skype_tiny.png', :alt => 'skype') , 'skype:' + @volunteer.skype_name ).to_s); @output_buffer.concat "</a>\n  </td>\n</tr>\n\n<tr>\n  <td>Mobile:</td>\n  <td>"
+
+
+
+
+
+; @output_buffer.concat((h @volunteer.mobile ).to_s); @output_buffer.concat "</td>\n</tr>\n\n<tr>\n  <td>Home phone:</td>\n  <td>"
+
+
+
+
+; @output_buffer.concat((h @volunteer.home_phone ).to_s); @output_buffer.concat "</td>\n</tr>\n\n<tr>\n  <td>Work phone:</td>\n  <td>"
+
+
+
+
+; @output_buffer.concat((h @volunteer.work_phone ).to_s); @output_buffer.concat "</td>\n</tr>\n\n<tr>\n  <td>Business name:</td>\n  <td>"
+
+
+
+
+; @output_buffer.concat((h @volunteer.business_name ).to_s); @output_buffer.concat "</td>\n</tr>\n\n<tr>\n  <td>Processed by:</td>\n  <td>"
+
+
+
+
+; @output_buffer.concat((h @volunteer.processed_by ).to_s); @output_buffer.concat "</td>\n</tr>\n\n<tr>\n  <td>Entered by:</td>\n  <td>"
+
+
+
+
+; @output_buffer.concat((h @volunteer.entered_by ).to_s); @output_buffer.concat "</td>\n</tr>\n\n<tr>\n  <td>Region:</td>\n  <td>"
+
+
+
+
+; @output_buffer.concat((h @volunteer.region ).to_s); @output_buffer.concat "</td>\n</tr>\n\n<tr>\n  <td>Paid:</td>\n  <td>"
+
+
+
+
+; @output_buffer.concat((h @volunteer.paid ).to_s); @output_buffer.concat "</td>\n</tr>\n\n<tr>\n  <td>Payment method:</td>\n  <td>"
+
+
+
+
+; @output_buffer.concat((h @volunteer.payment_method ).to_s); @output_buffer.concat "</td>\n</tr>\n\n<tr>\n  <td>Payment notes:</td>\n  <td>"
+
+
+
+
+; @output_buffer.concat((h @volunteer.payment_notes ).to_s); @output_buffer.concat "</td>\n</tr>\n\n<tr>\n  <td>Personal skills:</td>\n  <td>"
+
+
+
+
+; @output_buffer.concat((h @volunteer.personal_skills ).to_s); @output_buffer.concat "</td>\n</tr>\n\n</table>\n\n</div>"
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/show.html.erb:111:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/volunteers_controller.rb:20:in `show'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/show.html.erb:47: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+...nteer.skype_name + image_tag 'skype_tiny.png', :alt => 'skyp...
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/show.html.erb:47: syntax error, unexpected ',', expecting ')'
+... + image_tag 'skype_tiny.png', :alt => 'skype') , 'skype:' +...
+                              ^
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/volunteers/show.html.erb:47: syntax error, unexpected ')', expecting kEND
+... @volunteer.skype_name ).to_s); @output_buffer.concat "</a>\...
+                              ^) on line #47 of app/views/volunteers/show.html.erb:
+44:   <td>Skype name:</td>
+45:   <td>
+46:     <%= link_to @volunteer.skype_name , @volunteer.skype_name %>
+47:     <%= link_to (@volunteer.skype_name + image_tag 'skype_tiny.png', :alt => 'skype') , 'skype:' + @volunteer.skype_name %></a>
+48:   </td>
+49: </tr>
+50: 
+
+    app/views/volunteers/show.html.erb:111:in `compile!'
+    app/controllers/volunteers_controller.rb:20:in `show'
+
+Rendered rescues/_trace (136.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-09-13 17:22:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVolunteer Load (1.0ms)[0m   [0;1mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 56ms (View: 26, DB: 1) | 200 OK [http://localhost/volunteers/1]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:22:34) [GET]
+  [4;35;1mVolunteer Load (3.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 57ms (View: 34, DB: 3) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:23:27) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 46ms (View: 26, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-13 17:23:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/skype_tiny.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:23:49) [GET]
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 44ms (View: 26, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-13 17:23:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/skype_tiny.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:23:56) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 45ms (View: 26, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-13 17:23:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/skype_tiny.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:24:20) [GET]
+  [4;35;1mVolunteer Load (3.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 57ms (View: 36, DB: 3) | 200 OK [http://localhost/volunteers]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-13 17:24:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/skype_tiny.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 17:24:53) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 46ms (View: 27, DB: 2) | 200 OK [http://localhost/volunteers]
