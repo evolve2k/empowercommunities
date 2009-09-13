@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th>Name</th>
+    <th>Channel</th>
     <th>State</th>
     <th>Primary contact</th>
     <th>Position</th>
@@ -13,6 +14,7 @@
 <% @locations.each do |location| %>
   <tr>
     <td><%= link_to location.name, location %></td>
+    <td><%=h location.channel.name %></td>
     <td><%=h location.state %></td>
     <td><%=h location.primary_contact %></td>
     <td><%=h location.position %></td>
