@@ -14066,3 +14066,131 @@ Rendering volunteers/index
 Rendered _header (0.0ms)
 Rendered _footer (0.0ms)
 Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/volunteers]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-13 16:18:30) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 54ms (View: 35, DB: 3) | 200 OK [http://localhost/locations]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-13 16:18:34) [GET]
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 36ms (View: 20, DB: 1) | 200 OK [http://localhost/channels]
+
+
+Processing ChannelsController#new (for 127.0.0.1 at 2009-09-13 16:19:14) [GET]
+Rendering template within layouts/channels
+Rendering channels/new
+Rendered channels/_form (6.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/channels/new]
+
+
+Processing ChannelsController#create (for 127.0.0.1 at 2009-09-13 16:19:26) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"zK9ecsiQpfe38ub8UbWmLMkDVSZOcgcZk37AKFlhM+4=", "channel"=>{"name"=>"Rug Party", "description"=>""}}
+  [4;35;1mChannel Create (1.0ms)[0m   [0mINSERT INTO "channels" ("name", "created_at", "updated_at", "description") VALUES('Rug Party', '2009-09-13 06:49:26', '2009-09-13 06:49:26', '')[0m
+Redirected to http://localhost:3000/channels/5
+Completed in 32ms (DB: 1) | 302 Found [http://localhost/channels]
+
+
+Processing ChannelsController#show (for 127.0.0.1 at 2009-09-13 16:19:28) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 5) [0m
+Rendering template within layouts/channels
+Rendering channels/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 46ms (View: 13, DB: 1) | 200 OK [http://localhost/channels/5]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-13 16:38:54) [GET]
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 166ms (View: 24, DB: 1) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-09-13 16:39:01) [GET]
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Rendered volunteers/_form (33.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 63ms (View: 44, DB: 0) | 200 OK [http://localhost/volunteers/new]
+
+
+Processing VolunteersController#create (for 127.0.0.1 at 2009-09-13 16:40:23) [POST]
+  Parameters: {"commit"=>"Submit", "volunteer"=>{"region"=>"SA", "work_phone"=>"", "birth_date(2i)"=>"9", "personal_skills"=>"", "business_name"=>"", "birth_date(3i)"=>"2", "skype_name"=>"richkhoo22", "paid"=>"1", "payment_method"=>"Cash", "home_phone"=>"", "mobile"=>"", "preffered_name"=>"Richie", "entered_by"=>"Tyson", "surname"=>"Khoo", "payment_notes"=>"", "processed_by"=>"Tyson", "email"=>"richardkhoo@carpetsforcommunities.org", "birth_date(1i)"=>"1978", "given_names"=>"Richard"}, "authenticity_token"=>"zK9ecsiQpfe38ub8UbWmLMkDVSZOcgcZk37AKFlhM+4="}
+  [4;36;1mVolunteer Create (2.0ms)[0m   [0;1mINSERT INTO "volunteers" ("work_phone", "region", "business_name", "personal_skills", "created_at", "skype_name", "paid", "updated_at", "payment_method", "birth_date", "home_phone", "mobile", "preffered_name", "surname", "entered_by", "given_names", "email", "processed_by", "payment_notes") VALUES('', 'SA', '', '', '2009-09-13 07:10:23', 'richkhoo22', 't', '2009-09-13 07:10:23', 'Cash', '1978-09-02', '', '', 'Richie', 'Khoo', 'Tyson', 'Richard', 'richardkhoo@carpetsforcommunities.org', 'Tyson', '')[0m
+Redirected to http://localhost:3000/volunteers/2
+Completed in 42ms (DB: 2) | 302 Found [http://localhost/volunteers]
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-09-13 16:40:24) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mVolunteer Load (1.0ms)[0m   [0mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 2) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 63ms (View: 25, DB: 1) | 200 OK [http://localhost/volunteers/2]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-13 16:41:53) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 55ms (View: 37, DB: 3) | 200 OK [http://localhost/locations]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-13 16:41:56) [GET]
+  [4;36;1mChannel Load (2.0ms)[0m   [0;1mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 36ms (View: 20, DB: 2) | 200 OK [http://localhost/channels]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 11:04:21) [GET]
+  [4;36;1mVolunteer Load (3.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (4.0ms)
+Rendered _footer (3.0ms)
+Completed in 4736ms (View: 4717, DB: 3) | 200 OK [http://localhost/volunteers]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 11:04:37) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 432ms (View: 334, DB: 2) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-09-18 11:04:46) [GET]
+Rendering template within layouts/locations
+Rendering locations/new
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" ORDER BY name[0m
+Rendered locations/_form (86.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 127ms (View: 109, DB: 1) | 200 OK [http://localhost/locations/new]
