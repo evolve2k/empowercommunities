@@ -16260,3 +16260,497 @@ Rendering volunteers/index
 Rendered _header (1.0ms)
 Rendered _footer (0.0ms)
 Completed in 46ms (View: 27, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-14 13:55:50) [GET]
+  [4;36;1mVolunteer Load (4.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (67.0ms)
+Rendered _footer (24.0ms)
+Completed in 5565ms (View: 5541, DB: 4) | 200 OK [http://localhost/volunteers]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-14 13:56:36) [GET]
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 155ms (View: 66, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-09-14 13:56:45) [GET]
+Rendering template within layouts/locations
+Rendering locations/new
+Rendered locations/_form (40.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 129ms (View: 108, DB: 0) | 200 OK [http://localhost/locations/new]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-14 13:56:52) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 47ms (View: 27, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-14 13:57:12) [GET]
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 32ms (View: 12, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-14 13:57:14) [GET]
+  [4;36;1mChannel Load (2.0ms)[0m   [0;1mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 193ms (View: 70, DB: 2) | 200 OK [http://localhost/channels]
+
+
+Processing ChannelsController#new (for 127.0.0.1 at 2009-09-14 13:57:17) [GET]
+Rendering template within layouts/channels
+Rendering channels/new
+Rendered channels/_form (12.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 57ms (View: 39, DB: 0) | 200 OK [http://localhost/channels/new]
+
+
+Processing ChannelsController#create (for 127.0.0.1 at 2009-09-14 13:57:23) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"jrb5FJEqJcIt+NRhe64xNgcWu03Kxrhlwz7jjnuvwho=", "channel"=>{"name"=>"Market Stall", "description"=>""}}
+  [4;35;1mChannel Create (2.0ms)[0m   [0mINSERT INTO "channels" ("name", "created_at", "updated_at", "description") VALUES('Market Stall', '2009-09-14 04:27:23', '2009-09-14 04:27:23', '')[0m
+Redirected to http://localhost:3000/channels/1
+Completed in 474ms (DB: 2) | 302 Found [http://localhost/channels]
+
+
+Processing ChannelsController#show (for 127.0.0.1 at 2009-09-14 13:57:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+Rendering template within layouts/channels
+Rendering channels/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 54ms (View: 28, DB: 1) | 200 OK [http://localhost/channels/1]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-14 13:57:28) [GET]
+  [4;35;1mChannel Load (2.0ms)[0m   [0mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 37ms (View: 17, DB: 2) | 200 OK [http://localhost/channels]
+
+
+Processing ChannelsController#new (for 127.0.0.1 at 2009-09-14 13:57:31) [GET]
+Rendering template within layouts/channels
+Rendering channels/new
+Rendered channels/_form (7.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 48ms (View: 21, DB: 0) | 200 OK [http://localhost/channels/new]
+
+
+Processing ChannelsController#create (for 127.0.0.1 at 2009-09-14 13:57:38) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"jrb5FJEqJcIt+NRhe64xNgcWu03Kxrhlwz7jjnuvwho=", "channel"=>{"name"=>"Retail Store", "description"=>""}}
+  [4;36;1mChannel Create (3.0ms)[0m   [0;1mINSERT INTO "channels" ("name", "created_at", "updated_at", "description") VALUES('Retail Store', '2009-09-14 04:27:38', '2009-09-14 04:27:38', '')[0m
+Redirected to http://localhost:3000/channels/2
+Completed in 136ms (DB: 3) | 302 Found [http://localhost/channels]
+
+
+Processing ChannelsController#show (for 127.0.0.1 at 2009-09-14 13:57:39) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 2) [0m
+Rendering template within layouts/channels
+Rendering channels/show
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 35ms (View: 13, DB: 1) | 200 OK [http://localhost/channels/2]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-14 13:57:43) [GET]
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 44ms (View: 22, DB: 1) | 200 OK [http://localhost/channels]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-14 13:57:47) [GET]
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 30ms (View: 12, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-14 14:05:30) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (6.0ms)
+Rendered _footer (0.0ms)
+Completed in 40ms (View: 22, DB: 2) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-14 14:07:13) [GET]
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (4.0ms)
+Rendered _footer (0.0ms)
+Completed in 37ms (View: 20, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-14 14:07:57) [GET]
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (4.0ms)
+Rendered _footer (0.0ms)
+Completed in 37ms (View: 19, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-14 14:08:21) [GET]
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 29ms (View: 10, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-14 14:11:52) [GET]
+  [4;36;1mChannel Load (2.0ms)[0m   [0;1mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 38ms (View: 19, DB: 2) | 200 OK [http://localhost/channels]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-14 14:11:54) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 33ms (View: 11, DB: 2) | 200 OK [http://localhost/locations]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 10:14:40) [GET]
+  [4;36;1mVolunteer Load (3.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (6.0ms)
+Rendered _footer (64.0ms)
+Completed in 6269ms (View: 6248, DB: 3) | 200 OK [http://localhost/volunteers]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 10:33:05) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 194ms (View: 91, DB: 2) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-09-18 10:33:08) [GET]
+Rendering template within layouts/locations
+Rendering locations/new
+Rendered locations/_form (43.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 127ms (View: 97, DB: 0) | 200 OK [http://localhost/locations/new]
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20090814043645)
+Migrating to CreateLocations (20090911014430)
+Migrating to CreateChannels (20090911052823)
+Migrating to AddChannelToLocation (20090913012626)
+Migrating to CreateStates (20090918013130)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "states" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "code" varchar(255), "country" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090918013130')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("channels")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("locations")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("states")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("volunteers")[0m
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-09-18 11:16:07) [GET]
+Rendering template within layouts/locations
+Rendering locations/new
+Rendered locations/_form (21.0ms)
+Rendered _header (4.0ms)
+Rendered _footer (2.0ms)
+Completed in 215ms (View: 83, DB: 0) | 200 OK [http://localhost/locations/new]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 11:16:12) [GET]
+  [4;36;1mState Load (2.0ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Completed in 73ms (View: 49, DB: 2) | 200 OK [http://localhost/states]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 11:17:59) [GET]
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 35ms (View: 19, DB: 1) | 200 OK [http://localhost/states]
+
+
+Processing StatesController#new (for 127.0.0.1 at 2009-09-18 11:18:42) [GET]
+Rendering template within layouts/states
+Rendering states/new
+
+ActionView::TemplateError (state_url failed to generate from {:action=>"show", :controller=>"states"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["states", :id] - are they all satisfied?) on line #1 of app/views/states/new.html.erb:
+1: <p class="content-nav"><%= link_to 'Back', state_path %></p>
+2: 
+3: <h1>New State</h1>
+4: 
+
+    (eval):16:in `state_path'
+    app/views/states/new.html.erb:1
+    app/controllers/states_controller.rb:29:in `new'
+
+Rendered rescues/_trace (268.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatesController#new (for 127.0.0.1 at 2009-09-18 11:23:43) [GET]
+Rendering template within layouts/states
+Rendering states/new
+
+ActionView::TemplateError (state_url failed to generate from {:action=>"show", :controller=>"states"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["states", :id] - are they all satisfied?) on line #1 of app/views/states/new.html.erb:
+1: <p class="content-nav"><%= link_to 'Back', state_path %></p>
+2: 
+3: <h1>New State</h1>
+4: 
+
+    (eval):16:in `state_path'
+    app/views/states/new.html.erb:1
+    app/controllers/states_controller.rb:29:in `new'
+
+Rendered rescues/_trace (231.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatesController#new (for 127.0.0.1 at 2009-09-18 11:24:12) [GET]
+Rendering template within layouts/states
+Rendering states/new
+Rendered states/_form (14.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 75ms (View: 49, DB: 0) | 200 OK [http://localhost/states/new]
+
+
+Processing StatesController#create (for 127.0.0.1 at 2009-09-18 11:24:31) [POST]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"l/IMI68hIMhvkaLLporr8HvoOI8mabw6rjAfcC6yXKE=", "state"=>{"name"=>"South Australia", "country"=>"Australia", "code"=>"SA"}}
+  [4;36;1mState Create (3.0ms)[0m   [0;1mINSERT INTO "states" ("name", "created_at", "code", "country", "updated_at") VALUES('South Australia', '2009-09-18 01:54:31', 'SA', 'Australia', '2009-09-18 01:54:31')[0m
+Redirected to http://localhost:3000/states/1
+Completed in 216ms (DB: 3) | 302 Found [http://localhost/states]
+
+
+Processing StatesController#show (for 127.0.0.1 at 2009-09-18 11:24:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mState Load (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendering template within layouts/states
+Rendering states/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 39ms (View: 21, DB: 0) | 200 OK [http://localhost/states/1]
+
+
+Processing StatesController#new (for 127.0.0.1 at 2009-09-18 11:24:37) [GET]
+Rendering template within layouts/states
+Rendering states/new
+Rendered states/_form (6.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 43ms (View: 17, DB: 0) | 200 OK [http://localhost/states/new]
+
+
+Processing StatesController#create (for 127.0.0.1 at 2009-09-18 11:24:47) [POST]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"l/IMI68hIMhvkaLLporr8HvoOI8mabw6rjAfcC6yXKE=", "state"=>{"name"=>"New South Wales", "country"=>"Australia", "code"=>"NSW"}}
+  [4;36;1mState Create (2.0ms)[0m   [0;1mINSERT INTO "states" ("name", "created_at", "code", "country", "updated_at") VALUES('New South Wales', '2009-09-18 01:54:47', 'NSW', 'Australia', '2009-09-18 01:54:47')[0m
+Redirected to http://localhost:3000/states/2
+Completed in 87ms (DB: 2) | 302 Found [http://localhost/states]
+
+
+Processing StatesController#show (for 127.0.0.1 at 2009-09-18 11:24:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 2) [0m
+Rendering template within layouts/states
+Rendering states/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 49ms (View: 21, DB: 1) | 200 OK [http://localhost/states/2]
+
+
+Processing StatesController#new (for 127.0.0.1 at 2009-09-18 11:24:52) [GET]
+Rendering template within layouts/states
+Rendering states/new
+Rendered states/_form (8.0ms)
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 53ms (View: 27, DB: 0) | 200 OK [http://localhost/states/new]
+
+
+Processing StatesController#create (for 127.0.0.1 at 2009-09-18 11:25:09) [POST]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"l/IMI68hIMhvkaLLporr8HvoOI8mabw6rjAfcC6yXKE=", "state"=>{"name"=>"Victoria", "country"=>"Australia", "code"=>"VIC"}}
+  [4;36;1mState Create (2.0ms)[0m   [0;1mINSERT INTO "states" ("name", "created_at", "code", "country", "updated_at") VALUES('Victoria', '2009-09-18 01:55:10', 'VIC', 'Australia', '2009-09-18 01:55:10')[0m
+Redirected to http://localhost:3000/states/3
+Completed in 129ms (DB: 2) | 302 Found [http://localhost/states]
+
+
+Processing StatesController#show (for 127.0.0.1 at 2009-09-18 11:25:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mState Load (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 3) [0m
+Rendering template within layouts/states
+Rendering states/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 34ms (View: 16, DB: 0) | 200 OK [http://localhost/states/3]
+
+
+Processing StatesController#new (for 127.0.0.1 at 2009-09-18 11:25:15) [GET]
+Rendering template within layouts/states
+Rendering states/new
+Rendered states/_form (5.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 35ms (View: 18, DB: 0) | 200 OK [http://localhost/states/new]
+
+
+Processing StatesController#create (for 127.0.0.1 at 2009-09-18 11:25:25) [POST]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"l/IMI68hIMhvkaLLporr8HvoOI8mabw6rjAfcC6yXKE=", "state"=>{"name"=>"Queensland", "country"=>"Australia", "code"=>"QLD"}}
+  [4;36;1mState Create (2.0ms)[0m   [0;1mINSERT INTO "states" ("name", "created_at", "code", "country", "updated_at") VALUES('Queensland', '2009-09-18 01:55:25', 'QLD', 'Australia', '2009-09-18 01:55:25')[0m
+Redirected to http://localhost:3000/states/4
+Completed in 441ms (DB: 2) | 302 Found [http://localhost/states]
+
+
+Processing StatesController#show (for 127.0.0.1 at 2009-09-18 11:25:27) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 4) [0m
+Rendering template within layouts/states
+Rendering states/show
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 33ms (View: 14, DB: 1) | 200 OK [http://localhost/states/4]
+
+
+Processing StatesController#new (for 127.0.0.1 at 2009-09-18 11:25:30) [GET]
+Rendering template within layouts/states
+Rendering states/new
+Rendered states/_form (6.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 34ms (View: 18, DB: 0) | 200 OK [http://localhost/states/new]
+
+
+Processing StatesController#create (for 127.0.0.1 at 2009-09-18 11:25:48) [POST]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"l/IMI68hIMhvkaLLporr8HvoOI8mabw6rjAfcC6yXKE=", "state"=>{"name"=>"Northern Territory", "country"=>"Australia", "code"=>"NT"}}
+  [4;36;1mState Create (1.0ms)[0m   [0;1mINSERT INTO "states" ("name", "created_at", "code", "country", "updated_at") VALUES('Northern Territory', '2009-09-18 01:55:48', 'NT', 'Australia', '2009-09-18 01:55:48')[0m
+Redirected to http://localhost:3000/states/5
+Completed in 126ms (DB: 1) | 302 Found [http://localhost/states]
+
+
+Processing StatesController#show (for 127.0.0.1 at 2009-09-18 11:25:49) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mState Load (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 5) [0m
+Rendering template within layouts/states
+Rendering states/show
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 32ms (View: 13, DB: 0) | 200 OK [http://localhost/states/5]
+
+
+Processing StatesController#new (for 127.0.0.1 at 2009-09-18 11:25:52) [GET]
+Rendering template within layouts/states
+Rendering states/new
+Rendered states/_form (9.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 54ms (View: 29, DB: 0) | 200 OK [http://localhost/states/new]
+
+
+Processing StatesController#create (for 127.0.0.1 at 2009-09-18 11:26:00) [POST]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"l/IMI68hIMhvkaLLporr8HvoOI8mabw6rjAfcC6yXKE=", "state"=>{"name"=>"Tasmania", "country"=>"Australia", "code"=>"TAS"}}
+  [4;36;1mState Create (2.0ms)[0m   [0;1mINSERT INTO "states" ("name", "created_at", "code", "country", "updated_at") VALUES('Tasmania', '2009-09-18 01:56:00', 'TAS', 'Australia', '2009-09-18 01:56:00')[0m
+Redirected to http://localhost:3000/states/6
+Completed in 110ms (DB: 2) | 302 Found [http://localhost/states]
+
+
+Processing StatesController#show (for 127.0.0.1 at 2009-09-18 11:26:02) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 6) [0m
+Rendering template within layouts/states
+Rendering states/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 43ms (View: 16, DB: 1) | 200 OK [http://localhost/states/6]
+
+
+Processing StatesController#new (for 127.0.0.1 at 2009-09-18 11:26:06) [GET]
+Rendering template within layouts/states
+Rendering states/new
+Rendered states/_form (9.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 55ms (View: 27, DB: 0) | 200 OK [http://localhost/states/new]
+
+
+Processing StatesController#create (for 127.0.0.1 at 2009-09-18 11:26:16) [POST]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"l/IMI68hIMhvkaLLporr8HvoOI8mabw6rjAfcC6yXKE=", "state"=>{"name"=>"Western Australia", "country"=>"Australia", "code"=>"WA"}}
+  [4;36;1mState Create (2.0ms)[0m   [0;1mINSERT INTO "states" ("name", "created_at", "code", "country", "updated_at") VALUES('Western Australia', '2009-09-18 01:56:16', 'WA', 'Australia', '2009-09-18 01:56:16')[0m
+Redirected to http://localhost:3000/states/7
+Completed in 86ms (DB: 2) | 302 Found [http://localhost/states]
+
+
+Processing StatesController#show (for 127.0.0.1 at 2009-09-18 11:26:17) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 7) [0m
+Rendering template within layouts/states
+Rendering states/show
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 50ms (View: 22, DB: 1) | 200 OK [http://localhost/states/7]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 11:26:21) [GET]
+  [4;36;1mState Load (4.0ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 73ms (View: 46, DB: 4) | 200 OK [http://localhost/states]

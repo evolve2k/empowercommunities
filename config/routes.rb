@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :states
+
   map.resources :channels
 
   map.resources :locations
