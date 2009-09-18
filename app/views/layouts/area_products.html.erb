@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Area Products: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'reset' %>
+  <%= stylesheet_link_tag 'master' %>
+</head>
+<body>
+  <%= render :partial => "/header" %>
+
+  	<div class="sidebar">
+	  <div class="sidebar-a">
+	   <h1><%= link_to 'Add New Area Product', new_area_product_path %></h1>	 
+	  </div>
+	  
+	  <div class="sidebar-b">
+	  </div>
+	</div>
+  
+  <div class="content">
+      <p style="color: green"><%= flash[:notice] %></p>
+	  <br />
+      <%= yield %>	  
+  </div>
+  
+  <%= render :partial => "/footer" %>
+</body>
+</html>
