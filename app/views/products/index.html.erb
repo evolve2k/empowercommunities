@@ -11,7 +11,7 @@
 
 <% @products.each do |product| %>
   <tr>
-    <td><%= link to product, product %></td>
+    <td><%= link_to product, product %></td>
     <td><%=h product.code %></td>
     <td><%=h product.product_type_id %></td>
     <td><%=h product.first_production %></td>
