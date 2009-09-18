@@ -16754,3 +16754,585 @@ Rendering states/index
 Rendered _header (1.0ms)
 Rendered _footer (1.0ms)
 Completed in 73ms (View: 46, DB: 4) | 200 OK [http://localhost/states]
+
+
+Processing StatesController#show (for 127.0.0.1 at 2009-09-18 12:15:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mState Load (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendering template within layouts/states
+Rendering states/show
+Rendered _header (4.0ms)
+Rendered _footer (3.0ms)
+Completed in 72ms (View: 53, DB: 0) | 200 OK [http://localhost/states/1]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 12:15:07) [GET]
+  [4;36;1mState Load (2.0ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 53ms (View: 35, DB: 2) | 200 OK [http://localhost/states]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-18 12:15:18) [GET]
+  [4;35;1mChannel Load (2.0ms)[0m   [0mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 196ms (View: 60, DB: 2) | 200 OK [http://localhost/channels]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 12:15:22) [GET]
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 37ms (View: 20, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 12:15:26) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 29ms (View: 11, DB: 2) | 200 OK [http://localhost/locations]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 12:15:31) [GET]
+  [4;36;1mVolunteer Load (4.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 87ms (View: 58, DB: 4) | 200 OK [http://localhost/volunteers]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 12:15:47) [GET]
+  [4;35;1mState Load (3.0ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 47ms (View: 27, DB: 3) | 200 OK [http://localhost/states]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-18 12:15:50) [GET]
+  [4;36;1mChannel Load (2.0ms)[0m   [0;1mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 37ms (View: 17, DB: 2) | 200 OK [http://localhost/channels]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 12:15:52) [GET]
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 36ms (View: 18, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 12:15:54) [GET]
+  [4;36;1mVolunteer Load (3.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 46ms (View: 27, DB: 3) | 200 OK [http://localhost/volunteers]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-18 12:15:57) [GET]
+  [4;35;1mChannel Load (2.0ms)[0m   [0mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 37ms (View: 19, DB: 2) | 200 OK [http://localhost/channels]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 12:17:28) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 30ms (View: 12, DB: 2) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-09-18 12:37:08) [GET]
+Rendering template within layouts/locations
+Rendering locations/new
+Rendered locations/_form (21.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 72ms (View: 50, DB: 0) | 200 OK [http://localhost/locations/new]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-18 12:40:31) [GET]
+  [4;35;1mChannel Load (3.0ms)[0m   [0mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 60ms (View: 26, DB: 3) | 200 OK [http://localhost/channels]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 12:40:35) [GET]
+  [4;36;1mState Load (7.0ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 115ms (View: 64, DB: 7) | 200 OK [http://localhost/states]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-18 12:40:38) [GET]
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 42ms (View: 21, DB: 1) | 200 OK [http://localhost/channels]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 12:40:41) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 33ms (View: 13, DB: 2) | 200 OK [http://localhost/locations]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 12:40:43) [GET]
+  [4;35;1mVolunteer Load (4.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 80ms (View: 47, DB: 4) | 200 OK [http://localhost/volunteers]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-18 12:40:46) [GET]
+  [4;36;1mChannel Load (3.0ms)[0m   [0;1mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (2.0ms)
+Rendered _footer (1.0ms)
+Completed in 65ms (View: 34, DB: 3) | 200 OK [http://localhost/channels]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 12:40:48) [GET]
+  [4;35;1mState Load (4.0ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 79ms (View: 46, DB: 4) | 200 OK [http://localhost/states]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 12:40:54) [GET]
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 28ms (View: 11, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 12:40:56) [GET]
+  [4;35;1mVolunteer Load (3.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 52ms (View: 31, DB: 3) | 200 OK [http://localhost/volunteers]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 12:41:02) [GET]
+  [4;36;1mState Load (3.0ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (2.0ms)
+Rendered _footer (1.0ms)
+Completed in 51ms (View: 30, DB: 3) | 200 OK [http://localhost/states]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 13:04:50) [GET]
+  [4;35;1mVolunteer Load (3.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 58ms (View: 35, DB: 3) | 200 OK [http://localhost/volunteers]
+  [4;36;1mSQL (5.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20090814043645)
+Migrating to CreateLocations (20090911014430)
+Migrating to CreateChannels (20090911052823)
+Migrating to AddChannelToLocation (20090913012626)
+Migrating to CreateStates (20090918013130)
+Migrating to CreateProducts (20090918045338)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20090814043645)
+Migrating to CreateLocations (20090911014430)
+Migrating to CreateChannels (20090911052823)
+Migrating to AddChannelToLocation (20090913012626)
+Migrating to CreateStates (20090918013130)
+Migrating to CreateProducts (20090918045338)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "code" varchar(255), "product_type_id" integer, "first_production" date, "ceased_production" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090918045338')[0m
+Migrating to CreateAreaProducts (20090918051417)
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE "area_products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer, "shape" varchar(255), "width" float, "length" float, "area" float, "perimeter" float, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090918051417')[0m
+Migrating to CreateProductTypes (20090918051730)
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE TABLE "product_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "first_production" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090918051730')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("area_products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("channels")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("locations")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("product_types")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("states")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("volunteers")[0m
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 15:52:06) [GET]
+  [4;36;1mVolunteer Load (4.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (8.0ms)
+Rendered _footer (4.0ms)
+Completed in 140ms (View: 112, DB: 4) | 200 OK [http://localhost/volunteers]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 15:52:11) [GET]
+  [4;35;1mState Load (4.0ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (2.0ms)
+Rendered _footer (1.0ms)
+Completed in 109ms (View: 83, DB: 4) | 200 OK [http://localhost/states]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 15:52:15) [GET]
+  [4;36;1mState Load (4.0ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (2.0ms)
+Rendered _footer (1.0ms)
+Completed in 64ms (View: 38, DB: 4) | 200 OK [http://localhost/states]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-18 15:52:25) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 98ms (View: 76, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 15:53:07) [GET]
+  [4;36;1mState Load (3.0ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 56ms (View: 38, DB: 3) | 200 OK [http://localhost/states]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 15:54:32) [GET]
+  [4;35;1mState Load (4.0ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (7.0ms)
+Rendered _footer (1.0ms)
+Completed in 225ms (View: 198, DB: 4) | 200 OK [http://localhost/states]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-18 15:54:37) [GET]
+  [4;36;1mProduct Load (4.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (4.0ms)
+Rendered _footer (1.0ms)
+Completed in 72ms (View: 30, DB: 4) | 200 OK [http://localhost/products]
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-18 15:54:41) [GET]
+  [4;35;1mAreaProduct Load (2.0ms)[0m   [0mSELECT * FROM "area_products" [0m
+Rendering template within layouts/area_products
+Rendering area_products/index
+Completed in 67ms (View: 43, DB: 2) | 200 OK [http://localhost/area_products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-18 15:55:14) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (Missing template products/_form.erb in view path app/views) on line #6 of app/views/products/new.html.erb:
+3: <h1>New product</h1>
+4: 
+5: <div class="column-1">
+6:   <%= render :partial => 'form' %>
+7: </div>
+
+    app/views/products/new.html.erb:6
+    app/controllers/products_controller.rb:29:in `new'
+
+Rendered rescues/_trace (202.0ms)
+Rendered rescues/_request_and_response (13.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-18 15:55:50) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (Missing template products/_form.erb in view path app/views) on line #6 of app/views/products/new.html.erb:
+3: <h1>New product</h1>
+4: 
+5: <div class="column-1">
+6:   <%= render :partial => 'form' %>
+7: </div>
+
+    app/views/products/new.html.erb:6
+    app/controllers/products_controller.rb:29:in `new'
+
+Rendered rescues/_trace (322.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-18 15:56:34) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (Missing template products/_form.erb in view path app/views) on line #6 of app/views/products/new.html.erb:
+3: <h1>New product</h1>
+4: 
+5: <div class="column-1">
+6:   <%= render :partial => 'form' %>
+7: </div>
+
+    app/views/products/new.html.erb:6
+    app/controllers/products_controller.rb:29:in `new'
+
+Rendered rescues/_trace (351.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-18 15:56:52) [GET]
+Rendering template within layouts/products
+Rendering products/new
+ERROR: compiling _run_erb_app47views47products47_form46html46erb_locals_form_object RAISED compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/products/_form.html.erb:30: syntax error, unexpected kENSURE, expecting kEND
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/products/_form.html.erb:32: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47products47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ;  form_for(@product) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n<table>\n  <tr>\n    <td>"
+
+
+
+; @output_buffer.concat(( f.label :name ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( f.text_field :name ).to_s); @output_buffer.concat "</td>\n  </tr>\n  <tr>\n    <td>"
+
+
+; @output_buffer.concat(( f.label :code ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( f.text_field :code ).to_s); @output_buffer.concat "</td>\n  </tr>\n  <tr>\n    <td>"
+
+
+; @output_buffer.concat(( f.label :product_type_id ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( f.text_field :product_type_id ).to_s); @output_buffer.concat "</td>\n  </tr>\n  <tr>\n    <td>"
+
+
+; @output_buffer.concat(( f.label :first_production ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( f.date_select :first_production ).to_s); @output_buffer.concat "</td>\n  </tr>\n  <tr>\n    <td>"
+
+
+; @output_buffer.concat(( f.label :ceased_production ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( f.date_select :ceased_production ).to_s); @output_buffer.concat "</td>\n  </tr>\n  <tr>\n    <td></td>\n\t<td>"
+
+
+
+; @output_buffer.concat(( f.submit 'Update' ).to_s); @output_buffer.concat "</td>\n  </tr>  \n</table>"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/products/_form.html.erb:32:in `compile!'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:20:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:19:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:44:in `render_partial'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:184:in `render_partial'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:262:in `render'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/products/new.html.erb:6:in `_run_erb_app47views47products47new46html46erb'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:301:in `with_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:30:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/controllers/products_controller.rb:29:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Program Files/BitNami RubyStack/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/products/_form.html.erb:30: syntax error, unexpected kENSURE, expecting kEND
+C:/Users/User/BitNami RubyStack projects/empowercommunities/app/views/products/_form.html.erb:32: syntax error, unexpected $end, expecting kEND) on line #30 of app/views/products/_form.html.erb:
+27: 	<td><%= f.submit 'Update' %></td>
+28:   </tr>  
+29: </table>
+
+    app/views/products/_form.html.erb:32:in `compile!'
+    app/views/products/new.html.erb:6
+    app/controllers/products_controller.rb:29:in `new'
+
+Rendered rescues/_trace (220.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-18 15:57:41) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Rendered products/_form (1160.0ms)
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 1208ms (View: 1184, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-18 15:58:02) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Rendered products/_form (55.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 130ms (View: 88, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-18 15:59:23) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Rendered products/_form (31.0ms)
+Rendered _header (2.0ms)
+Rendered _footer (1.0ms)
+Completed in 75ms (View: 50, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-18 15:59:29) [GET]
+  [4;36;1mAreaProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "area_products" [0m
+Rendering template within layouts/area_products
+Rendering area_products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 51ms (View: 28, DB: 2) | 200 OK [http://localhost/area_products]
