@@ -14541,3 +14541,113 @@ Rendered locations/_form (88.0ms)
 Rendered _header (1.0ms)
 Rendered _footer (0.0ms)
 Completed in 300ms (View: 111, DB: 2) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-09-18 15:58:58) [GET]
+Rendering template within layouts/locations
+Rendering locations/new
+  [4;35;1mChannel Load (2.0ms)[0m   [0mSELECT * FROM "channels" ORDER BY name[0m
+  [4;36;1mState Load (2.0ms)[0m   [0;1mSELECT * FROM "states" ORDER BY name[0m
+Rendered locations/_form (109.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 159ms (View: 133, DB: 4) | 200 OK [http://localhost/locations/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-18 15:59:15) [GET]
+
+ActionController::RoutingError (No route matches "/product_type" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-18 15:59:24) [GET]
+
+ActionController::RoutingError (No route matches "/producttype" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-18 15:59:30) [GET]
+
+ActionController::RoutingError (No route matches "/product" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 15:59:45) [GET]
+  [4;35;1mVolunteer Load (2.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 46ms (View: 27, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2009-09-18 16:00:15) [GET]
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: product_types: SELECT * FROM "product_types" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: product_types: SELECT * FROM "product_types" ):
+  app/controllers/product_types_controller.rb:5:in `index'
+
+Rendered rescues/_trace (128.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20090814043645)
+Migrating to CreateLocations (20090911014430)
+Migrating to CreateChannels (20090911052823)
+Migrating to AddChannelToLocation (20090913012626)
+Migrating to CreateStates (20090918013130)
+Migrating to AddStatesToLocation (20090918033432)
+Migrating to RemoveStateFromLocation (20090918033911)
+Migrating to AddStateToLocation (20090918034206)
+Migrating to CreateProducts (20090918045338)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (45.0ms)[0m   [0mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "code" varchar(255), "product_type_id" integer, "first_production" date, "ceased_production" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090918045338')[0m
+Migrating to CreateAreaProducts (20090918051417)
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "area_products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer, "shape" varchar(255), "width" float, "length" float, "area" float, "perimeter" float, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090918051417')[0m
+Migrating to CreateProductTypes (20090918051730)
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TABLE "product_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "first_production" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090918051730')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("area_products")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("channels")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("locations")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("product_types")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("states")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("volunteers")[0m
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2009-09-18 16:01:15) [GET]
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 94ms (View: 37, DB: 2) | 200 OK [http://localhost/product_types]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-18 16:02:50) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 46ms (View: 30, DB: 2) | 200 OK [http://localhost/products]
