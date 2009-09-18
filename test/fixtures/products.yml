@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  code: 
+  product_type_id: 1
+  first_production: 2009-09-18
+  ceased_production: 2009-09-18
+
+two:
+  name: MyString
+  code: 
+  product_type_id: 1
+  first_production: 2009-09-18
+  ceased_production: 2009-09-18
