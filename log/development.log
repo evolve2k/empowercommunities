@@ -16754,3 +16754,220 @@ Rendering states/index
 Rendered _header (1.0ms)
 Rendered _footer (1.0ms)
 Completed in 73ms (View: 46, DB: 4) | 200 OK [http://localhost/states]
+
+
+Processing StatesController#show (for 127.0.0.1 at 2009-09-18 12:15:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mState Load (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendering template within layouts/states
+Rendering states/show
+Rendered _header (4.0ms)
+Rendered _footer (3.0ms)
+Completed in 72ms (View: 53, DB: 0) | 200 OK [http://localhost/states/1]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 12:15:07) [GET]
+  [4;36;1mState Load (2.0ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 53ms (View: 35, DB: 2) | 200 OK [http://localhost/states]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-18 12:15:18) [GET]
+  [4;35;1mChannel Load (2.0ms)[0m   [0mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 196ms (View: 60, DB: 2) | 200 OK [http://localhost/channels]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 12:15:22) [GET]
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 37ms (View: 20, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 12:15:26) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 29ms (View: 11, DB: 2) | 200 OK [http://localhost/locations]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 12:15:31) [GET]
+  [4;36;1mVolunteer Load (4.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 87ms (View: 58, DB: 4) | 200 OK [http://localhost/volunteers]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 12:15:47) [GET]
+  [4;35;1mState Load (3.0ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (0.0ms)
+Rendered _footer (0.0ms)
+Completed in 47ms (View: 27, DB: 3) | 200 OK [http://localhost/states]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-18 12:15:50) [GET]
+  [4;36;1mChannel Load (2.0ms)[0m   [0;1mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 37ms (View: 17, DB: 2) | 200 OK [http://localhost/channels]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 12:15:52) [GET]
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 36ms (View: 18, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 12:15:54) [GET]
+  [4;36;1mVolunteer Load (3.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 46ms (View: 27, DB: 3) | 200 OK [http://localhost/volunteers]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-18 12:15:57) [GET]
+  [4;35;1mChannel Load (2.0ms)[0m   [0mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 37ms (View: 19, DB: 2) | 200 OK [http://localhost/channels]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 12:17:28) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 30ms (View: 12, DB: 2) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-09-18 12:37:08) [GET]
+Rendering template within layouts/locations
+Rendering locations/new
+Rendered locations/_form (21.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 72ms (View: 50, DB: 0) | 200 OK [http://localhost/locations/new]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-18 12:40:31) [GET]
+  [4;35;1mChannel Load (3.0ms)[0m   [0mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 60ms (View: 26, DB: 3) | 200 OK [http://localhost/channels]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 12:40:35) [GET]
+  [4;36;1mState Load (7.0ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 115ms (View: 64, DB: 7) | 200 OK [http://localhost/states]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-18 12:40:38) [GET]
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 42ms (View: 21, DB: 1) | 200 OK [http://localhost/channels]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 12:40:41) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 33ms (View: 13, DB: 2) | 200 OK [http://localhost/locations]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 12:40:43) [GET]
+  [4;35;1mVolunteer Load (4.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 80ms (View: 47, DB: 4) | 200 OK [http://localhost/volunteers]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-18 12:40:46) [GET]
+  [4;36;1mChannel Load (3.0ms)[0m   [0;1mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (2.0ms)
+Rendered _footer (1.0ms)
+Completed in 65ms (View: 34, DB: 3) | 200 OK [http://localhost/channels]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 12:40:48) [GET]
+  [4;35;1mState Load (4.0ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 79ms (View: 46, DB: 4) | 200 OK [http://localhost/states]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 12:40:54) [GET]
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 28ms (View: 11, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 12:40:56) [GET]
+  [4;35;1mVolunteer Load (3.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 52ms (View: 31, DB: 3) | 200 OK [http://localhost/volunteers]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 12:41:02) [GET]
+  [4;36;1mState Load (3.0ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (2.0ms)
+Rendered _footer (1.0ms)
+Completed in 51ms (View: 30, DB: 3) | 200 OK [http://localhost/states]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 13:04:50) [GET]
+  [4;35;1mVolunteer Load (3.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 58ms (View: 35, DB: 3) | 200 OK [http://localhost/volunteers]
