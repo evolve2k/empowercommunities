@@ -11,12 +11,11 @@
 
 <% @products.each do |product| %>
   <tr>
-    <td><%=h product.name %></td>
+    <td><%= link to product, product %></td>
     <td><%=h product.code %></td>
     <td><%=h product.product_type_id %></td>
     <td><%=h product.first_production %></td>
     <td><%=h product.ceased_production %></td>
-    <td><%= link_to 'Show', product %></td>
     <td><%= link_to 'Edit', edit_product_path(product) %></td>
     <td><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
