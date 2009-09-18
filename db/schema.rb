@@ -9,7 +9,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20090918034206) do
+=======
+ActiveRecord::Schema.define(:version => 20090918051730) do
+
+  create_table "area_products", :force => true do |t|
+    t.integer  "product_id"
+    t.string   "shape"
+    t.float    "width"
+    t.float    "length"
+    t.float    "area"
+    t.float    "perimeter"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+>>>>>>> evolve2k/master
 
   create_table "channels", :force => true do |t|
     t.string   "name"
@@ -33,6 +48,23 @@ ActiveRecord::Schema.define(:version => 20090918034206) do
     t.datetime "updated_at"
     t.integer  "channel_id"
     t.integer  "state_id"
+  end
+
+  create_table "product_types", :force => true do |t|
+    t.string   "name"
+    t.date     "first_production"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "products", :force => true do |t|
+    t.string   "name"
+    t.string   "code"
+    t.integer  "product_type_id"
+    t.date     "first_production"
+    t.date     "ceased_production"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "states", :force => true do |t|

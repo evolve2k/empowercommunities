@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  product_id: 1
+  shape: MyString
+  width: 1.5
+  length: 1.5
+  area: 1.5
+  perimeter: 1.5
+
+two:
+  product_id: 1
+  shape: MyString
+  width: 1.5
+  length: 1.5
+  area: 1.5
+  perimeter: 1.5
