@@ -17336,3 +17336,19 @@ Rendering area_products/index
 Rendered _header (2.0ms)
 Rendered _footer (0.0ms)
 Completed in 51ms (View: 28, DB: 2) | 200 OK [http://localhost/area_products]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-18 16:25:04) [GET]
+
+ActionController::RoutingError (No route matches "/products" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-18 16:25:14) [GET]
+
+ActionController::RoutingError (No route matches "/states" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
