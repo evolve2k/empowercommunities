@@ -14651,3 +14651,167 @@ Processing ProductsController#index (for 127.0.0.1 at 2009-09-18 16:02:50) [GET]
 Rendering template within layouts/products
 Rendering products/index
 Completed in 46ms (View: 30, DB: 2) | 200 OK [http://localhost/products]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 17:40:28) [GET]
+  [4;35;1mVolunteer Load (3.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (20.0ms)
+Rendered _footer (0.0ms)
+Completed in 119ms (View: 99, DB: 3) | 200 OK [http://localhost/volunteers]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2009-09-18 17:40:32) [GET]
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 38ms (View: 20, DB: 1) | 200 OK [http://localhost/product_types]
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-18 17:40:34) [GET]
+  [4;35;1mAreaProduct Load (2.0ms)[0m   [0mSELECT * FROM "area_products" [0m
+Rendering template within layouts/area_products
+Rendering area_products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 107ms (View: 90, DB: 2) | 200 OK [http://localhost/area_products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-18 17:40:36) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 92ms (View: 75, DB: 2) | 200 OK [http://localhost/products]
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-18 17:40:40) [GET]
+  [4;35;1mAreaProduct Load (1.0ms)[0m   [0mSELECT * FROM "area_products" [0m
+Rendering template within layouts/area_products
+Rendering area_products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 28ms (View: 12, DB: 1) | 200 OK [http://localhost/area_products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-18 17:40:46) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 27ms (View: 11, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-18 17:40:53) [GET]
+  [4;35;1mAreaProduct Load (1.0ms)[0m   [0mSELECT * FROM "area_products" [0m
+Rendering template within layouts/area_products
+Rendering area_products/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 27ms (View: 12, DB: 1) | 200 OK [http://localhost/area_products]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2009-09-18 17:41:17) [GET]
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 27ms (View: 11, DB: 1) | 200 OK [http://localhost/product_types]
+
+
+Processing ProductTypesController#new (for 127.0.0.1 at 2009-09-18 17:41:23) [GET]
+Rendering template within layouts/product_types
+Rendering product_types/new
+
+ActionView::TemplateError (product_type_url failed to generate from {:action=>"show", :controller=>"product_types"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["product_types", :id] - are they all satisfied?) on line #1 of app/views/product_types/new.html.erb:
+1: <p class="content-nav"><%= link_to 'Back', product_type_path %></p>
+2: 
+3: <h1>New Product Type</h1>
+4: 
+
+    (eval):16:in `product_type_path'
+    app/views/product_types/new.html.erb:1
+    app/controllers/product_types_controller.rb:29:in `new'
+
+Rendered rescues/_trace (270.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductTypesController#new (for 127.0.0.1 at 2009-09-18 17:43:59) [GET]
+Rendering template within layouts/product_types
+Rendering product_types/new
+
+ActionView::TemplateError (Missing template product_types/_form.erb in view path app/views) on line #6 of app/views/product_types/new.html.erb:
+3: <h1>New Product Type</h1>
+4: 
+5: <div class="column-1">
+6:   <%= render :partial => 'form' %>
+7: </div>
+
+    app/views/product_types/new.html.erb:6
+    app/controllers/product_types_controller.rb:29:in `new'
+
+Rendered rescues/_trace (373.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductTypesController#new (for 127.0.0.1 at 2009-09-18 17:44:59) [GET]
+Rendering template within layouts/product_types
+Rendering product_types/new
+Rendered product_types/_form (943.0ms)
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 985ms (View: 969, DB: 0) | 200 OK [http://localhost/product_types/new]
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-18 17:45:05) [GET]
+  [4;35;1mAreaProduct Load (2.0ms)[0m   [0mSELECT * FROM "area_products" [0m
+Rendering template within layouts/area_products
+Rendering area_products/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 28ms (View: 10, DB: 2) | 200 OK [http://localhost/area_products]
+
+
+Processing AreaProductsController#new (for 127.0.0.1 at 2009-09-18 17:45:08) [GET]
+Rendering template within layouts/area_products
+Rendering area_products/new
+Rendered _header (2.0ms)
+Rendered _footer (1.0ms)
+Completed in 157ms (View: 140, DB: 0) | 200 OK [http://localhost/area_products/new]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-18 17:45:12) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (2.0ms)
+Rendered _footer (1.0ms)
+Completed in 27ms (View: 11, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-18 17:45:14) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (Missing template products/_form.erb in view path app/views) on line #6 of app/views/products/new.html.erb:
+3: <h1>New product</h1>
+4: 
+5: <div class="column-1">
+6:   <%= render :partial => 'form' %>
+7: </div>
+
+    app/views/products/new.html.erb:6
+    app/controllers/products_controller.rb:29:in `new'
+
+Rendered rescues/_trace (334.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
