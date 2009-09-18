@@ -1,0 +1,6 @@
+<p class="content-nav"><%= link_to 'Show', @state %> | <%= link_to 'Destroy', @state, :confirm => 'Are you sure?', :method => :delete %> | <%= link_to 'Back', states_path %> </p>
+<h1>Edit: <%= @state.name %></h1>
+
+<div class="column-1">
+  <%= render :partial => 'form' %>
+</div>
