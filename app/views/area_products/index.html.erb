@@ -1,0 +1,30 @@
+<h1>Listing area_products</h1>
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Shape</th>
+    <th>Width</th>
+    <th>Length</th>
+    <th>Area</th>
+    <th>Perimeter</th>
+  </tr>
+
+<% @area_products.each do |area_product| %>
+  <tr>
+    <td><%=h area_product.product_id %></td>
+    <td><%=h area_product.shape %></td>
+    <td><%=h area_product.width %></td>
+    <td><%=h area_product.length %></td>
+    <td><%=h area_product.area %></td>
+    <td><%=h area_product.perimeter %></td>
+    <td><%= link_to 'Show', area_product %></td>
+    <td><%= link_to 'Edit', edit_area_product_path(area_product) %></td>
+    <td><%= link_to 'Destroy', area_product, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New area_product', new_area_product_path %>

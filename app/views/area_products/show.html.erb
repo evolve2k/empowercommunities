@@ -1,0 +1,33 @@
+<p>
+  <b>Product:</b>
+  <%=h @area_product.product_id %>
+</p>
+
+<p>
+  <b>Shape:</b>
+  <%=h @area_product.shape %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%=h @area_product.width %>
+</p>
+
+<p>
+  <b>Length:</b>
+  <%=h @area_product.length %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%=h @area_product.area %>
+</p>
+
+<p>
+  <b>Perimeter:</b>
+  <%=h @area_product.perimeter %>
+</p>
+
+
+<%= link_to 'Edit', edit_area_product_path(@area_product) %> |
+<%= link_to 'Back', area_products_path %>

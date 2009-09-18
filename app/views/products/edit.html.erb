@@ -1,0 +1,32 @@
+<h1>Editing product</h1>
+
+<% form_for(@product) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </p>
+  <p>
+    <%= f.label :product_type_id %><br />
+    <%= f.text_field :product_type_id %>
+  </p>
+  <p>
+    <%= f.label :first_production %><br />
+    <%= f.date_select :first_production %>
+  </p>
+  <p>
+    <%= f.label :ceased_production %><br />
+    <%= f.date_select :ceased_production %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @product %> |
+<%= link_to 'Back', products_path %>
