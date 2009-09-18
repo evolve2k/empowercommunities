@@ -21,8 +21,9 @@
     <td><%= f.text_field :suburb %></td>
   </tr>
   <tr>
-    <td><%= f.label :state %></td>
-    <td><%= f.text_field :state %></td>
+    <td><%= f.label :state_id %></td>
+    <td><%= f.select :state_id, State.find(:all , :order => "name").collect {|s|	
+		[(s.name), s.id]} %></td>
   </tr>
   <tr>
     <td><%= f.label :post_code %></td>
