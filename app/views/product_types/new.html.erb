@@ -1,0 +1,19 @@
+<h1>New product_type</h1>
+
+<% form_for(@product_type) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :first_production %><br />
+    <%= f.date_select :first_production %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', product_types_path %>
