@@ -3,5 +3,65 @@
 <h1>New product</h1>
 
 <div class="column-1">
-  <%= render :partial => 'form' %>
+
+<% form_for(@product) do |f| %>
+  <%= f.error_messages %>
+
+<table>
+  <tr>
+    <td><%= f.label :name %></td>
+    <td><%= f.text_field :name %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :code %></td>
+    <td><%= f.text_field :code %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :product_type_id %></td>
+    <td><%= f.text_field :product_type_id %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :first_production %></td>
+    <td><%= f.date_select :first_production %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :ceased_production %></td>
+    <td><%= f.date_select :ceased_production %></td>
+  </tr>
+  
+  <% f.fields_for :area_products do |ap| %>
+	  <td>
+		<tr><%= ap.label :product_id %></tr>
+		<tr><%= ap.text_field :product_id %></tr>
+	  </td>
+	  <td>
+		<tr><%= ap.label :shape %></tr>
+		<tr><%= ap.text_field :shape %></tr>
+	  </td>
+	  <td>
+		<tr><%= ap.label :width %></tr>
+		<tr><%= f.text_field :width %></tr>
+	  </td>
+	  <td>
+		<tr><%= ap.label :length %></tr>
+		<tr><%= ap.text_field :length %></tr>
+	  </td>
+	  <td>
+		<tr><%= ap.label :area %></tr>
+		<tr><%= ap.text_field :area %></tr>
+	  </td>
+	  <td>
+		<tr><%= ap.label :perimeter %></tr>
+		<tr><%= ap.text_field :perimeter %></tr>
+	  </td>
+  <% end %>
+  
+  <tr>
+    <td></td>
+	<td><%= f.submit 'Submit' %></td>
+  </tr>  
+</table>
+
+<% end %>
+
 </div>

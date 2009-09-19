@@ -17352,3 +17352,509 @@ ActionController::RoutingError (No route matches "/states" with {:method=>:get})
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-19 15:28:20) [GET]
+  [4;36;1mVolunteer Load (3.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (6.0ms)
+Rendered _footer (2.0ms)
+Completed in 4817ms (View: 4795, DB: 3) | 200 OK [http://localhost/volunteers]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2009-09-19 15:28:30) [GET]
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+Completed in 52ms (View: 33, DB: 1) | 200 OK [http://localhost/product_types]
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-19 15:28:37) [GET]
+  [4;36;1mAreaProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "area_products" [0m
+Rendering template within layouts/area_products
+Rendering area_products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 63ms (View: 45, DB: 2) | 200 OK [http://localhost/area_products]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2009-09-19 15:28:41) [GET]
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+Completed in 23ms (View: 6, DB: 2) | 200 OK [http://localhost/product_types]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-19 15:28:46) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 60ms (View: 42, DB: 2) | 200 OK [http://localhost/products]
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-19 15:28:48) [GET]
+  [4;35;1mAreaProduct Load (2.0ms)[0m   [0mSELECT * FROM "area_products" [0m
+Rendering template within layouts/area_products
+Rendering area_products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 14, DB: 2) | 200 OK [http://localhost/area_products]
+
+
+Processing AreaProductsController#new (for 127.0.0.1 at 2009-09-19 15:28:53) [GET]
+Rendering template within layouts/area_products
+Rendering area_products/new
+Rendered _header (2.0ms)
+Rendered _footer (1.0ms)
+Completed in 49ms (View: 30, DB: 0) | 200 OK [http://localhost/area_products/new]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-19 15:29:00) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 30ms (View: 13, DB: 2) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 15:29:02) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Rendered products/_form (635.0ms)
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 684ms (View: 662, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-19 15:29:08) [GET]
+  [4;35;1mAreaProduct Load (2.0ms)[0m   [0mSELECT * FROM "area_products" [0m
+Rendering template within layouts/area_products
+Rendering area_products/index
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 30ms (View: 13, DB: 2) | 200 OK [http://localhost/area_products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-19 15:29:15) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 30ms (View: 12, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-19 15:29:29) [GET]
+  [4;35;1mAreaProduct Load (2.0ms)[0m   [0mSELECT * FROM "area_products" [0m
+Rendering template within layouts/area_products
+Rendering area_products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 13, DB: 2) | 200 OK [http://localhost/area_products]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2009-09-19 15:29:31) [GET]
+  [4;36;1mProductType Load (2.0ms)[0m   [0;1mSELECT * FROM "product_types" [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+Completed in 24ms (View: 6, DB: 2) | 200 OK [http://localhost/product_types]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-19 15:29:35) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 34ms (View: 14, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-19 16:10:35) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 174ms (View: 13, DB: 2) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:10:38) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (undefined local variable or method `products' for #<ActionView::Base:0x5741c10>) on line #26 of app/views/products/_form.html.erb:
+23:     <td><%= f.date_select :ceased_production %></td>
+24:   </tr>
+25:   
+26:   <% f.fields_for :area-products do |ap| %>
+27: 	  <td>
+28: 		<tr><%= ap.label :product_id %></tr>
+29: 		<tr><%= ap.text_field :product_id %></tr>
+
+    app/views/products/_form.html.erb:26
+    app/views/products/_form.html.erb:1
+    app/views/products/new.html.erb:6
+    app/controllers/products_controller.rb:29:in `new'
+
+Rendered rescues/_trace (295.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:11:35) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (uninitialized constant Product::AreaProducts) on line #26 of app/views/products/_form.html.erb:
+23:     <td><%= f.date_select :ceased_production %></td>
+24:   </tr>
+25:   
+26:   <% f.fields_for :area_products do |ap| %>
+27: 	  <td>
+28: 		<tr><%= ap.label :product_id %></tr>
+29: 		<tr><%= ap.text_field :product_id %></tr>
+
+    app/views/products/_form.html.erb:26
+    app/views/products/_form.html.erb:1
+    app/views/products/new.html.erb:6
+    app/controllers/products_controller.rb:29:in `new'
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:22:17) [GET]
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `reject_if' for #<Class:0x55852c8>):
+  app/models/product.rb:3
+  app/controllers/products_controller.rb:27:in `new'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:22:44) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (undefined method `product_areas' for #<Product:0x5707344>) on line #1 of app/views/products/_form.html.erb:
+1: <% form_for  setup_product(@product) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4: <table>
+
+    app/helpers/application_helper.rb:22:in `setup_product'
+    app/helpers/application_helper.rb:21:in `setup_product'
+    app/views/products/_form.html.erb:1
+    app/views/products/new.html.erb:6
+    app/controllers/products_controller.rb:29:in `new'
+
+Rendered rescues/_trace (297.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:24:28) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (undefined method `product_areas' for #<Product:0x57dc044>) on line #1 of app/views/products/_form.html.erb:
+1: <% form_for  setup_product(@product) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4: <table>
+
+    app/helpers/application_helper.rb:22:in `setup_product'
+    app/helpers/application_helper.rb:21:in `setup_product'
+    app/views/products/_form.html.erb:1
+    app/views/products/new.html.erb:6
+    app/controllers/products_controller.rb:29:in `new'
+
+Rendered rescues/_trace (180.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:28:15) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (uninitialized constant Product::AreaProducts) on line #1 of app/views/products/_form.html.erb:
+1: <% form_for setup_product(@product) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4: <table>
+
+    app/helpers/application_helper.rb:22:in `setup_product'
+    app/helpers/application_helper.rb:21:in `setup_product'
+    app/views/products/_form.html.erb:1
+    app/views/products/new.html.erb:6
+    app/controllers/products_controller.rb:29:in `new'
+
+Rendered rescues/_trace (311.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:30:23) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (uninitialized constant Product::AreaProducts) on line #1 of app/views/products/_form.html.erb:
+1: <% form_for setup_product(@product) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4: <table>
+
+    app/helpers/application_helper.rb:22:in `setup_product'
+    app/helpers/application_helper.rb:21:in `setup_product'
+    app/views/products/_form.html.erb:1
+    app/views/products/new.html.erb:6
+    app/controllers/products_controller.rb:29:in `new'
+
+Rendered rescues/_trace (320.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:31:07) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (undefined method `area_product' for #<Product:0x5755e7c>) on line #1 of app/views/products/_form.html.erb:
+1: <% form_for setup_product(@product) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4: <table>
+
+    app/helpers/application_helper.rb:22:in `setup_product'
+    app/helpers/application_helper.rb:21:in `setup_product'
+    app/views/products/_form.html.erb:1
+    app/views/products/new.html.erb:6
+    app/controllers/products_controller.rb:29:in `new'
+
+Rendered rescues/_trace (187.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:31:31) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (undefined method `area_product' for #<Product:0x556ce80>) on line #1 of app/views/products/_form.html.erb:
+1: <% form_for setup_product(@product) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4: <table>
+
+    app/helpers/application_helper.rb:22:in `setup_product'
+    app/helpers/application_helper.rb:21:in `setup_product'
+    app/views/products/_form.html.erb:1
+    app/views/products/new.html.erb:6
+    app/controllers/products_controller.rb:29:in `new'
+
+Rendered rescues/_trace (178.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:50:01) [GET]
+
+NoMethodError (undefined method `area_product' for #<Product:0x563c0cc>):
+  app/controllers/products_controller.rb:28:in `new'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:50:52) [GET]
+
+NoMethodError (undefined method `children' for #<Product:0x57fa9cc>):
+  app/controllers/products_controller.rb:28:in `new'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:52:07) [GET]
+
+ArgumentError (No association found for name `area_products'. Has it been defined yet?):
+  app/models/product.rb:3
+  app/controllers/products_controller.rb:27:in `new'
+
+Rendered rescues/_trace (149.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:52:44) [GET]
+
+ArgumentError (No association found for name `area_products'. Has it been defined yet?):
+  app/models/product.rb:3
+  app/controllers/products_controller.rb:27:in `new'
+
+Rendered rescues/_trace (252.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:54:32) [GET]
+
+ArgumentError (No association found for name `area_products'. Has it been defined yet?):
+  app/models/product.rb:3
+  app/controllers/products_controller.rb:27:in `new'
+
+Rendered rescues/_trace (124.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 16:55:05) [GET]
+
+NoMethodError (undefined method `area_products' for #<Product:0x55f6c0c>):
+  app/controllers/products_controller.rb:28:in `new'
+
+Rendered rescues/_trace (237.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-19 16:59:07) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+Rendered _header (3.0ms)
+Rendered _footer (0.0ms)
+Completed in 104ms (View: 73, DB: 2) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-09-19 16:59:10) [GET]
+Rendering template within layouts/locations
+Rendering locations/new
+Rendered locations/_form (21.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 69ms (View: 48, DB: 0) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#create (for 127.0.0.1 at 2009-09-19 16:59:31) [POST]
+  Parameters: {"location"=>{"position"=>"", "address"=>"", "name"=>"Rundle Street Markets", "contact_number"=>"", "country"=>"", "notes"=>"", "post_code"=>"", "channel_id"=>"", "suburb"=>"", "website"=>"", "primary_contact"=>"", "state"=>""}, "commit"=>"Update", "authenticity_token"=>"MSeUo0957uG5JOij1nLRLuQmz1vf6aifP2GzF9Pclxw="}
+  [4;36;1mLocation Create (2.0ms)[0m   [0;1mINSERT INTO "locations" ("name", "address", "position", "contact_number", "created_at", "country", "post_code", "notes", "updated_at", "channel_id", "suburb", "primary_contact", "website", "state") VALUES('Rundle Street Markets', '', '', '', '2009-09-19 07:29:31', '', '', '', '2009-09-19 07:29:31', NULL, '', '', '', '')[0m
+Redirected to http://localhost:3000/locations/1
+Completed in 215ms (DB: 2) | 302 Found [http://localhost/locations]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-19 16:59:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 52ms (View: 28, DB: 1) | 200 OK [http://localhost/locations/1]
+
+
+Processing LocationsController#edit (for 127.0.0.1 at 2009-09-19 16:59:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/edit
+Rendered locations/_form (8.0ms)
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 62ms (View: 38, DB: 1) | 200 OK [http://localhost/locations/1/edit]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-19 17:01:30) [GET]
+  [4;35;1mProduct Load (2.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 32ms (View: 13, DB: 2) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 17:01:33) [GET]
+
+SyntaxError (C:/Users/User/BitNami RubyStack projects/empowercommunities/app/models/area_product.rb:2: syntax error, unexpected ':', expecting kEND
+  :belongs_to :product
+               ^):
+  app/controllers/products_controller.rb:28:in `new'
+
+Rendered rescues/_trace (152.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-19 17:01:56) [GET]
+
+SyntaxError (C:/Users/User/BitNami RubyStack projects/empowercommunities/app/models/area_product.rb:2: syntax error, unexpected tIDENTIFIER, expecting kEND):
+  app/controllers/products_controller.rb:28:in `new'
+
+Rendered rescues/_trace (265.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-19 17:05:03) [GET]
+
+SyntaxError (C:/Users/User/BitNami RubyStack projects/empowercommunities/app/models/area_product.rb:2: syntax error, unexpected tIDENTIFIER, expecting kEND):
+  app/controllers/area_products_controller.rb:5:in `index'
+
+Rendered rescues/_trace (126.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-19 17:05:19) [GET]
+  [4;36;1mAreaProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "area_products" [0m
+Rendering template within layouts/area_products
+Rendering area_products/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 31ms (View: 13, DB: 1) | 200 OK [http://localhost/area_products]
+
+
+Processing AreaProductsController#new (for 127.0.0.1 at 2009-09-19 17:05:24) [GET]
+Rendering template within layouts/area_products
+Rendering area_products/new
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 40ms (View: 21, DB: 0) | 200 OK [http://localhost/area_products/new]
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-19 17:07:07) [GET]
+
+SyntaxError (C:/Users/User/BitNami RubyStack projects/empowercommunities/app/models/area_product.rb:2: syntax error, unexpected tIDENTIFIER, expecting kEND):
+  app/controllers/area_products_controller.rb:5:in `index'
+
+Rendered rescues/_trace (256.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-19 17:07:51) [GET]
+
+SyntaxError (C:/Users/User/BitNami RubyStack projects/empowercommunities/app/models/area_product.rb:2: syntax error, unexpected tIDENTIFIER, expecting kEND):
+  app/controllers/area_products_controller.rb:5:in `index'
+
+Rendered rescues/_trace (127.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
