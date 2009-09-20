@@ -15310,3 +15310,457 @@ Rendered locations/_form (45.0ms)
 Rendered _header (2.0ms)
 Rendered _footer (0.0ms)
 Completed in 91ms (View: 61, DB: 2) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-09-18 18:53:44) [GET]
+Rendering template within layouts/locations
+Rendering locations/new
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" ORDER BY name[0m
+  [4;36;1mState Load (1.0ms)[0m   [0;1mSELECT * FROM "states" ORDER BY name[0m
+Rendered locations/_form (63.0ms)
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 102ms (View: 79, DB: 2) | 200 OK [http://localhost/locations/new]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 18:53:49) [GET]
+  [4;35;1mState Load (2.0ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 37ms (View: 20, DB: 2) | 200 OK [http://localhost/states]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-18 18:53:51) [GET]
+  [4;36;1mChannel Load (2.0ms)[0m   [0;1mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 42ms (View: 23, DB: 2) | 200 OK [http://localhost/channels]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 19:16:24) [GET]
+  [4;35;1mLocation Load (98.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.state.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (1239.0ms)
+Rendered rescues/_request_and_response (48.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 19:16:27) [GET]
+  [4;35;1mLocation Load (3.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.state.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (446.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 19:16:59) [GET]
+  [4;35;1mState Load (2.0ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 205ms (View: 109, DB: 2) | 200 OK [http://localhost/states]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 19:17:04) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.state.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (1314.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20090814043645)
+Migrating to CreateLocations (20090911014430)
+Migrating to CreateChannels (20090911052823)
+Migrating to AddChannelToLocation (20090913012626)
+Migrating to CreateStates (20090918013130)
+Migrating to AddStatesToLocation (20090918033432)
+Migrating to RemoveStateFromLocation (20090918033911)
+Migrating to AddStateToLocation (20090918034206)
+Migrating to CreateProducts (20090918045338)
+Migrating to CreateAreaProducts (20090918051417)
+Migrating to CreateProductTypes (20090918051730)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("area_products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("channels")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("locations")[0m
+  [4;35;1mSQL (33.0ms)[0m   [0mPRAGMA index_list("product_types")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("states")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("volunteers")[0m
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 19:18:39) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.state.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (394.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 19:21:07) [GET]
+  [4;36;1mLocation Load (3.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.state.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (438.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 19:22:18) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.state.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (870.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20090814043645)
+Migrating to CreateLocations (20090911014430)
+Migrating to CreateChannels (20090911052823)
+Migrating to AddChannelToLocation (20090913012626)
+Migrating to CreateStates (20090918013130)
+Migrating to AddStatesToLocation (20090918033432)
+Migrating to RemoveStateFromLocation (20090918033911)
+Migrating to AddStateToLocation (20090918034206)
+Migrating to CreateProducts (20090918045338)
+Migrating to CreateAreaProducts (20090918051417)
+Migrating to CreateProductTypes (20090918051730)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("area_products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("channels")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("locations")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("product_types")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("states")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("volunteers")[0m
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 19:26:44) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.state.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (377.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 19:27:04) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `states' for #<Location:0x5dd6ea4>) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.states.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (276.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 19:27:54) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.state.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (857.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 19:28:12) [GET]
+  [4;36;1mVolunteer Load (24.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 75ms (View: 34, DB: 24) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2009-09-18 19:28:16) [GET]
+Rendering template within layouts/volunteers
+Rendering volunteers/new
+Rendered volunteers/_form (252.0ms)
+Rendered _header (20.0ms)
+Rendered _footer (1.0ms)
+Completed in 365ms (View: 300, DB: 0) | 200 OK [http://localhost/volunteers/new]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 19:28:21) [GET]
+  [4;35;1mVolunteer Load (5.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 91ms (View: 70, DB: 5) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#show (for 127.0.0.1 at 2009-09-18 19:28:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" WHERE ("volunteers"."id" = 1) [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 154ms (View: 110, DB: 2) | 200 OK [http://localhost/volunteers/1]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-18 19:28:32) [GET]
+  [4;35;1mVolunteer Load (4.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 198ms (View: 121, DB: 4) | 200 OK [http://localhost/volunteers]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-18 19:28:35) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.state.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (438.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-18 19:28:42) [GET]
+  [4;36;1mChannel Load (2.0ms)[0m   [0;1mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (2.0ms)
+Rendered _footer (1.0ms)
+Completed in 116ms (View: 96, DB: 2) | 200 OK [http://localhost/channels]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-18 19:28:44) [GET]
+  [4;35;1mState Load (2.0ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (3.0ms)
+Rendered _footer (1.0ms)
+Completed in 101ms (View: 22, DB: 2) | 200 OK [http://localhost/states]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-18 19:28:47) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 113ms (View: 94, DB: 2) | 200 OK [http://localhost/products]
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-18 19:28:50) [GET]
+  [4;35;1mAreaProduct Load (1.0ms)[0m   [0mSELECT * FROM "area_products" [0m
+Rendering template within layouts/area_products
+Rendering area_products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 83ms (View: 39, DB: 1) | 200 OK [http://localhost/area_products]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2009-09-18 19:28:54) [GET]
+  [4;36;1mProductType Load (2.0ms)[0m   [0;1mSELECT * FROM "product_types" [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 278ms (View: 260, DB: 2) | 200 OK [http://localhost/product_types]
