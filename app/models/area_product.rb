@@ -1,3 +1,3 @@
 class AreaProduct < ActiveRecord::Base
-  :has_one product
+  has_one :product
 end
