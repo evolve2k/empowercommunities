@@ -19,7 +19,7 @@ module ApplicationHelper
 
   def setup_product(product)
     returning(product) do |p|
-	  p.area_products.build if p.area_product.empty?
+	  p.Area_Products.build if p.Area_Products.empty?
 	end
   end
 end

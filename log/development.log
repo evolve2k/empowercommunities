@@ -18710,3 +18710,315 @@ Rendering products/new
 Rendered _header (2.0ms)
 Rendered _footer (0.0ms)
 Completed in 94ms (View: 60, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-20 13:46:55) [GET]
+  [4;36;1mVolunteer Load (5.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (8.0ms)
+Rendered _footer (4.0ms)
+Completed in 7002ms (View: 6971, DB: 5) | 200 OK [http://localhost/volunteers]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-20 13:47:26) [GET]
+  [4;35;1mProduct Load (3.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 213ms (View: 62, DB: 3) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-20 13:47:29) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Rendered _header (2.0ms)
+Rendered _footer (1.0ms)
+Completed in 961ms (View: 826, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-20 13:49:05) [GET]
+
+NoMethodError (undefined method `area_product' for #<Product:0x56692fc>):
+  app/controllers/products_controller.rb:28:in `new'
+
+Rendered rescues/_trace (161.0ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-20 13:49:12) [GET]
+
+NoMethodError (undefined method `area_product' for #<Product:0x584a1ac>):
+  app/controllers/products_controller.rb:28:in `new'
+
+Rendered rescues/_trace (307.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-20 13:49:24) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 100ms (View: 67, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-09-20 13:49:32) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"B1BcMuksUYooovW4Zp7ZWKEcECxCKMVuF6pWeMPEY+k=", "product"=>{"first_production(2i)"=>"9", "name"=>"Expensive Rug", "first_production(3i)"=>"20", "area_products"=>{"product_id"=>"", "shape"=>"", "area"=>"", "length"=>"", "perimeter"=>""}, "code"=>"", "ceased_production(1i)"=>"2009", "ceased_production(2i)"=>"9", "ceased_production(3i)"=>"20", "product_type_id"=>"", "first_production(1i)"=>"2009"}}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: area_products):
+  app/controllers/products_controller.rb:44:in `new'
+  app/controllers/products_controller.rb:44:in `create'
+
+Rendered rescues/_trace (162.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-09-20 13:50:38) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"B1BcMuksUYooovW4Zp7ZWKEcECxCKMVuF6pWeMPEY+k=", "product"=>{"first_production(2i)"=>"9", "name"=>"Expensive Rug", "first_production(3i)"=>"20", "area_products"=>{"product_id"=>"", "shape"=>"", "area"=>"", "length"=>"1.2", "perimeter"=>""}, "code"=>"", "ceased_production(1i)"=>"2009", "ceased_production(2i)"=>"9", "ceased_production(3i)"=>"20", "product_type_id"=>"", "first_production(1i)"=>"2009"}}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: area_products):
+  app/controllers/products_controller.rb:44:in `new'
+  app/controllers/products_controller.rb:44:in `create'
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-09-20 13:50:52) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"B1BcMuksUYooovW4Zp7ZWKEcECxCKMVuF6pWeMPEY+k=", "product"=>{"first_production(2i)"=>"9", "name"=>"Expensive Rug", "first_production(3i)"=>"20", "area_products"=>{"product_id"=>"", "shape"=>"", "area"=>"", "length"=>"1.2", "perimeter"=>""}, "code"=>"", "ceased_production(1i)"=>"2009", "ceased_production(2i)"=>"9", "ceased_production(3i)"=>"20", "product_type_id"=>"", "first_production(1i)"=>"2009"}}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: area_products):
+  app/controllers/products_controller.rb:44:in `new'
+  app/controllers/products_controller.rb:44:in `create'
+
+Rendered rescues/_trace (491.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-09-20 13:54:28) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"B1BcMuksUYooovW4Zp7ZWKEcECxCKMVuF6pWeMPEY+k=", "product"=>{"first_production(2i)"=>"9", "name"=>"Expensive Rug", "first_production(3i)"=>"20", "area_products"=>{"product_id"=>"", "shape"=>"", "area"=>"", "length"=>"1.2", "perimeter"=>""}, "code"=>"", "ceased_production(1i)"=>"2009", "ceased_production(2i)"=>"9", "ceased_production(3i)"=>"20", "product_type_id"=>"", "first_production(1i)"=>"2009"}}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: area_products):
+  app/controllers/products_controller.rb:44:in `new'
+  app/controllers/products_controller.rb:44:in `create'
+
+Rendered rescues/_trace (161.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-09-20 13:59:36) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"B1BcMuksUYooovW4Zp7ZWKEcECxCKMVuF6pWeMPEY+k=", "product"=>{"first_production(2i)"=>"9", "name"=>"Expensive Rug", "first_production(3i)"=>"20", "area_products"=>{"product_id"=>"", "shape"=>"", "area"=>"", "length"=>"1.2", "perimeter"=>""}, "code"=>"", "ceased_production(1i)"=>"2009", "ceased_production(2i)"=>"9", "ceased_production(3i)"=>"20", "product_type_id"=>"", "first_production(1i)"=>"2009"}}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: area_products):
+  app/controllers/products_controller.rb:44:in `new'
+  app/controllers/products_controller.rb:44:in `create'
+
+Rendered rescues/_trace (166.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-09-20 14:00:25) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"B1BcMuksUYooovW4Zp7ZWKEcECxCKMVuF6pWeMPEY+k=", "product"=>{"first_production(2i)"=>"9", "name"=>"Expensive Rug", "first_production(3i)"=>"20", "area_products"=>{"product_id"=>"", "shape"=>"", "area"=>"", "length"=>"1.2", "perimeter"=>""}, "code"=>"", "ceased_production(1i)"=>"2009", "ceased_production(2i)"=>"9", "ceased_production(3i)"=>"20", "product_type_id"=>"", "first_production(1i)"=>"2009"}}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: area_products):
+  app/controllers/products_controller.rb:44:in `new'
+  app/controllers/products_controller.rb:44:in `create'
+
+Rendered rescues/_trace (160.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-09-20 14:00:36) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"B1BcMuksUYooovW4Zp7ZWKEcECxCKMVuF6pWeMPEY+k=", "product"=>{"first_production(2i)"=>"9", "name"=>"Expensive Rug", "first_production(3i)"=>"20", "area_products"=>{"product_id"=>"", "shape"=>"", "area"=>"", "length"=>"1.2", "perimeter"=>""}, "code"=>"", "ceased_production(1i)"=>"2009", "ceased_production(2i)"=>"9", "ceased_production(3i)"=>"20", "product_type_id"=>"", "first_production(1i)"=>"2009"}}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: area_products):
+  app/controllers/products_controller.rb:44:in `new'
+  app/controllers/products_controller.rb:44:in `create'
+
+Rendered rescues/_trace (162.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-20 14:04:16) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 46ms (View: 17, DB: 2) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-20 14:04:19) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (undefined method `area_products' for #<Product:0x59280ec>) on line #7 of app/views/products/new.html.erb:
+4: 
+5: <div class="column-1">
+6: 
+7: <% form_for setup_product(@product) do |f| %>
+8:   <%= f.error_messages %>
+9: 
+10: <table>
+
+    app/helpers/application_helper.rb:22:in `setup_product'
+    app/helpers/application_helper.rb:21:in `setup_product'
+    app/views/products/new.html.erb:7
+    app/controllers/products_controller.rb:30:in `new'
+
+Rendered rescues/_trace (218.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-20 14:05:01) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (undefined method `AreaProducts' for #<Product:0x57694a4>) on line #7 of app/views/products/new.html.erb:
+4: 
+5: <div class="column-1">
+6: 
+7: <% form_for setup_product(@product) do |f| %>
+8:   <%= f.error_messages %>
+9: 
+10: <table>
+
+    app/helpers/application_helper.rb:22:in `setup_product'
+    app/helpers/application_helper.rb:21:in `setup_product'
+    app/views/products/new.html.erb:7
+    app/controllers/products_controller.rb:30:in `new'
+
+Rendered rescues/_trace (385.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-20 14:05:16) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (undefined method `AreaProduct' for #<Product:0x58a1aec>) on line #7 of app/views/products/new.html.erb:
+4: 
+5: <div class="column-1">
+6: 
+7: <% form_for setup_product(@product) do |f| %>
+8:   <%= f.error_messages %>
+9: 
+10: <table>
+
+    app/helpers/application_helper.rb:22:in `setup_product'
+    app/helpers/application_helper.rb:21:in `setup_product'
+    app/views/products/new.html.erb:7
+    app/controllers/products_controller.rb:30:in `new'
+
+Rendered rescues/_trace (211.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-20 14:05:29) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (undefined method `Area_Product' for #<Product:0x56e9a4c>) on line #7 of app/views/products/new.html.erb:
+4: 
+5: <div class="column-1">
+6: 
+7: <% form_for setup_product(@product) do |f| %>
+8:   <%= f.error_messages %>
+9: 
+10: <table>
+
+    app/helpers/application_helper.rb:22:in `setup_product'
+    app/helpers/application_helper.rb:21:in `setup_product'
+    app/views/products/new.html.erb:7
+    app/controllers/products_controller.rb:30:in `new'
+
+Rendered rescues/_trace (381.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-20 14:05:39) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (undefined method `Area_Products' for #<Product:0x5834dac>) on line #7 of app/views/products/new.html.erb:
+4: 
+5: <div class="column-1">
+6: 
+7: <% form_for setup_product(@product) do |f| %>
+8:   <%= f.error_messages %>
+9: 
+10: <table>
+
+    app/helpers/application_helper.rb:22:in `setup_product'
+    app/helpers/application_helper.rb:21:in `setup_product'
+    app/views/products/new.html.erb:7
+    app/controllers/products_controller.rb:30:in `new'
+
+Rendered rescues/_trace (214.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-21 11:43:51) [GET]
+  [4;36;1mVolunteer Load (6.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (8.0ms)
+Rendered _footer (5.0ms)
+Completed in 8288ms (View: 8253, DB: 6) | 200 OK [http://localhost/volunteers]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-21 11:44:22) [GET]
+  [4;35;1mVolunteer Load (5.0ms)[0m   [0mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 78ms (View: 47, DB: 5) | 200 OK [http://localhost/volunteers]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-21 11:54:12) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (8.0ms)
+Rendered _footer (0.0ms)
+Completed in 389ms (View: 115, DB: 2) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-21 11:54:16) [GET]
+Rendering template within layouts/products
+Rendering products/new
+
+ActionView::TemplateError (undefined method `Area_Products' for #<Product:0x5786c0c>) on line #7 of app/views/products/new.html.erb:
+4: 
+5: <div class="column-1">
+6: 
+7: <% form_for setup_product(@product) do |f| %>
+8:   <%= f.error_messages %>
+9: 
+10: <table>
+
+    app/helpers/application_helper.rb:22:in `setup_product'
+    app/helpers/application_helper.rb:21:in `setup_product'
+    app/views/products/new.html.erb:7
+    app/controllers/products_controller.rb:30:in `new'
+
+Rendered rescues/_trace (422.0ms)
+Rendered rescues/_request_and_response (7.0ms)
+Rendering rescues/layout (internal_server_error)
