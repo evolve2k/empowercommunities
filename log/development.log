@@ -19022,3 +19022,14 @@ ActionView::TemplateError (undefined method `Area_Products' for #<Product:0x5786
 Rendered rescues/_trace (422.0ms)
 Rendered rescues/_request_and_response (7.0ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-09-21 14:07:45) [GET]
+
+ArgumentError (No association found for name `area_product'. Has it been defined yet?):
+  app/models/product.rb:3
+  app/controllers/products_controller.rb:27:in `new'
+
+Rendered rescues/_trace (178.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
