@@ -1,20 +1,6 @@
-<h1>Editing product_type</h1>
+<p class="content-nav"><%= link_to 'Show', @product_type %> | <%= link_to 'Destroy', @product_type, :confirm => 'Are you sure?', :method => :delete %> | <%= link_to 'Back', product_types_path %> </p>
+<h1>Edit: <%= @product_type.name %></h1>
 
-<% form_for(@product_type) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :first_production %><br />
-    <%= f.date_select :first_production %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @product_type %> |
-<%= link_to 'Back', product_types_path %>
+<div class="column-1">
+  <%= render :partial => 'form' %>
+</div>

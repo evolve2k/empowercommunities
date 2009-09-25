@@ -33,7 +33,6 @@ ActiveRecord::Schema.define(:version => 20090918051730) do
     t.string   "name"
     t.string   "address"
     t.string   "suburb"
-    t.string   "state"
     t.string   "post_code"
     t.string   "country"
     t.string   "primary_contact"
@@ -44,6 +43,7 @@ ActiveRecord::Schema.define(:version => 20090918051730) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "channel_id"
+    t.integer  "state_id"
   end
 
   create_table "product_types", :force => true do |t|

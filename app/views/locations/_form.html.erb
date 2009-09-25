@@ -8,7 +8,9 @@
   </tr>
   <tr>
     <td><%= f.label :channel_id %></td>
-    <td><%= f.text_field :channel_id %></td>
+    <td><%= f.select :channel_id, Channel.find(:all , :order => "name").collect {|s|	
+		[(s.name), s.id]} %><%= link_to ' Add New Channel ', new_channel_path %></td>
+    <td></td>
   </tr>
   <tr>
     <td><%= f.label :address %></td>
@@ -19,8 +21,9 @@
     <td><%= f.text_field :suburb %></td>
   </tr>
   <tr>
-    <td><%= f.label :state %></td>
-    <td><%= f.text_field :state %></td>
+    <td><%= f.label :state_id %></td>
+    <td><%= f.select :state_id, State.find(:all , :order => "name").collect {|s|	
+		[(s.name), s.id]} %></td>
   </tr>
   <tr>
     <td><%= f.label :post_code %></td>

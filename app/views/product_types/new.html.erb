@@ -1,19 +1,8 @@
-<h1>New product_type</h1>
+<p class="content-nav"><%= link_to 'Back', product_types_path %></p>
 
-<% form_for(@product_type) do |f| %>
-  <%= f.error_messages %>
+<h1>New Product Type</h1>
 
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :first_production %><br />
-    <%= f.date_select :first_production %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
+<div class="column-1">
+  <%= render :partial => 'form' %>
+</div>
 
-<%= link_to 'Back', product_types_path %>

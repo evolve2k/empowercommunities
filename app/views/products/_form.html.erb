@@ -16,11 +16,11 @@
   </tr>
   <tr>
     <td><%= f.label :first_production %></td>
-    <td><%= f.date_select :first_production %></td>
+    <td><%= f.date_select :first_production, :start_year=>2004 , :end_year=>Time.now.year %></td>
   </tr>
   <tr>
     <td><%= f.label :ceased_production %></td>
-    <td><%= f.date_select :ceased_production %></td>
+    <td><%= f.date_select :ceased_production, :start_year=>2004 , :end_year=>Time.now.year %></td>
   </tr>
   
   <% f.fields_for :area_products do |ap| %>

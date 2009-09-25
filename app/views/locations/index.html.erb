@@ -1,8 +1,9 @@
-<h1>Listing locations</h1>
+<h1>Listing Locations</h1>
 
 <table>
   <tr>
     <th>Name</th>
+    <th>Channel</th>
     <th>State</th>
     <th>Primary contact</th>
     <th>Position</th>
@@ -13,7 +14,8 @@
 <% @locations.each do |location| %>
   <tr>
     <td><%= link_to location.name, location %></td>
-    <td><%=h location.state %></td>
+    <td><%=h location.channel.name %></td>
+    <td><%=h location.state.name %></td>
     <td><%=h location.primary_contact %></td>
     <td><%=h location.position %></td>
     <td><%=h location.contact_number %></td>
@@ -25,4 +27,4 @@
 
 <br />
 
-<%= link_to 'New location', new_location_path %>
+<%= link_to 'New Location', new_location_path %>
