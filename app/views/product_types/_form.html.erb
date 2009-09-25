@@ -1,5 +1,6 @@
 <% form_for(@product_type) do |f| %>
 <%= f.error_messages %>
+
 <table>
   <tr>
     <td><%= f.label :name %></td>
@@ -8,7 +9,7 @@
   
   <tr>
     <td><%= f.label :first_production %></td>
-    <td><%= f.date_select :first_production %></td>
+    <td><%= f.date_select :first_production , :start_year=>2004 , :end_year=>Time.now.year %></td>
   </tr>
   
   <tr>
