@@ -1,3 +1,3 @@
 class State < ActiveRecord::Base
-  has_many :states
+  has_many :locations
 end

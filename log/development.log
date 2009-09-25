@@ -15764,3 +15764,894 @@ Rendering product_types/index
 Rendered _header (2.0ms)
 Rendered _footer (0.0ms)
 Completed in 278ms (View: 260, DB: 2) | 200 OK [http://localhost/product_types]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-25 10:16:27) [GET]
+  [4;36;1mVolunteer Load (35.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (16.0ms)
+Rendered _footer (2.0ms)
+Completed in 4499ms (View: 4447, DB: 35) | 200 OK [http://localhost/volunteers]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 10:36:54) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.state.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (263.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-25 10:37:09) [GET]
+  [4;35;1mChannel Load (2.0ms)[0m   [0mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 115ms (View: 98, DB: 2) | 200 OK [http://localhost/channels]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-25 10:37:18) [GET]
+  [4;36;1mState Load (2.0ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 148ms (View: 131, DB: 2) | 200 OK [http://localhost/states]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-25 10:37:20) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 112ms (View: 97, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing AreaProductsController#index (for 127.0.0.1 at 2009-09-25 10:37:22) [GET]
+  [4;36;1mAreaProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "area_products" [0m
+Rendering template within layouts/area_products
+Rendering area_products/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 118ms (View: 102, DB: 1) | 200 OK [http://localhost/area_products]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2009-09-25 10:37:24) [GET]
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 115ms (View: 99, DB: 1) | 200 OK [http://localhost/product_types]
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2009-09-25 10:37:35) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering template within layouts/volunteers
+Rendering volunteers/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 42ms (View: 25, DB: 2) | 200 OK [http://localhost/volunteers]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 10:41:57) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.state.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (138.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-25 10:43:06) [GET]
+  [4;35;1mState Load (2.0ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 34ms (View: 19, DB: 2) | 200 OK [http://localhost/states]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 10:49:15) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.state.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (254.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 10:51:19) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 104ms (View: 86, DB: 3) | 200 OK [http://localhost/locations]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-25 10:51:38) [GET]
+  [4;36;1mState Load (2.0ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 34ms (View: 18, DB: 2) | 200 OK [http://localhost/states]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 10:53:41) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.state.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (256.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 10:54:11) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 70ms (View: 53, DB: 3) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-09-25 10:54:17) [GET]
+Rendering template within layouts/locations
+Rendering locations/new
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" ORDER BY name[0m
+  [4;36;1mState Load (0.0ms)[0m   [0;1mSELECT * FROM "states" ORDER BY name[0m
+Rendered locations/_form (82.0ms)
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 125ms (View: 105, DB: 1) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#create (for 127.0.0.1 at 2009-09-25 10:54:26) [POST]
+  Parameters: {"location"=>{"position"=>"", "address"=>"", "name"=>"", "contact_number"=>"", "country"=>"", "notes"=>"", "post_code"=>"", "channel_id"=>"1", "suburb"=>"", "website"=>"", "primary_contact"=>"", "state_id"=>"1"}, "commit"=>"Update", "authenticity_token"=>"thR63qvLKibk99T0NjsmFIAvZV8IuqmAP76m8ozVaCA="}
+  [4;35;1mLocation Create (1.0ms)[0m   [0mINSERT INTO "locations" ("name", "address", "position", "contact_number", "created_at", "country", "post_code", "notes", "updated_at", "channel_id", "suburb", "primary_contact", "website", "state_id") VALUES('', '', '', '', '2009-09-25 01:24:26', '', '', '', '2009-09-25 01:24:26', 1, '', '', '', 1)[0m
+Redirected to http://localhost:3000/locations/2
+Completed in 39ms (DB: 1) | 302 Found [http://localhost/locations]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-25 10:54:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 2) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 208ms (View: 181, DB: 2) | 200 OK [http://localhost/locations/2]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-25 10:54:34) [GET]
+  [4;36;1mState Load (1.0ms)[0m   [0;1mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 34ms (View: 17, DB: 1) | 200 OK [http://localhost/states]
+
+
+Processing StatesController#index (for 127.0.0.1 at 2009-09-25 10:54:59) [GET]
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" [0m
+Rendering template within layouts/states
+Rendering states/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 34ms (View: 18, DB: 1) | 200 OK [http://localhost/states]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 10:55:04) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #18 of app/views/locations/index.html.erb:
+15:   <tr>
+16:     <td><%= link_to location.name, location %></td>
+17:     <td><%=h location.channel.name %></td>
+18:     <td><%=h location.state.name %></td>
+19:     <td><%=h location.primary_contact %></td>
+20:     <td><%=h location.position %></td>
+21:     <td><%=h location.contact_number %></td>
+
+    app/views/locations/index.html.erb:18
+    app/views/locations/index.html.erb:14:in `each'
+    app/views/locations/index.html.erb:14
+    app/controllers/locations_controller.rb:7:in `index'
+
+Rendered rescues/_trace (137.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 10:56:28) [GET]
+  [4;36;1mLocation Load (3.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;35;1mState Load (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 75ms (View: 58, DB: 3) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-25 10:56:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 48ms (View: 27, DB: 1) | 200 OK [http://localhost/locations/1]
+
+
+Processing LocationsController#edit (for 127.0.0.1 at 2009-09-25 10:56:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mLocation Load (0.0ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/edit
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" ORDER BY name[0m
+  [4;35;1mState Load (2.0ms)[0m   [0mSELECT * FROM "states" ORDER BY name[0m
+Rendered locations/_form (47.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 93ms (View: 69, DB: 3) | 200 OK [http://localhost/locations/1/edit]
+
+
+Processing LocationsController#update (for 127.0.0.1 at 2009-09-25 10:56:47) [PUT]
+  Parameters: {"location"=>{"position"=>"", "address"=>"Rundle Street", "name"=>"Rundle Street Market", "contact_number"=>"", "country"=>"Australia", "notes"=>"", "post_code"=>"5000", "channel_id"=>"1", "suburb"=>"Adelaide", "website"=>"", "primary_contact"=>"", "state_id"=>"1"}, "commit"=>"Update", "authenticity_token"=>"thR63qvLKibk99T0NjsmFIAvZV8IuqmAP76m8ozVaCA=", "id"=>"1"}
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+  [4;35;1mLocation Update (1.0ms)[0m   [0mUPDATE "locations" SET "updated_at" = '2009-09-25 01:26:48', "state_id" = 1 WHERE "id" = 1[0m
+Redirected to http://localhost:3000/locations/1
+Completed in 37ms (DB: 2) | 302 Found [http://localhost/locations/1]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-25 10:56:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+  [4;35;1mState Load (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 49ms (View: 28, DB: 1) | 200 OK [http://localhost/locations/1]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 10:56:55) [GET]
+  [4;36;1mLocation Load (3.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;36;1mState Load (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 69ms (View: 50, DB: 4) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 10:57:45) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;35;1mState Load (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 69ms (View: 51, DB: 2) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#edit (for 127.0.0.1 at 2009-09-25 10:57:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 2) [0m
+Rendering template within layouts/locations
+Rendering locations/edit
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" ORDER BY name[0m
+  [4;36;1mState Load (1.0ms)[0m   [0;1mSELECT * FROM "states" ORDER BY name[0m
+Rendered locations/_form (47.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 88ms (View: 65, DB: 3) | 200 OK [http://localhost/locations/2/edit]
+
+
+Processing LocationsController#update (for 127.0.0.1 at 2009-09-25 10:58:16) [PUT]
+  Parameters: {"location"=>{"position"=>"", "address"=>"", "name"=>"Ecolateral", "contact_number"=>"", "country"=>"", "notes"=>"", "post_code"=>"", "channel_id"=>"3", "suburb"=>"", "website"=>"", "primary_contact"=>"", "state_id"=>"1"}, "commit"=>"Update", "authenticity_token"=>"thR63qvLKibk99T0NjsmFIAvZV8IuqmAP76m8ozVaCA=", "id"=>"2"}
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 2) [0m
+  [4;36;1mLocation Update (1.0ms)[0m   [0;1mUPDATE "locations" SET "updated_at" = '2009-09-25 01:28:16', "channel_id" = 3, "name" = 'Ecolateral' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/locations/2
+Completed in 38ms (DB: 2) | 302 Found [http://localhost/locations/2]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-25 10:58:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 2) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+  [4;36;1mState Load (1.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 86ms (View: 50, DB: 2) | 200 OK [http://localhost/locations/2]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 10:58:28) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 71ms (View: 51, DB: 5) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 10:58:46) [GET]
+  [4;36;1mLocation Load (6.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;36;1mState Load (1.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 96ms (View: 70, DB: 9) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 10:58:50) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 71ms (View: 51, DB: 5) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 10:58:58) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;36;1mState Load (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;35;1mChannel Load (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 72ms (View: 54, DB: 3) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#edit (for 127.0.0.1 at 2009-09-25 10:59:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 2) [0m
+Rendering template within layouts/locations
+Rendering locations/edit
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" ORDER BY name[0m
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" ORDER BY name[0m
+Rendered locations/_form (47.0ms)
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 85ms (View: 62, DB: 3) | 200 OK [http://localhost/locations/2/edit]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-25 11:02:14) [GET]
+  [4;36;1mChannel Load (4.0ms)[0m   [0;1mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 46ms (View: 26, DB: 4) | 200 OK [http://localhost/channels]
+
+
+Processing ChannelsController#new (for 127.0.0.1 at 2009-09-25 11:02:17) [GET]
+Rendering template within layouts/channels
+Rendering channels/new
+Rendered channels/_form (8.0ms)
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 46ms (View: 30, DB: 0) | 200 OK [http://localhost/channels/new]
+
+
+Processing ChannelsController#create (for 127.0.0.1 at 2009-09-25 11:02:23) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"thR63qvLKibk99T0NjsmFIAvZV8IuqmAP76m8ozVaCA=", "channel"=>{"name"=>"Other", "description"=>""}}
+  [4;35;1mChannel Create (1.0ms)[0m   [0mINSERT INTO "channels" ("name", "created_at", "updated_at", "description") VALUES('Other', '2009-09-25 01:32:23', '2009-09-25 01:32:23', '')[0m
+Redirected to http://localhost:3000/channels/6
+Completed in 29ms (DB: 1) | 302 Found [http://localhost/channels]
+
+
+Processing ChannelsController#show (for 127.0.0.1 at 2009-09-25 11:02:25) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mChannel Load (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 6) [0m
+Rendering template within layouts/channels
+Rendering channels/show
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 37ms (View: 19, DB: 0) | 200 OK [http://localhost/channels/6]
+
+
+Processing ChannelsController#index (for 127.0.0.1 at 2009-09-25 11:02:28) [GET]
+  [4;35;1mChannel Load (2.0ms)[0m   [0mSELECT * FROM "channels" [0m
+Rendering template within layouts/channels
+Rendering channels/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 38ms (View: 21, DB: 2) | 200 OK [http://localhost/channels]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 11:02:30) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;36;1mState Load (1.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 118ms (View: 98, DB: 5) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#edit (for 127.0.0.1 at 2009-09-25 11:02:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 2) [0m
+Rendering template within layouts/locations
+Rendering locations/edit
+  [4;36;1mChannel Load (2.0ms)[0m   [0;1mSELECT * FROM "channels" ORDER BY name[0m
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" ORDER BY name[0m
+Rendered locations/_form (47.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 86ms (View: 62, DB: 4) | 200 OK [http://localhost/locations/2/edit]
+
+
+Processing LocationsController#destroy (for 127.0.0.1 at 2009-09-25 11:02:40) [DELETE]
+  Parameters: {"authenticity_token"=>"thR63qvLKibk99T0NjsmFIAvZV8IuqmAP76m8ozVaCA=", "id"=>"2"}
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 2) [0m
+  [4;35;1mLocation Destroy (1.0ms)[0m   [0mDELETE FROM "locations" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/locations
+Completed in 29ms (DB: 2) | 302 Found [http://localhost/locations/2]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 11:02:41) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;36;1mState Load (1.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 67ms (View: 49, DB: 3) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-09-25 11:02:46) [GET]
+Rendering template within layouts/locations
+Rendering locations/new
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" ORDER BY name[0m
+  [4;36;1mState Load (1.0ms)[0m   [0;1mSELECT * FROM "states" ORDER BY name[0m
+Rendered locations/_form (52.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 195ms (View: 60, DB: 2) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#create (for 127.0.0.1 at 2009-09-25 11:03:08) [POST]
+  Parameters: {"location"=>{"position"=>"", "address"=>"", "name"=>"Ecolateral", "contact_number"=>"", "country"=>"", "notes"=>"", "post_code"=>"", "channel_id"=>"3", "suburb"=>"", "website"=>"", "primary_contact"=>"", "state_id"=>"1"}, "commit"=>"Update", "authenticity_token"=>"thR63qvLKibk99T0NjsmFIAvZV8IuqmAP76m8ozVaCA="}
+  [4;35;1mLocation Create (2.0ms)[0m   [0mINSERT INTO "locations" ("name", "address", "position", "contact_number", "created_at", "country", "post_code", "notes", "updated_at", "channel_id", "suburb", "primary_contact", "website", "state_id") VALUES('Ecolateral', '', '', '', '2009-09-25 01:33:08', '', '', '', '2009-09-25 01:33:08', 3, '', '', '', 1)[0m
+Redirected to http://localhost:3000/locations/3
+Completed in 38ms (DB: 2) | 302 Found [http://localhost/locations]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-25 11:03:09) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 3) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 50ms (View: 27, DB: 2) | 200 OK [http://localhost/locations/3]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 11:03:22) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;36;1mState Load (1.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 71ms (View: 51, DB: 4) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 11:05:11) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 72ms (View: 53, DB: 4) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-09-25 11:05:24) [GET]
+Rendering template within layouts/locations
+Rendering locations/new
+  [4;36;1mChannel Load (2.0ms)[0m   [0;1mSELECT * FROM "channels" ORDER BY name[0m
+  [4;35;1mState Load (0.0ms)[0m   [0mSELECT * FROM "states" ORDER BY name[0m
+Rendered locations/_form (54.0ms)
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 85ms (View: 64, DB: 2) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#create (for 127.0.0.1 at 2009-09-25 11:05:49) [POST]
+  Parameters: {"location"=>{"position"=>"", "address"=>"", "name"=>"waste not want not", "contact_number"=>"", "country"=>"", "notes"=>"", "post_code"=>"", "channel_id"=>"3", "suburb"=>"Adelaide", "website"=>"", "primary_contact"=>"", "state_id"=>"1"}, "commit"=>"Update", "authenticity_token"=>"thR63qvLKibk99T0NjsmFIAvZV8IuqmAP76m8ozVaCA="}
+  [4;36;1mLocation Create (2.0ms)[0m   [0;1mINSERT INTO "locations" ("name", "address", "position", "contact_number", "created_at", "country", "post_code", "notes", "updated_at", "channel_id", "suburb", "primary_contact", "website", "state_id") VALUES('waste not want not', '', '', '', '2009-09-25 01:35:50', '', '', '', '2009-09-25 01:35:50', 3, 'Adelaide', '', '', 1)[0m
+Redirected to http://localhost:3000/locations/4
+Completed in 39ms (DB: 2) | 302 Found [http://localhost/locations]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-25 11:05:51) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mLocation Load (1.0ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 4) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+  [4;36;1mState Load (1.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 49ms (View: 28, DB: 2) | 200 OK [http://localhost/locations/4]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 11:05:54) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;35;1mState Load (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 75ms (View: 55, DB: 4) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 11:06:43) [GET]
+  [4;36;1mLocation Load (2.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;36;1mState Load (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;35;1mChannel Load (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 84ms (View: 65, DB: 3) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-09-25 11:07:02) [GET]
+Rendering template within layouts/locations
+Rendering locations/new
+  [4;35;1mChannel Load (2.0ms)[0m   [0mSELECT * FROM "channels" ORDER BY name[0m
+  [4;36;1mState Load (1.0ms)[0m   [0;1mSELECT * FROM "states" ORDER BY name[0m
+Rendered locations/_form (58.0ms)
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 87ms (View: 65, DB: 3) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 11:07:07) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mChannel Load (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 190ms (View: 170, DB: 4) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-25 11:07:14) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 4) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 59ms (View: 30, DB: 2) | 200 OK [http://localhost/locations/4]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-25 11:07:37) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 4) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 72ms (View: 49, DB: 2) | 200 OK [http://localhost/locations/4]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 11:07:57) [GET]
+  [4;36;1mLocation Load (3.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;36;1mState Load (2.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;35;1mChannel Load (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 79ms (View: 59, DB: 5) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 11:08:00) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;35;1mState Load (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mChannel Load (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 74ms (View: 56, DB: 3) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-25 11:08:05) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 4) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+  [4;35;1mState Load (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 53ms (View: 30, DB: 1) | 200 OK [http://localhost/locations/4]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 11:08:31) [GET]
+  [4;36;1mLocation Load (3.0ms)[0m   [0;1mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;36;1mState Load (1.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 191ms (View: 171, DB: 6) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-09-25 11:08:38) [GET]
+Rendering template within layouts/locations
+Rendering locations/new
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" ORDER BY name[0m
+  [4;36;1mState Load (1.0ms)[0m   [0;1mSELECT * FROM "states" ORDER BY name[0m
+Rendered locations/_form (51.0ms)
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 82ms (View: 60, DB: 2) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 11:10:14) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 102ms (View: 82, DB: 4) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-25 11:10:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;36;1mState Load (0.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 74ms (View: 52, DB: 2) | 200 OK [http://localhost/locations/1]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 11:10:29) [GET]
+  [4;35;1mLocation Load (3.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 74ms (View: 54, DB: 5) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#edit (for 127.0.0.1 at 2009-09-25 11:10:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/edit
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" ORDER BY name[0m
+  [4;36;1mState Load (2.0ms)[0m   [0;1mSELECT * FROM "states" ORDER BY name[0m
+Rendered locations/_form (170.0ms)
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 209ms (View: 185, DB: 4) | 200 OK [http://localhost/locations/1/edit]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-09-25 11:10:46) [GET]
+  [4;35;1mLocation Load (2.0ms)[0m   [0mSELECT * FROM "locations" [0m
+Rendering template within layouts/locations
+Rendering locations/index
+  [4;36;1mChannel Load (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mChannel Load (1.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "channels" WHERE ("channels"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 76ms (View: 54, DB: 4) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2009-09-25 11:10:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLocation Load (1.0ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/locations
+Rendering locations/show
+  [4;35;1mChannel Load (1.0ms)[0m   [0mSELECT * FROM "channels" WHERE ("channels"."id" = 1) [0m
+  [4;36;1mState Load (1.0ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 69ms (View: 44, DB: 3) | 200 OK [http://localhost/locations/1]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2009-09-25 11:31:09) [GET]
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+Rendered _header (1.0ms)
+Rendered _footer (0.0ms)
+Completed in 29ms (View: 11, DB: 1) | 200 OK [http://localhost/product_types]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2009-09-25 11:31:10) [GET]
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+Rendered _header (1.0ms)
+Rendered _footer (1.0ms)
+Completed in 24ms (View: 10, DB: 1) | 200 OK [http://localhost/product_types]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2009-09-25 11:31:11) [GET]
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 29ms (View: 10, DB: 1) | 200 OK [http://localhost/product_types]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2009-09-25 11:31:13) [GET]
+  [4;36;1mProductType Load (2.0ms)[0m   [0;1mSELECT * FROM "product_types" [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+Rendered _header (2.0ms)
+Rendered _footer (0.0ms)
+Completed in 26ms (View: 10, DB: 2) | 200 OK [http://localhost/product_types]
