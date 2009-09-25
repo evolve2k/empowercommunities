@@ -22,6 +22,34 @@
     <td><%= f.label :ceased_production %></td>
     <td><%= f.date_select :ceased_production, :start_year=>2004 , :end_year=>Time.now.year %></td>
   </tr>
+  
+  <% f.fields_for :area_products do |ap| %>
+	  <tr>
+		<td><%= ap.label :product_id %></td>
+		<td><%= ap.text_field :product_id %></td>
+	  </tr>
+	  <tr>
+		<td><%= ap.label :shape %></td>
+		<td><%= ap.text_field :shape %></td>
+	  </tr>
+	  <tr>
+	    <td><%= ap.label :width %></td>
+		<td><%= ap.text_field :width %></td>
+	  </tr>
+	  <tr>
+		<td><%= ap.label :length %></td>
+		<td><%= ap.text_field :length %></td>
+	  </tr>
+	  <tr>
+		<td><%= ap.label :area %></td>
+		<td><%= ap.text_field :area %></td>
+	  </tr>
+	  <tr>
+		<td><%= ap.label :perimeter %></td>
+		<td><%= ap.text_field :perimeter %></td>
+	  </tr>
+  <% end %>
+  
   <tr>
     <td></td>
 	<td><%= f.submit 'Submit' %></td>
