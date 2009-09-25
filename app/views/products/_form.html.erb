@@ -24,30 +24,30 @@
   </tr>
   
   <% f.fields_for :area_products do |ap| %>
-	  <td>
-		<tr><%= ap.label :product_id %></tr>
-		<tr><%= ap.text_field :product_id %></tr>
-	  </td>
-	  <td>
-		<tr><%= ap.label :shape %></tr>
-		<tr><%= ap.text_field :shape %></tr>
-	  </td>
-	  <td>
-		<tr><%= ap.label :width %></tr>
-		<tr><%= f.text_field :width %></tr>
-	  </td>
-	  <td>
-		<tr><%= ap.label :length %></tr>
-		<tr><%= ap.text_field :length %></tr>
-	  </td>
-	  <td>
-		<tr><%= ap.label :area %></tr>
-		<tr><%= ap.text_field :area %></tr>
-	  </td>
-	  <td>
-		<tr><%= ap.label :perimeter %></tr>
-		<tr><%= ap.text_field :perimeter %></tr>
-	  </td>
+	  <tr>
+		<td><%= ap.label :product_id %></td>
+		<td><%= ap.text_field :product_id %></td>
+	  </tr>
+	  <tr>
+		<td><%= ap.label :shape %></td>
+		<td><%= ap.text_field :shape %></td>
+	  </tr>
+	  <tr>
+	    <td><%= ap.label :width %></td>
+		<td><%= ap.text_field :width %></td>
+	  </tr>
+	  <tr>
+		<td><%= ap.label :length %></td>
+		<td><%= ap.text_field :length %></td>
+	  </tr>
+	  <tr>
+		<td><%= ap.label :area %></td>
+		<td><%= ap.text_field :area %></td>
+	  </tr>
+	  <tr>
+		<td><%= ap.label :perimeter %></td>
+		<td><%= ap.text_field :perimeter %></td>
+	  </tr>
   <% end %>
   
   <tr>

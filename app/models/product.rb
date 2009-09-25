@@ -1,4 +1,4 @@
 class Product < ActiveRecord::Base
-  has_many :area_products, :class_name => 'Product'
-  accepts_nested_attributes_for :area_product, :allow_destroy => true, :reject_if => :all_blank
+  has_many :area_products
+  accepts_nested_attributes_for :area_products, :allow_destroy => true, :reject_if => proc { |attrs| attrs.all? { |k, v| v.blank? } }
 end
