@@ -22,12 +22,8 @@
     <td><%= f.label :ceased_production %></td>
     <td><%= f.date_select :ceased_production, :start_year=>2004 , :end_year=>Time.now.year %></td>
   </tr>
-  
+    
   <% f.fields_for :area_products do |ap| %>
-	  <tr>
-		<td><%= ap.label :product_id %></td>
-		<td><%= ap.text_field :product_id %></td>
-	  </tr>
 	  <tr>
 		<td><%= ap.label :shape %></td>
 		<td><%= ap.text_field :shape %></td>
