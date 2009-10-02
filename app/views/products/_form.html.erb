@@ -12,7 +12,10 @@
   </tr>
   <tr>
     <td><%= f.label :product_type_id %></td>
-    <td><%= f.text_field :product_type_id %></td>
+	<td>
+	  <%= f.select :product_type_id, ProductType.find(:all , :order => "name").collect {|s| [(s.name), s.id]} %>
+	  <%= link_to ' Add New Product Type ', new_product_type_path %>
+    </td>
   </tr>
   <tr>
     <td><%= f.label :first_production %></td>

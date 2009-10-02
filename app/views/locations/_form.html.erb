@@ -8,9 +8,10 @@
   </tr>
   <tr>
     <td><%= f.label :channel_id %></td>
-    <td><%= f.select :channel_id, Channel.find(:all , :order => "name").collect {|s|	
-		[(s.name), s.id]} %><%= link_to ' Add New Channel ', new_channel_path %></td>
-    <td></td>
+    <td>
+	  <%= f.select :channel_id, Channel.find(:all , :order => "name").collect {|s| [(s.name), s.id]} %>
+	  <%= link_to ' Add New Channel ', new_channel_path %>
+    </td>
   </tr>
   <tr>
     <td><%= f.label :address %></td>
