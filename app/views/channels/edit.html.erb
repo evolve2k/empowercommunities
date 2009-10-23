@@ -1,11 +1,35 @@
-<p class="content-nav">
-  <%= link_to 'Show', @channel %> | 
-  <%= link_to 'Destroy', @channel, :confirm => 'Are you sure?', :method => :delete %> | 
-  <%= link_to 'Back', channels_path %> 
-</p>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Users: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'reset' %>
+  <%= stylesheet_link_tag 'master' %>
+</head>
+<body>
+  <%= render :partial => "/header" %>
 
-<h1>Edit: <%= @channel.name %></h1>
+  	<div class="sidebar">
+	  <div class="sidebar-a">
+	   <h1><%= link_to 'Add New User', new_user_path %></h1>	 
+	  </div>
+	  
+	  <div class="sidebar-b">
+	  </div>
+	</div>
+  
+  <div class="content">
+      <p style="color: green"><%= flash[:notice] %></p>
+	  <br />
+      <p class="content-nav">
+        <%= link_to 'Show', @channel %> | 
+        <%= link_to 'Destroy', @channel, :confirm => 'Are you sure?', :method => :delete %> | 
+        <%= link_to 'Back', channels_path %> 
+      </p>
+      <h1>Edit: <%= @channel.name %></h1>
 
-<div class="column-1">
-  <%= render :partial => 'form' %>
-</div>
+      <div class="column-1">
+        <%= render :partial => 'form' %>
+      </div>
+  </div>
+  
+  <%= render :partial => "/footer" %>
+</body>
