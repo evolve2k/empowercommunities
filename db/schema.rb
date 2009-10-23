@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091009052855) do
+ActiveRecord::Schema.define(:version => 20091023043701) do
 
   create_table "area_products", :force => true do |t|
     t.integer  "product_id"
@@ -46,6 +46,18 @@ ActiveRecord::Schema.define(:version => 20091009052855) do
     t.integer  "state_id"
   end
 
+  create_table "permissions", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "permissions_roles", :id => false, :force => true do |t|
+    t.integer "permission_id"
+    t.integer "role_id"
+  end
+
   create_table "product_types", :force => true do |t|
     t.string   "name"
     t.date     "first_production"
@@ -63,10 +75,24 @@ ActiveRecord::Schema.define(:version => 20091009052855) do
     t.datetime "updated_at"
   end
 
+  create_table "roles", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "states", :force => true do |t|
     t.string   "name"
     t.string   "code"
     t.string   "country"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_sessions", :force => true do |t|
+    t.string   "username"
+    t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -86,6 +112,7 @@ ActiveRecord::Schema.define(:version => 20091009052855) do
     t.string   "last_login_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "role_id"
   end
 
   create_table "volunteers", :force => true do |t|
