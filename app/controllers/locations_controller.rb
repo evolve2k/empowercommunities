@@ -1,4 +1,6 @@
 class LocationsController < ApplicationController
+  #before_filter :login_required #User must login before this section is accessible  before_filter :login_required
+
   # GET /locations
   # GET /locations.xml
   def index
@@ -82,4 +84,5 @@ class LocationsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
 end

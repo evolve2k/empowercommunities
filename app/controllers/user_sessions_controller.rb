@@ -1,4 +1,5 @@
 class UserSessionsController < ApplicationController
+
   # GET /user_sessions
   # GET /user_sessions.xml
   def index
@@ -83,4 +84,5 @@ class UserSessionsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
 end

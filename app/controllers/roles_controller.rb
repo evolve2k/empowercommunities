@@ -1,4 +1,6 @@
 class RolesController < ApplicationController
+  #before_filter :login_required #User must login before this section is accessible
+
   # GET /roles
   # GET /roles.xml
   def index

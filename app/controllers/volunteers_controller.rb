@@ -1,4 +1,6 @@
 class VolunteersController < ApplicationController
+  #before_filter :login_required #User must login before this section is accessible
+
   # GET /volunteers
   # GET /volunteers.xml
   def index

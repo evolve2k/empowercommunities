@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  #before_filter :login_required #User must login before this section is accessible
+
   # GET /users
   # GET /users.xml
   def index

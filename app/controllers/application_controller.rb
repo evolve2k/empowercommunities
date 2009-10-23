@@ -21,4 +21,14 @@ class ApplicationController < ActionController::Base
 	@current_user = current_user_session && current_user_session.record
     return @current_user if defined?(@current_user)
   end
+  
+  def login_required
+    if defined?(@current_user)
+	  return true
+	else
+	  redirect_to root_url
+	end
+
+  end
+  
 end

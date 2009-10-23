@@ -1,4 +1,6 @@
 class PermissionsController < ApplicationController
+  #before_filter :login_required #User must login before this section is accessible
+  
   # GET /permissions
   # GET /permissions.xml
   def index

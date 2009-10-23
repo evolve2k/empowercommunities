@@ -1,4 +1,6 @@
 class ProductTypesController < ApplicationController
+  #before_filter :login_required #User must login before this section is accessible
+
   # GET /product_types
   # GET /product_types.xml
   def index
